@@ -1,0 +1,24 @@
+{
+    "name": "lokesh/sodium",
+    "type": "color-library",
+    "description": "A Smart color library to create, convert, mix, generate, export colors.",
+    "keywords": ["color", "colour", "convert", "gif", "image", "rgb", "hex", "hsl", "hsv", "hsb", "cmy", "cmyk", "lab"],
+    "homepage": "http://github.com/lokesh-coder/Sodium",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lokesh",
+            "email": "hello@lokesh.me",
+            "homepage": "http://lokesh.me",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Sodium": "src/"
+        }
+    },
+    "require": {
+        "imagine/imagine": "0.6.*@dev"
+    }
+}

@@ -1,0 +1,28 @@
+
+ Adobe Color File (ACO) Generator
+ Documentation File
+
+
+A. How to use:
+--------------------
+1. Include "aco.class.php"
+    require_once("aco.class.php");
+2. Create a new class:
+    $aco = new acofile("file_name_comes_here.aco");
+3. Add Some Colors to the list, There are 2 ways to do so:
+    a.
+        $aco->add("Color1", 250, 251, 252); //Name, R,G,B
+        $aco->add("Color2", 120, 121, 122);
+    b.
+        $aco->add(array("Color1" => array(250, 251, 252), "Color2" => array(120, 121, 122)));
+4. acofile is Ready! you can:
+    a. Output the file:
+        $aco->outputAcofile();
+    b. Save the file
+        $aco->saveAcoFile();
+5.  file_name_comes_here.aco is created successfully and forced to download or saved to disk!
+
+B. References
+--------------------
+Please note that these ACO files are version 1, Read more information about ACO files at:
+http://www.nomodes.com/aco.html

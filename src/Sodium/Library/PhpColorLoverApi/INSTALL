@@ -1,0 +1,26 @@
+COLOURLovers (http://www.colourlovers.com/) released their API April 2, 2088 for accessing Color(s), Palette(s), Pattern(s) and
+Lover(s) information from their site. phpColourLover is a PHP wrapper for this API. This wrapper was designed to implement every
+feature available by the COLOURLovers API.
+
+phpColourLover is a PHP5 class which uses SimpleXML and, if available, the cURL library. I am currently working on a simple XML
+parser to implement phpColourLover using PHP4, which should be available within a week or to (April 13 or 20). I am also in the
+works of developing jsColourLover, a JavaScript wrapper.
+
+To install phpColourLover, extract these files into your diectory of choice and you need to edit the main class file to point
+to your desided path.
+
+./phpColourLover.php [Line 19]:
+define("PCL_INSTALL_PATH", "/path/to/phpColourLover");
+
+To call phpColourLover in your PHP application, simply add this to your file:
+require_once("/path/to/phpColourLover/phpColourLover.php");
+
+For information on the subclasses and methods each one offers, please take a look at ./docs/index.html which will describe each
+class method and the way to use it. Also, take a look at ./examples.php for examples on using phpColourLover.
+
+
+
+If you have any questions or commments, feel free to drop me a line by emailing nathan@unwrittenmedia.com or sending me a
+message from http://www.gimpstraw.com/
+
+copyright (c) 2008, Nathan Lucas
