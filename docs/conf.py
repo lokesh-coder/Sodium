@@ -22,7 +22,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 {% extends "!layout.html" %}
 
 {# Custom CSS overrides #}
-{% set bootswatch_css_custom = ['_static/my-styles.css'] %}
+{% set bootswatch_css_custom = ['_static/style.css'] %}
 
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
