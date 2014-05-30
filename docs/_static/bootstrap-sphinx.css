@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
 /*
 * bootstrap-sphinx.css
 * ~~~~~~~~~~~~~~~~~~~~
@@ -175,8 +177,7 @@ table.field-list {
 
 
 
-@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);
-@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+
 body{
 
     font-family: 'Old Standard TT', serif;
