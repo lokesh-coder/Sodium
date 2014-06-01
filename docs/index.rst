@@ -1,83 +1,57 @@
-.. Sodium documentation master file, created by
-   sphinx-quickstart on Mon May 26 11:48:19 2014.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. title:: Sodium | PHP Color Library
 
-********************
-Sodium Color Library
-********************
+*******
+Sodium
+*******
 
-A smart color library for all your color related needs :)
+A smart color library for all your color related needs
 
-Sodium does,
+Sodium can create, convert, generate, extract, manipulate, export colors, with no pain.
 
-* Color conversion
-* Color manipulation
-* Color generation
-* Color extraction
-* Color creation
-* Color export
-* ... and lot more
-
-Its easy
-========
+:strong:`Its easy`
 
 Not more that 2 lines,
 
 .. code-block:: php
 
-    <?php
-
     $Sodium = new Sodium('#2f8cab');
     echo $Sodium->getHsl();
 
-Its Simple
-==========
+:strong:`Its Simple`
 
 Get it what you want, with no pain.
 
 .. code-block:: php
 
-    <?php
-
     $Sodium = new Sodium('#ddd');
     echo $Sodium->getRed(Model::STANDARD);
 
-Its smart, actually
-===================
+:strong:`Its smart, actually`
 
 Provide anything, or nothing.
 
 .. code-block:: php
-
-    <?php
 
     $Sodium = new Sodium(array('Violet',hsl(20,66,210),image('/path/to/image'),''));
     $Sodium->useInput(3)->exportToAco();
 
 You can provide, ``hex`` ``rgb`` ``name`` ``hsl`` ``hsv`` ``hsb`` ``lab`` ``hlab`` ``cmy`` ``cmyk`` ``luv`` ``xyz`` ``xyx`` ``lch`` ``pantone`` ``image`` ``ico`` ``website`` ``css`` ``crayon name`` ``psd`` ``colorlovers pallate`` ``kulers id`` ``custom resource`` ``empty``
 
-Its a color engine
-==================
+:strong:`Its a color engine`
 
 Generate color pallate,
 
 .. code-block:: php
 
-    <?php
-
     $Sodium = new Sodium('Violet');
     $colors = $Sodium->applyFormula('Greenish')->setDegree(2)->generate(20);
     print_r($colors);
 
-Its Cool in export
-==================
+:strong:`Its Cool in export`
 
 Export to anything,
 
 .. code-block:: php
-
-    <?php
 
     $colors = array();
     $colors[] = 'rgb(30,99,111)';
@@ -86,34 +60,28 @@ Export to anything,
     $Sodium = new Sodium($colors);
     $Sodium->exportAlltoAll();
 
-Its more
-========
+:strong:`Its more`
 
 Do anything with the color.
 
 .. code-block:: php
 
-    <?php
-
     $Sodium = new Sodium();
     echo $Sodium->addRed(0.6)->store()->pluginGray(3%)->mix('#333aca')->getCmy();
     print_r($Sodium->getStoredColors());
 
-Its Extensible
-==============
+:strong:`Its Extensible`
 
 Plug your custom input type, custom color resource, custom export, custom plugin, custom toolbox, custom color generation formula, and customize everything. It has configuration file too.
 
 .. code-block:: php
-
-    <?php
 
     $Sodium = new Sodium('**/custom-input-type/**','custom config name');
     $Sodium->getFavorite();
 
 
 Features
-========
+--------
 
 * Supports multiple resources (color spaces/models,web, files)
 * Loosely coulpled
@@ -124,11 +92,38 @@ Features
 * easy to install within any modern frameworks (zf,Laravel,symphony,codeIgniter)
 * Completely Customizable
 * Easy extensible to create custom plugins/models/tools/image templates/formulas/classes
-* small file size
+* small in file size.
+
+Install
+-------
+
+:strong:`Requirements`
+
+| PHP 5.3 
+| GD/Image magick extention
+
+:strong:`Composer`
+
+Sodium is build following ``PSR-0`` standard. You can install using composer.
+
+Add this code in your ``composer.json``
+
+.. code-block:: json
+
+    "require": {
+            "lokesh/sodium": "1.0.1"
+        }
+
+:strong:`Dependencies`
+
+| "imagine/imagine"              For Image manipulation 
+| "sabre/xml"                    For import/export in XML
+| "skyzyx/adobe-swatch-exchange" For export in PSD ACO
+| "sybio/gif-creator"            For export in GIF
 
 
 .. toctree::
    :maxdepth: 2
 
-
+   getting_started
 

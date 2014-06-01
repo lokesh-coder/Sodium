@@ -1,23 +1,25 @@
-
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Sodium Color Library &mdash; Sodium v1.0.1 documentation</title>
+  
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Sodium | PHP Color Library &mdash; Sodium documentation</title>
     
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootswatch-3.1.0/yeti/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="_static/styles.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     'v1.0.1',
+        VERSION:     '1.0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -26,176 +28,145 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Sodium v1.0.1 documentation" href="#" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="top" title="Sodium documentation" href="#" />
+    <link rel="next" title="Getting Started" href="getting_started.html" />
+  
+   
 
   </head>
   <body>
-
-  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          Sodium</a>
-        <span class="navbar-text navbar-version pull-left"><b>v1.0.1</b></span>
-      </div>
-
-        <div class="collapse navbar-collapse nav-collapse">
-          <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
-            
-                <li><a href="overview.html">Overview</a></li>
-                <li><a href="installation.html">Installation</a></li>
-                <li><a href="components.html">Components</a></li>
-                <li><a href="https://github.com/lokesh-coder/sodium/">Download</a></li>
-            
-            
-              <li class="dropdown globaltoc-container">
-  <a role="button"
-     id="dLabelGlobalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Home <b class="caret"></b></a>
-  <ul class="dropdown-menu globaltoc"
-      role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul class="simple">
-</ul>
-</ul>
-</li>
-              
-                <li class="dropdown">
-  <a role="button"
-     id="dLabelLocalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Page <b class="caret"></b></a>
-  <ul class="dropdown-menu localtoc"
-      role="menu"
-      aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Sodium Color Library</a><ul>
-<li><a class="reference internal" href="#its-easy">Its easy</a></li>
-<li><a class="reference internal" href="#its-simple">Its Simple</a></li>
-<li><a class="reference internal" href="#its-smart-actually">Its smart, actually</a></li>
-<li><a class="reference internal" href="#its-a-color-engine">Its a color engine</a></li>
-<li><a class="reference internal" href="#its-cool-in-export">Its Cool in export</a></li>
-<li><a class="reference internal" href="#its-more">Its more</a></li>
-<li><a class="reference internal" href="#its-extensible">Its Extensible</a></li>
-<li><a class="reference internal" href="#features">Features</a></li>
-</ul>
-</li>
-</ul>
-</ul>
-</li>
-              
-            
-            
-              
-                
-              
-            
-            
-            
-            
-              <li class="hidden-sm">
-<div id="sourcelink">
-  <a href="_sources/index.txt"
-     rel="nofollow">Source</a>
-</div></li>
-            
-          </ul>
-
-          
-            
-<form class="navbar-form navbar-right" action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-          
-        </div>
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <div class="container">
+    <div class="visible-md visible-lg navbar-text pull-right" id="github-stars">
+      <iframe src="http://ghbtns.com/github-btn.html?user=lokesh-coder&repo=https://github.com/lokesh-coder/Sodium&type=watch&count=true&size=small"
+      allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+    </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#toggle-main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Sodium</a>
+    </div>
+    <div class="collapse navbar-collapse" id="toggle-main-nav">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="_static/../getting_started.html">Getting Started</a></li>
+<li class="">
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Components<b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/model.html">Models</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/formula.html">Formula</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/image.html">Image</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/plugin.html">Plugin</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/toolbox.html">Toolbox</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Components/input.html">Input</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Components/export.html">Export</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Components/reference.html">Reference</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Components/configuration.html">Configuration</a></li>
+              </ul>
+            </li>
+<li><a href="https://github.com/lokesh-coder/sodium">Download</a></li>
+      </ul>
     </div>
   </div>
+</nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      
-  <div class="section" id="sodium-color-library">
-<h1>Sodium Color Library<a class="headerlink" href="#sodium-color-library" title="Permalink to this headline">¶</a></h1>
-<p>A smart color library for all your color related needs :)</p>
-<p>Sodium does,</p>
-<ul class="simple">
-<li>Color conversion</li>
-<li>Color manipulation</li>
-<li>Color generation</li>
-<li>Color extraction</li>
-<li>Color creation</li>
-<li>Color export</li>
-<li>... and lot more</li>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="getting_started.html" title="Getting Started"
+             accesskey="N">next</a> |</li>
+        <li><a href="#">Sodium</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+        <div class="container-fluid">
+            
+    <div class="top-links">
+      <ul class="breadcrumb pull-right">
+          <li><a href="getting_started.html" title="next chapter (use the right arrow)">Getting Started &rarr;</a></li>
+      </ul>
+    </div>
+  
+            <div class="row document clearer">
+  <div class="col-md-3 sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3><a href="#">Table Of Contents</a></h3>
+  </div>
+  <div class="panel-body panel-toc">
+    <ul>
+<li><a class="reference internal" href="#">Sodium</a><ul>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#install">Install</a></li>
 </ul>
-<div class="section" id="its-easy">
-<h2>Its easy<a class="headerlink" href="#its-easy" title="Permalink to this headline">¶</a></h2>
-<p>Not more that 2 lines,</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="cp">&lt;?php</span>
+</li>
+</ul>
 
-<span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;#2f8cab&#39;</span><span class="p">);</span>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Search</h3>
+  </div>
+  <div class="panel-body">
+    <form class="form-inline" action="search.html" method="get" role="form">
+      <div class="input-group">
+        <input name="q" type="text" class="form-control">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Go</button>
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+  </div>
+</div>
+    </div>
+  </div>
+                <div class="col-md-9 body">
+                  
+  <div class="section" id="sodium">
+<h1>Sodium<a class="headerlink" href="#sodium" title="Permalink to this headline">¶</a></h1>
+<p>A smart color library for all your color related needs</p>
+<p>Sodium can create, convert, generate, extract, manipulate, export colors, with no pain.</p>
+<p><strong>Its easy</strong></p>
+<p>Not more that 2 lines,</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;#2f8cab&#39;</span><span class="p">);</span>
 <span class="k">echo</span> <span class="nv">$Sodium</span><span class="o">-&gt;</span><span class="na">getHsl</span><span class="p">();</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="its-simple">
-<h2>Its Simple<a class="headerlink" href="#its-simple" title="Permalink to this headline">¶</a></h2>
+<p><strong>Its Simple</strong></p>
 <p>Get it what you want, with no pain.</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="cp">&lt;?php</span>
-
-<span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;#ddd&#39;</span><span class="p">);</span>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;#ddd&#39;</span><span class="p">);</span>
 <span class="k">echo</span> <span class="nv">$Sodium</span><span class="o">-&gt;</span><span class="na">getRed</span><span class="p">(</span><span class="nx">Model</span><span class="o">::</span><span class="na">STANDARD</span><span class="p">);</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="its-smart-actually">
-<h2>Its smart, actually<a class="headerlink" href="#its-smart-actually" title="Permalink to this headline">¶</a></h2>
+<p><strong>Its smart, actually</strong></p>
 <p>Provide anything, or nothing.</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="cp">&lt;?php</span>
-
-<span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;Violet&#39;</span><span class="p">,</span><span class="nx">hsl</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">66</span><span class="p">,</span><span class="mi">210</span><span class="p">),</span><span class="nx">image</span><span class="p">(</span><span class="s1">&#39;/path/to/image&#39;</span><span class="p">),</span><span class="s1">&#39;&#39;</span><span class="p">));</span>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;Violet&#39;</span><span class="p">,</span><span class="nx">hsl</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">66</span><span class="p">,</span><span class="mi">210</span><span class="p">),</span><span class="nx">image</span><span class="p">(</span><span class="s1">&#39;/path/to/image&#39;</span><span class="p">),</span><span class="s1">&#39;&#39;</span><span class="p">));</span>
 <span class="nv">$Sodium</span><span class="o">-&gt;</span><span class="na">useInput</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">exportToAco</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>You can provide, <tt class="docutils literal"><span class="pre">hex</span></tt> <tt class="docutils literal"><span class="pre">rgb</span></tt> <tt class="docutils literal"><span class="pre">name</span></tt> <tt class="docutils literal"><span class="pre">hsl</span></tt> <tt class="docutils literal"><span class="pre">hsv</span></tt> <tt class="docutils literal"><span class="pre">hsb</span></tt> <tt class="docutils literal"><span class="pre">lab</span></tt> <tt class="docutils literal"><span class="pre">hlab</span></tt> <tt class="docutils literal"><span class="pre">cmy</span></tt> <tt class="docutils literal"><span class="pre">cmyk</span></tt> <tt class="docutils literal"><span class="pre">luv</span></tt> <tt class="docutils literal"><span class="pre">xyz</span></tt> <tt class="docutils literal"><span class="pre">xyx</span></tt> <tt class="docutils literal"><span class="pre">lch</span></tt> <tt class="docutils literal"><span class="pre">pantone</span></tt> <tt class="docutils literal"><span class="pre">image</span></tt> <tt class="docutils literal"><span class="pre">ico</span></tt> <tt class="docutils literal"><span class="pre">website</span></tt> <tt class="docutils literal"><span class="pre">css</span></tt> <tt class="docutils literal"><span class="pre">crayon</span> <span class="pre">name</span></tt> <tt class="docutils literal"><span class="pre">psd</span></tt> <tt class="docutils literal"><span class="pre">colorlovers</span> <span class="pre">pallate</span></tt> <tt class="docutils literal"><span class="pre">kulers</span> <span class="pre">id</span></tt> <tt class="docutils literal"><span class="pre">custom</span> <span class="pre">resource</span></tt> <tt class="docutils literal"><span class="pre">empty</span></tt></p>
-</div>
-<div class="section" id="its-a-color-engine">
-<h2>Its a color engine<a class="headerlink" href="#its-a-color-engine" title="Permalink to this headline">¶</a></h2>
+<p><strong>Its a color engine</strong></p>
 <p>Generate color pallate,</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="cp">&lt;?php</span>
-
-<span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;Violet&#39;</span><span class="p">);</span>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;Violet&#39;</span><span class="p">);</span>
 <span class="nv">$colors</span> <span class="o">=</span> <span class="nv">$Sodium</span><span class="o">-&gt;</span><span class="na">applyFormula</span><span class="p">(</span><span class="s1">&#39;Greenish&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">setDegree</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">generate</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
 <span class="nb">print_r</span><span class="p">(</span><span class="nv">$colors</span><span class="p">);</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="its-cool-in-export">
-<h2>Its Cool in export<a class="headerlink" href="#its-cool-in-export" title="Permalink to this headline">¶</a></h2>
+<p><strong>Its Cool in export</strong></p>
 <p>Export to anything,</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="cp">&lt;?php</span>
-
-<span class="nv">$colors</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$colors</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
 <span class="nv">$colors</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">&#39;rgb(30,99,111)&#39;</span><span class="p">;</span>
 <span class="nv">$colors</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">&#39;rgb(17%,0.4,55)&#39;</span><span class="p">;</span>
 
@@ -203,27 +174,18 @@
 <span class="nv">$Sodium</span><span class="o">-&gt;</span><span class="na">exportAlltoAll</span><span class="p">();</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="its-more">
-<h2>Its more<a class="headerlink" href="#its-more" title="Permalink to this headline">¶</a></h2>
+<p><strong>Its more</strong></p>
 <p>Do anything with the color.</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="cp">&lt;?php</span>
-
-<span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">();</span>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">();</span>
 <span class="k">echo</span> <span class="nv">$Sodium</span><span class="o">-&gt;</span><span class="na">addRed</span><span class="p">(</span><span class="mf">0.6</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">store</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">pluginGray</span><span class="p">(</span><span class="mi">3</span><span class="o">%</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">mix</span><span class="p">(</span><span class="s1">&#39;#333aca&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getCmy</span><span class="p">();</span>
 <span class="nb">print_r</span><span class="p">(</span><span class="nv">$Sodium</span><span class="o">-&gt;</span><span class="na">getStoredColors</span><span class="p">());</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="its-extensible">
-<h2>Its Extensible<a class="headerlink" href="#its-extensible" title="Permalink to this headline">¶</a></h2>
+<p><strong>Its Extensible</strong></p>
 <p>Plug your custom input type, custom color resource, custom export, custom plugin, custom toolbox, custom color generation formula, and customize everything. It has configuration file too.</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="cp">&lt;?php</span>
-
-<span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;**/custom-input-type/**&#39;</span><span class="p">,</span><span class="s1">&#39;custom config name&#39;</span><span class="p">);</span>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$Sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;**/custom-input-type/**&#39;</span><span class="p">,</span><span class="s1">&#39;custom config name&#39;</span><span class="p">);</span>
 <span class="nv">$Sodium</span><span class="o">-&gt;</span><span class="na">getFavorite</span><span class="p">();</span>
 </pre></div>
-</div>
 </div>
 <div class="section" id="features">
 <h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
@@ -237,31 +199,91 @@
 <li>easy to install within any modern frameworks (zf,Laravel,symphony,codeIgniter)</li>
 <li>Completely Customizable</li>
 <li>Easy extensible to create custom plugins/models/tools/image templates/formulas/classes</li>
-<li>small file size</li>
+<li>small in file size.</li>
 </ul>
+</div>
+<div class="section" id="install">
+<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
+<p><strong>Requirements</strong></p>
+<div class="line-block">
+<div class="line">PHP 5.3</div>
+<div class="line">GD/Image magick extention</div>
+</div>
+<p><strong>Composer</strong></p>
+<p>Sodium is build following <tt class="docutils literal"><span class="pre">PSR-0</span></tt> standard. You can install using composer.</p>
+<p>Add this code in your <tt class="docutils literal"><span class="pre">composer.json</span></tt></p>
+<div class="highlight-json"><div class="highlight"><pre>&quot;require&quot;: {
+        &quot;lokesh/sodium&quot;: &quot;1.0.1&quot;
+    }
+</pre></div>
+</div>
+<p><strong>Dependencies</strong></p>
+<div class="line-block">
+<div class="line">&quot;imagine/imagine&quot;              For Image manipulation</div>
+<div class="line">&quot;sabre/xml&quot;                    For import/export in XML</div>
+<div class="line">&quot;skyzyx/adobe-swatch-exchange&quot; For export in PSD ACO</div>
+<div class="line">&quot;sybio/gif-creator&quot;            For export in GIF</div>
+</div>
 <div class="toctree-wrapper compound">
-<ul class="simple">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#add-colors">Add Colors</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 </div>
 
 
+                </div>
+              <div class="clearfix"></div>
+            </div>
+            
+    <div class="footer-links">
+      <ul class="breadcrumb pull-right">
+          <li><a href="getting_started.html" title="next chapter (use the right arrow)">Getting Started &rarr;</a></li>
+      </ul>
     </div>
-      
-  </div>
+  
+            <div class="container comment-container">
+              
+<div id="comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'Sodium';
+    var disqus_identifier = 'index';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
-<footer class="footer">
-  <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-    </p>
-    <p>
-        &copy; Copyright 2014, Lokesh.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
-    </p>
+
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="getting_started.html" title="Getting Started"
+             >next</a> |</li>
+        <li><a href="#">Sodium</a> &raquo;</li> 
+      </ul>
+    </div>
+
+  <script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer container">
+    &copy; Copyright 2014, Lokesh. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
   </div>
-</footer>
   </body>
 </html>

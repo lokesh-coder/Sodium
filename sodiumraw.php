@@ -4,9 +4,7 @@ include_once 'vendor/autoload.php';
 
 use Sodium\Sodium;
 
-$so = new Sodium('red');
-$v = $so->ImageBox();
+$so = new Sodium('hsv(100%,90,90)');
 
-echo '<pre>';print_r($v);echo '</pre>';
+print_r($so->getHue()) ;
 
-?>

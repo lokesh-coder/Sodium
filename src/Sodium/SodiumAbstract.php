@@ -209,7 +209,7 @@ abstract class SodiumAbstract Implements SodiumInterface
      * loads input colors, and configuration
      *
      * @param mixed $input_color given input
-     * @param string $config configuration name
+     * @param mixed $config configuration name or array
      *
      */
     public function __construct($input_color = '', $config = '')
@@ -221,7 +221,6 @@ abstract class SodiumAbstract Implements SodiumInterface
             $this->_load_config(Storage::getValue('Config'));
         else
             $this->_load_config($this->_config_name);
-
         return $this->import($input_color);
     }
 
@@ -546,7 +545,11 @@ abstract class SodiumAbstract Implements SodiumInterface
         $this->_degree = $config['Formula']['Default_Degree'];
         $this->_limit = $config['Formula']['Default_Limit'];
 
-        Storage::setValue('Config', $config_name);
+        Storage::setValue('Config', $config);
+    }
+
+    public function getConfig(){
+        return Storage::getValue('Config');
     }
 
 }
