@@ -122,11 +122,7 @@ Add this code in your ``composer.json``
 | "sybio/gif-creator"            For export in GIF
 
 
-User guide
-----------
-
 .. toctree::
    :maxdepth: 2
 
    getting_started
-
