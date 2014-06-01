@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Getting Started | Sodium - PHP Color Library &mdash; Sodium documentation</title>
+    
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Sodium documentation" href="index.html" />
+    <link rel="prev" title="Sodium" href="index.html" />
+  
+   
+
+  </head>
+  <body>
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <div class="container">
+    <div class="visible-md visible-lg navbar-text pull-right" id="github-stars">
+      <iframe src="http://ghbtns.com/github-btn.html?user=lokesh-coder&repo=https://github.com/lokesh-coder/Sodium&type=watch&count=true&size=small"
+      allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+    </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#toggle-main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Sodium</a>
+    </div>
+    <div class="collapse navbar-collapse" id="toggle-main-nav">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="_static/../getting_started.html">Getting Started</a></li>
+<li class="">
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Components<b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/model.html">Models</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/formula.html">Formula</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/image.html">Image</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/plugin.html">Plugin</a></li><li role="presentation"><a role="menuitem" tabindex="-1" href="_static/../Components/toolbox.html">Toolbox</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Components/input.html">Input</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Components/export.html">Export</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Components/reference.html">Reference</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Components/configuration.html">Configuration</a></li>
+              </ul>
+            </li>
+<li><a href="https://github.com/lokesh-coder/sodium">Download</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Sodium"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Sodium</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+        <div class="container-fluid">
+            
+    <div class="top-links">
+      <ul class="breadcrumb pull-right">
+        <li>
+          <a href="index.html" title="previous chapter (use the left arrow)">&larr; Sodium</a>
+        </li>
+      </ul>
+    </div>
+  
+            <div class="row document clearer">
+  <div class="col-md-3 sphinxsidebar">
+    <div class="sphinxsidebarwrapper">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3><a href="index.html">Table Of Contents</a></h3>
+  </div>
+  <div class="panel-body panel-toc">
+    <ul>
+<li><a class="reference internal" href="#">Getting Started</a><ul>
+<li><a class="reference internal" href="#add-colors">Add Colors</a><ul>
+<li><a class="reference internal" href="#add-in-constructor">Add in constructor</a></li>
+<li><a class="reference internal" href="#add-after-initiated">Add after initiated</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Search</h3>
+  </div>
+  <div class="panel-body">
+    <form class="form-inline" action="search.html" method="get" role="form">
+      <div class="input-group">
+        <input name="q" type="text" class="form-control">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Go</button>
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+  </div>
+</div>
+    </div>
+  </div>
+                <div class="col-md-9 body">
+                  
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Add required file,</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">require</span> <span class="s1">&#39;../vendor/autoload.php&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Initiate sodium,</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">use</span> <span class="nx">Sodium\Sodium</span><span class="p">;</span>
+<span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;Green&#39;</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">getHex</span><span class="p">();</span> <span class="c1">// returns 0f0</span>
+</pre></div>
+</div>
+<div class="section" id="add-colors">
+<h2>Add Colors<a class="headerlink" href="#add-colors" title="Permalink to this headline">¶</a></h2>
+<p>Sodium supports multiple colors input, and multiple formats ( <cite>string</cite>, <cite>array</cite>, <cite>json</cite>, <cite>array object</cite>, <cite>Sodium object</cite>). Read more about <a class="reference external" href="/components/input.html">Input types</a></p>
+<div class="section" id="add-in-constructor">
+<h3>Add in constructor<a class="headerlink" href="#add-in-constructor" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;#2f8cab&#39;</span><span class="p">);</span>
+
+<span class="nv">$colors</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;Violet&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;rgb(30,99,4)&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;#ff9&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;cmy(45,99,1)&#39;</span><span class="p">,</span>
+    <span class="nv">$sodium</span><span class="p">,</span>
+    <span class="k">array</span><span class="p">(</span>
+      <span class="k">new</span> <span class="nx">ArrayObject</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+      <span class="nb">json_encode</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;hsv(45,8,100)&#39;</span><span class="p">))</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+<span class="nv">$sodium_advanced</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="nv">$colors</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-after-initiated">
+<h3>Add after initiated<a class="headerlink" href="#add-after-initiated" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">import</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">);</span>
+<span class="nv">$sodium</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">);</span> <span class="c1">// sodium object acts as function</span>
+<span class="k">echo</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">getHex</span><span class="p">();</span> <span class="c1">// by default it selects first color (red)</span>
+<span class="k">echo</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">useInput</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getHex</span><span class="p">();</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Colors can be added to the sodium, by <cite>import</cite> method and direct object function. You can import in differnt formats as like importing in constructor.</div>
+<div class="line"><br /></div>
+<div class="line">To select the color <cite>useInput</cite> method can be used.</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">useInput method takes argument from 1. To select second color useInput(2).</p>
+</div>
+</div>
+</div>
+</div>
+
+
+                </div>
+              <div class="clearfix"></div>
+            </div>
+            
+    <div class="footer-links">
+      <ul class="breadcrumb pull-right">
+        <li>
+          <a href="index.html" title="previous chapter (use the left arrow)">&larr; Sodium</a>
+        </li>
+      </ul>
+    </div>
+  
+            <div class="container comment-container">
+              
+<div id="comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'Sodium';
+    var disqus_identifier = 'getting_started';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Sodium"
+             >previous</a> |</li>
+        <li><a href="index.html">Sodium</a> &raquo;</li> 
+      </ul>
+    </div>
+
+  <script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer container">
+    &copy; Copyright 2014, Lokesh. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>
