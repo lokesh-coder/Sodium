@@ -335,7 +335,7 @@ in your composer.json file, add this code and run.
 
 ```php
     "require":{
-        "lokesh/sodium": "dev-live"
+        "lokesh/sodium": "dev-master"
     }
 ```
 
