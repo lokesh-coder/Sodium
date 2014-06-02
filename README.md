@@ -313,7 +313,7 @@ $config['Predefined_Colors'][] = '#456789';
 
 ```
 
-you can use different config for diffrent  `sodium` object.
+you can use different config for different  `sodium` object.
 
 ```php
 $sodium = new sodium($input,'custom_config_name');
