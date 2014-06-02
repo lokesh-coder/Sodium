@@ -4,7 +4,7 @@ include_once 'vendor/autoload.php';
 
 use Sodium\Sodium;
 
-$so = new Sodium('hsv(100%,90,90)');
+$so = new Sodium('red','Custom');
 
-print_r($so->getHue()) ;
+echo $so;
 

@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap-theme.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <title>Getting Started | Sodium - PHP Color Library &mdash; Sodium documentation</title>
+    <title>Model | Sodium - PHP Color Library &mdash; Sodium documentation</title>
     
     <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -29,6 +29,7 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="Sodium documentation" href="../index.html" />
+    <link rel="prev" title="Getting Started" href="../getting_started.html" />
   
    
 
@@ -79,19 +80,41 @@
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../getting_started.html" title="Getting Started"
+             accesskey="P">previous</a> |</li>
         <li><a href="../index.html">Sodium</a> &raquo;</li> 
       </ul>
     </div>
     <div class="container-wrapper">
         <div class="container-fluid">
             
-    
-      <div class="clearer"></div>
-    
+    <div class="top-links">
+      <ul class="breadcrumb pull-right">
+        <li>
+          <a href="../getting_started.html" title="previous chapter (use the left arrow)">&larr; Getting Started</a>
+        </li>
+      </ul>
+    </div>
   
             <div class="row document clearer">
   <div class="col-md-3 sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3><a href="../index.html">Table Of Contents</a></h3>
+  </div>
+  <div class="panel-body panel-toc">
+    <ul>
+<li><a class="reference internal" href="#">Model</a><ul>
+<li><a class="reference internal" href="#model-types">Model Types</a></li>
+<li><a class="reference internal" href="#mixers">Mixers</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Search</h3>
@@ -115,7 +138,67 @@
                   
   <div class="section" id="model">
 <h1>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h1>
-<p>this is model</p>
+<div class="line-block">
+<div class="line">Models are the core components of Sodium. A model is a color object which converts the input color to its own color.</div>
+<div class="line"><br /></div>
+<div class="line">Each model performs two primary functions, creates own color from RGB and converts own color to RGB. For instance, HSV model receives color in RGB format and it converts to HSV.</div>
+</div>
+<div class="highlight-php"><div class="highlight"><pre>    <span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="s1">&#39;rgb(34,88,10)&#39;</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">getHsv</span><span class="p">();</span>
+
+    <span class="c1">//Above code internally performs this,</span>
+
+<span class="nv">$hsv</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Sodium\Model\Colorspace\Hsv</span><span class="p">(</span><span class="s1">&#39;rgb(34,88,10)&#39;</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$hsv</span><span class="o">-&gt;</span><span class="na">getStandardOutput</span><span class="p">();</span>
+</pre></div>
+</div>
+<div class="section" id="model-types">
+<h2>Model Types<a class="headerlink" href="#model-types" title="Permalink to this headline">¶</a></h2>
+<p>There are four types of models.</p>
+<p><strong>Colorspace</strong></p>
+<p>Colorspaces includes <tt class="docutils literal"><span class="pre">hex</span></tt> <tt class="docutils literal"><span class="pre">rgb</span></tt> <tt class="docutils literal"><span class="pre">name</span></tt> <tt class="docutils literal"><span class="pre">hsl</span></tt> <tt class="docutils literal"><span class="pre">hsv</span></tt> <tt class="docutils literal"><span class="pre">hsb</span></tt> <tt class="docutils literal"><span class="pre">lab</span></tt> <tt class="docutils literal"><span class="pre">hlab</span></tt> <tt class="docutils literal"><span class="pre">cmy</span></tt> <tt class="docutils literal"><span class="pre">cmyk</span></tt> <tt class="docutils literal"><span class="pre">luv</span></tt> <tt class="docutils literal"><span class="pre">xyz</span></tt> <tt class="docutils literal"><span class="pre">xyx</span></tt> <tt class="docutils literal"><span class="pre">lch</span></tt></p>
+<p>These models are primarily for creating and converting colors.</p>
+<p><strong>Seed</strong></p>
+<p>Color sources which has definite value.</p>
+<p>It includes <tt class="docutils literal"><span class="pre">hex</span></tt> <tt class="docutils literal"><span class="pre">web</span> <span class="pre">color</span> <span class="pre">name</span></tt> <tt class="docutils literal"><span class="pre">Pantone</span></tt> <tt class="docutils literal"><span class="pre">crayon</span></tt></p>
+<p><strong>Aggregate</strong></p>
+<p>Color sources which can contain multiple colors.</p>
+<p>It includes  <tt class="docutils literal"><span class="pre">image</span></tt> <tt class="docutils literal"><span class="pre">ico</span></tt> <tt class="docutils literal"><span class="pre">css</span></tt>  <tt class="docutils literal"><span class="pre">psd</span></tt></p>
+<p><strong>Api</strong></p>
+<p>Color sources which gets colors from other sources.</p>
+<p>It includes <tt class="docutils literal"><span class="pre">website</span></tt> <tt class="docutils literal"><span class="pre">colorlovers</span> <span class="pre">pallate</span></tt> <tt class="docutils literal"><span class="pre">kulers</span> <span class="pre">id</span></tt></p>
+</div>
+<div class="section" id="mixers">
+<h2>Mixers<a class="headerlink" href="#mixers" title="Permalink to this headline">¶</a></h2>
+<p>Mixers are extended class for the model. It actually has the codes to manipulate colors. RGB model mixer looks similar to this,</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">namespace</span> <span class="nx">Sodium\Mixer\Colorspace</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">Sodium\Model\Colorspace\Rgb</span> <span class="k">as</span> <span class="nx">RgbModel</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">Rgb</span> <span class="k">Extends</span> <span class="nx">RgbModel</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="nv">$_model</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">RgbModel</span> <span class="nv">$model</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_model</span> <span class="o">=</span> <span class="nv">$model</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">mixRed</span><span class="p">(</span><span class="nv">$value</span><span class="p">)</span>
+    <span class="p">{</span>
+            <span class="nv">$red</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_model</span><span class="o">-&gt;</span><span class="na">_rgb</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+            <span class="nv">$green</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_model</span><span class="o">-&gt;</span><span class="na">_rgb</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+            <span class="nv">$blue</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_model</span><span class="o">-&gt;</span><span class="na">_rgb</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+            <span class="nv">$rgb</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="nv">$red</span> <span class="o">+</span> <span class="nv">$value</span><span class="p">,</span> <span class="nv">$green</span><span class="p">,</span> <span class="nv">$blue</span><span class="p">)</span>
+        <span class="nv">$value</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_model</span><span class="o">-&gt;</span><span class="na">_filter_input</span><span class="p">(</span><span class="nv">$value</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_model</span><span class="o">-&gt;</span><span class="na">_rgb</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_model</span><span class="o">-&gt;</span><span class="na">_filter_input</span><span class="p">(</span><span class="nv">$rgb</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">//... other methods</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -123,7 +206,13 @@
               <div class="clearfix"></div>
             </div>
             
-    
+    <div class="footer-links">
+      <ul class="breadcrumb pull-right">
+        <li>
+          <a href="../getting_started.html" title="previous chapter (use the left arrow)">&larr; Getting Started</a>
+        </li>
+      </ul>
+    </div>
   
             <div class="container comment-container">
               
@@ -153,6 +242,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="../getting_started.html" title="Getting Started"
+             >previous</a> |</li>
         <li><a href="../index.html">Sodium</a> &raquo;</li> 
       </ul>
     </div>

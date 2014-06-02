@@ -48,11 +48,17 @@ class Utile
         return implode('', $new);
     }
 
-    public static function dump(array $stuff)
+    public static function dump( $stuff)
     {
-        echo '<pre>';
-        print_r($stuff);
-        echo '</pre>';
+        if(is_array($stuff)){
+            echo '<pre>';
+            print_r($stuff);
+            echo '</pre>';
+        }
+        else{
+            echo var_dump($stuff);
+        }
+
     }
 
 }

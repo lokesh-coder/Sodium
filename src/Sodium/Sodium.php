@@ -227,6 +227,16 @@ class Sodium Extends Core
     }
 
     /**
+     * returns HSL
+     *
+     * @return array
+     */
+    public function getHsl()
+    {
+        return $this->_getElement('Colorspace\Hsl')->getHsl();
+    }
+
+    /**
      * sets lightness in HSL
      * value may be actual/float/percentage
      *
@@ -256,7 +266,7 @@ class Sodium Extends Core
      */
     public function getHue()
     {
-        return $this->_getElement('Colorspace\Hsv')->getHue();
+        return $this->_getElement('Colorspace\Hsl')->getHue();
     }
 
     /**

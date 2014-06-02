@@ -44,4 +44,14 @@ class Hsl Extends HslModel
         return $this->_model->_lightness;
     }
 
+
+    public function getHsl()
+    {
+        return array(
+            $this->_model->_hue,
+            $this->_model->_saturation,
+            $this->_model->_lightness
+        );
+    }
+
 }
