@@ -82,6 +82,8 @@ $config['Image']['Grid_Size'] = '400x400';
 $config['Image']['Pallate_Size'] = '100x500';
 $config['Image']['Single_Size'] = '150x170';
 
+$config['Kuler']['Id']="";
+
 $config['Formula']['Default_Degree'] = 10;
 $config['Formula']['Default_Limit'] = 6;
 

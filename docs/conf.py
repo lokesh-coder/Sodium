@@ -54,7 +54,7 @@ html_theme_options = {
     "project_nav_name": "Sodium",
     "github_user": "lokesh-coder",
     "github_repo": "https://github.com/lokesh-coder/Sodium",
-    "disqus_comments_shortname": "Sodium",
+    "disqus_comments_shortname": "sodium",
     "google_analytics_account": ""
 }
 

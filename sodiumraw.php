@@ -4,7 +4,7 @@ include_once 'vendor/autoload.php';
 
 use Sodium\Sodium;
 
-$so = new Sodium('red','Custom');
+$so = new Sodium('cl(3375417)');
 
-echo $so;
+\Sodium\Utile::dump($so->getCollection(\Sodium\Model::RGB));
 
