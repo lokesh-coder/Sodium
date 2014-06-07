@@ -3,6 +3,8 @@ Sodium
 
 A PHP color library `version 1.0.1`
 
+[![Build Status](https://travis-ci.org/lokesh-coder/Sodium.svg?branch=master)](https://travis-ci.org/lokesh-coder/Sodium)
+
 Introduction
 =====================
 
