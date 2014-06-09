@@ -108,6 +108,10 @@
     <ul>
 <li><a class="reference internal" href="#">Model</a><ul>
 <li><a class="reference internal" href="#model-types">Model Types</a></li>
+<li><a class="reference internal" href="#models">Models</a><ul>
+<li><a class="reference internal" href="#hex">Hex</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#mixers">Mixers</a></li>
 </ul>
 </li>
@@ -168,6 +172,29 @@
 <p>Color sources which gets colors from other sources.</p>
 <p>It includes <tt class="docutils literal"><span class="pre">website</span></tt> <tt class="docutils literal"><span class="pre">colorlovers</span> <span class="pre">pallate</span></tt> <tt class="docutils literal"><span class="pre">kulers</span> <span class="pre">id</span></tt></p>
 </div>
+<div class="section" id="models">
+<h2>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="hex">
+<h3>Hex<a class="headerlink" href="#hex" title="Permalink to this headline">¶</a></h3>
+<p>The input hex triplet can be 6 chars or 3 chars, but it should have '#' prefix. But, the output hex can ----- be customized.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$input</span><span class="p">[</span><span class="s1">&#39;full_hex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#2f8cab&#39;</span><span class="p">;</span>
+<span class="nv">$input</span><span class="p">[</span><span class="s1">&#39;short_hex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#0d6&#39;</span><span class="p">;</span>
+<span class="nv">$input</span><span class="p">[</span><span class="s1">&#39;rgb&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;rgb(20,88,140)&#39;</span><span class="p">;</span>
+<span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+
+ <span class="c1">// returns hex without &#39;#&#39;</span>
+<span class="k">echo</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">useInput</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getHex</span><span class="p">();</span>
+
+<span class="c1">// returns with &#39;#&#39;</span>
+<span class="k">echo</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">useInput</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getHex</span><span class="p">(</span><span class="k">True</span><span class="p">);</span>
+
+<span class="c1">// if the hex code can be shortened, it will return</span>
+<span class="c1">// 3 chars or 6 chars with &#39;#&#39;</span>
+<span class="k">echo</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">useInput</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getHex</span><span class="p">(</span><span class="k">True</span><span class="p">,</span><span class="k">True</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="section" id="mixers">
 <h2>Mixers<a class="headerlink" href="#mixers" title="Permalink to this headline">¶</a></h2>
 <p>Mixers are extended class for the model. It actually has the codes to manipulate colors. RGB model mixer looks similar to this,</p>
@@ -219,7 +246,7 @@
 <div id="comments">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
-    var disqus_shortname = 'Sodium';
+    var disqus_shortname = 'sodium';
     var disqus_identifier = 'components/model';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

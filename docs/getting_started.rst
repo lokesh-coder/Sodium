@@ -24,7 +24,7 @@ Add Colors
 Sodium supports multiple colors input, and multiple formats ( `string`, `array`, `json`, `array object`, `Sodium object`). Read more about `Input types </components/input.html>`__
 
 Add in constructor
----------------------------
+-------------------
 
 .. code-block:: php
 
@@ -60,8 +60,34 @@ Add after initiated
 
 .. note:: useInput method takes argument from 1. To select second color useInput(2).
 
+Add colors in config
+--------------------
+
+Its possible to initiate sodium without providing any initial colors. By default, it will take ``black`` as primary color source. If suppose you are working with defined colors, you can add those colors in configuration, and initiate without a need of providing colors everytime.
+
+.. code-block:: php
+
+    // in config file add like this,
+    $config['Predefined_Colors'] = array('#2f8cab','pink');
+
+    //initiate
+    $sodium = new Sodium();
+    echo $sodium->getHex(); // returns 2f8cab
+    echo $sodium->useInput(2)->getName(); // returns pink
+
+.. warning:: You cannot add same input more than once. The duplicate one will be removed. But you can add in different formats,like hex, rgb..
 
 
 
-    
+Convert Colors
+==============
+
+
+Import Colors
+=============
+
+
+Export Colors
+=============
+   
 

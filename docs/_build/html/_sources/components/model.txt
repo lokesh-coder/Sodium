@@ -47,6 +47,32 @@ Color sources which gets colors from other sources.
 
 It includes ``website`` ``colorlovers pallate`` ``kulers id``
 
+Models
+======
+
+Hex
+---
+
+The input hex triplet can be 6 chars or 3 chars, but it should have '#' prefix. But, the output hex can ----- be customized.
+
+.. code-block:: php
+
+    $input['full_hex'] = '#2f8cab';
+    $input['short_hex'] = '#0d6';
+    $input['rgb'] = 'rgb(20,88,140)';
+    $sodium = new Sodium($input);
+
+     // returns hex without '#'
+    echo $sodium->useInput(3)->getHex();
+
+    // returns with '#'
+    echo $sodium->useInput(3)->getHex(True); 
+
+    // if the hex code can be shortened, it will return 
+    // 3 chars or 6 chars with '#'
+    echo $sodium->useInput(3)->getHex(True,True); 
+
+
 Mixers
 ======
 

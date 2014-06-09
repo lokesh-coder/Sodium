@@ -1,7 +1,9 @@
 Sodium
 ======
 
-A PHP color library `version 1.0.1`
+A PHP color library.
+
+[![Build Status](https://travis-ci.org/lokesh-coder/Sodium.svg?branch=master)](https://travis-ci.org/lokesh-coder/Sodium)
 
 Introduction
 =====================
@@ -53,44 +55,34 @@ $input[] = 'luv(99,65,8)'; // luv
 $input[] = 'lch(2,58,01)'; // lch
 
 $input[] = 'image(/path/to/imagefile/jpg)'; // jpg, png, gif file
-
 $input[] = 'css(/path/to/cssfile.css)'; // css
-
 $input[] = 'ico(/path/to/icofile.ico)'; // ico
-
 $input[] = 'psd(/path/to/psdfile.psd)'; // psd
-
 $input[] = 'website(http://websitename.com/)'; // website
-
 $input[] = 'crayon(childblue)'; // crayon name
-
 $input[] = 'colorlover(pallateID)'; // colorlovers site
-
 $input[] = 'kuler(ID)'; // Adobe kuler Pallates
-
 $input[] = 'pantone(pantonecode)'; // pantone
 
 $input[] = [{'rgb(20,99,45)','#ff9'}];  // json format
-
 $input[] = array(array('gray')); // supports multi dimentional array
-
 $input[] = new sodium('hsl(45,304,9)'); // sodium object
-
 $input[] = new SimpleArray('crayon(greenishred)'); // array object
-
 $input[] = ''; // empty 
 
 $input[] = '-lokesh-67-'; // custom model with custom syntax
+
+$sodium = new Sodium($input);
 ```
 
 ###Its flexible
 
 ```php
 $sodium = new sodium('hsl(180,7%,0.4)');
-$sodium->mixRed(0.5) // adds 5% of red
-        ->mixHue(-40) //decreces hue
-        ->addBlue(77%) // adds blue
-        ->getRed(sodium::PERCENTAGE); // returns red in percentage value
+echo $sodium->mixRed(0.5) // adds 5% of red
+        ->mixHue(-40) //decreases hue
+        ->addBlue('77%') // adds blue
+        ->getRed(Sodium::PERCENTAGE); // returns red in percentage value
 
 ```
 
@@ -131,7 +123,7 @@ $sodium(array('green','css(/path/to/cssfile.css)'));  // adds color - as a funct
 
 $sodium->useInput(3)->view(); // outputs color as html view
 
-$sodium->store() // stores current color 
+echo $sodium->store() // stores current color
         ->mixHue(7%)
         ->store() // stores mixed colro
         ->getRgb(); // returns rgb color value
@@ -141,11 +133,11 @@ $stored-colors = $sodium->getStoredColors(); // returns stored colors
 sodium is more
 =============
 
-sodium is not just color convertor, but it is a powerful tool to generate colors. It has five core components, each individually performs unique actions.
+sodium is not just color converter, but it is a powerful tool to generate colors. It has five core components, each individually performs unique actions.
 
 ###Model
 
-Models are the main core component in the sodium. To define exactly, sodium is completely depent upon models. There were four types of model. 
+Models are the main core component in the sodium. To define exactly, sodium is completely depend upon models. There were four types of model.
 `color space` `aggregate` `seed` `api`
 
 **color space** - color models and color spaces
@@ -155,7 +147,7 @@ Models are the main core component in the sodium. To define exactly, sodium is c
 
 ###Formula
 
-Formula is a one of the super feature, to generate color pallates.
+Formula is a one of the super feature, to generate color palates.
 
 ```php
 $sodium = new sodium('#2f8cab');
@@ -168,11 +160,11 @@ $colors = $sodium->SmashFormula(30)
 
 ###plugin
 
-Plugins are basic source to manupulate colors
+Plugins are basic source to manipulate colors
 
 ```php
 $sodium = new $sodium('yellow');
-echo $sodium->pluginBrightness(20%)->getHex(); 
+echo $sodium->pluginBrightness('20%')->getHex();
 ```
 
 ###Toolbox
@@ -225,39 +217,11 @@ $config['Profiler'] = 'Off';
 
 /** load models **/
 
-$config['Load_Models']['Seed\Hex'] = 'Seed\Hex';
-$config['Load_Models']['Seed\Name'] = 'Seed\Name';
-$config['Load_Models']['Seed\Crayon'] = 'Seed\Crayon';
-$config['Load_Models']['Seed\Pantone'] = 'Seed\Pantone';
-$config['Load_Models']['Seed\Basic'] = 'Seed\Basic';
-
-$config['Load_Models']['Colorspace\Rgb'] = 'Colorspace\Rgb';
-$config['Load_Models']['Colorspace\Hsl'] = 'Colorspace\Hsl';
-$config['Load_Models']['Colorspace\Hsv'] = 'Colorspace\Hsv';
-$config['Load_Models']['Colorspace\Cmy'] = 'Colorspace\Cmy';
-$config['Load_Models']['Colorspace\Cmyk'] = 'Colorspace\Cmyk';
-$config['Load_Models']['Colorspace\Xyz'] = 'Colorspace\Xyz';
-$config['Load_Models']['Colorspace\Yxy'] = 'Colorspace\Yxy';
-$config['Load_Models']['Colorspace\Lab'] = 'Colorspace\Lab';
-$config['Load_Models']['Colorspace\Luv'] = 'Colorspace\Luv';
-$config['Load_Models']['Colorspace\Lch'] = 'Colorspace\Lch';
-$config['Load_Models']['Colorspace\Hlab'] = 'Colorspace\HunterLab';
-
-$config['Load_Models']['Aggregate\Image'] = 'Aggregate\Image';
-$config['Load_Models']['Aggregate\Css'] = 'Aggregate\Css';
-$config['Load_Models']['Aggregate\Psd'] = 'Aggregate\Psd';
-$config['Load_Models']['Aggregate\Ico'] = 'Aggregate\Ico';
-
-$config['Load_Models']['Api\Webpage'] = 'Api\Webpage';
-$config['Load_Models']['Api\ColorLovers'] = 'Api\ColorLovers';
-$config['Load_Models']['Api\Kuler'] = 'Api\Kuler';
+$config['Load_Models'] = array();
 
 /** inputs **/
 
-$config['Input_Formats'][] = 'SimpleArrayObject';
-$config['Input_Formats'][] = 'Json';
-$config['Input_Formats'][] = 'sodiumObject';
-
+$config['Input_Formats']=array();
 
 /** custom config for custom model **/
 
@@ -265,51 +229,27 @@ $config['Seed\Basic']['Db_Path'] = 'Model/Seed/Basic/Db/';
 
 /**color storage **/
 
-$config['Color_Storage']['Auto'] = 'Off';
-$config['Color_Storage']['Standard'] = 'Off';
-$config['Color_Storage']['Default_Model'] = 'Model\Colorspace\Rgb';
+$config['Color_Storage'] = array();
 
 /** prefix **/
 
-$config['Prefix']['Plugin'] = 'Plugin';
-$config['Prefix']['Formula'] = 'apply';
-$config['Prefix']['Image'] = 'Image';
-$config['Prefix']['Toolbox'] = 'Tool';
+$config['Prefix'] = array();
 
 /**path config **/
 
-$config['Path']['Root'] = '';
-$config['Path']['Plugin'] = 'Plugin/';
-$config['Path']['Formula'] = 'Formula/';
-$config['Path']['Toolbox'] = 'Toolbox/';
-$config['Path']['Image'] = 'Image/';
-$config['Path']['Images'] = 'Snapshots/';
-$config['Path']['Fonts'] = 'File/Font/';
-$config['Path']['Aco'] = 'File/Aco/';
-$config['Path']['Ase'] = 'File/Ase/';
-$config['Path']['Gif'] = 'File/Gif/';
+$config['Path'] = array();
 
 /** image **/
 
-$config['Image']['Default_Adapter'] = 'GD';
-$config['Image']['Default_Font'] = 'Bradhit.ttf';
-$config['Image']['Grid_Path'] = 'File/Image/Grid/';
-$config['Image']['Single_Path'] = 'File/Image/Single/';
-$config['Image']['Pallate_Path'] = 'File/Image/Pallate/';
-$config['Image']['Screensnap_Path'] = 'File/Image/Screensnap/';
-$config['Image']['Default_Path'] = 'File/Image/Default/';
-$config['Image']['Grid_Size'] = '400x400';
-$config['Image']['Pallate_Size'] = '100x500';
-$config['Image']['Single_Size'] = '150x170';
+$config['Image']=array();
 
-/** color pallates (formula component) **/
+/** color palates (formula component) **/
 
-$config['Formula']['Default_Degree'] = 10;
-$config['Formula']['Default_Limit'] = 6;
+$config['Formula'] = array();
 
 /** predefined colors, if no input is provided **/
 
-$config['Predefined_Colors'][] = '#456789';
+$config['Predefined_Colors'] = array();
 
 ```
 
@@ -317,6 +257,8 @@ you can use different config for different  `sodium` object.
 
 ```php
 $sodium = new sodium($input,'custom_config_name');
+//or directly input the config
+$sodium = new Sodium($input,array());
 ```
 
 Extend everything

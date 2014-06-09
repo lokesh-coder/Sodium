@@ -29,6 +29,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Sodium documentation" href="index.html" />
+    <link rel="next" title="Model" href="components/model.html" />
     <link rel="prev" title="Sodium" href="index.html" />
   
    
@@ -81,6 +82,9 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
+          <a href="components/model.html" title="Model"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
           <a href="index.html" title="Sodium"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">Sodium</a> &raquo;</li> 
@@ -93,7 +97,10 @@
       <ul class="breadcrumb pull-right">
         <li>
           <a href="index.html" title="previous chapter (use the left arrow)">&larr; Sodium</a>
+          <span class="divider"></span>
+          
         </li>
+          <li><a href="components/model.html" title="next chapter (use the right arrow)">Model &rarr;</a></li>
       </ul>
     </div>
   
@@ -110,8 +117,12 @@
 <li><a class="reference internal" href="#add-colors">Add Colors</a><ul>
 <li><a class="reference internal" href="#add-in-constructor">Add in constructor</a></li>
 <li><a class="reference internal" href="#add-after-initiated">Add after initiated</a></li>
+<li><a class="reference internal" href="#add-colors-in-config">Add colors in config</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#convert-colors">Convert Colors</a></li>
+<li><a class="reference internal" href="#import-colors">Import Colors</a></li>
+<li><a class="reference internal" href="#export-colors">Export Colors</a></li>
 </ul>
 </li>
 </ul>
@@ -192,6 +203,32 @@
 <p class="last">useInput method takes argument from 1. To select second color useInput(2).</p>
 </div>
 </div>
+<div class="section" id="add-colors-in-config">
+<h3>Add colors in config<a class="headerlink" href="#add-colors-in-config" title="Permalink to this headline">¶</a></h3>
+<p>Its possible to initiate sodium without providing any initial colors. By default, it will take <tt class="docutils literal"><span class="pre">black</span></tt> as primary color source. If suppose you are working with defined colors, you can add those colors in configuration, and initiate without a need of providing colors everytime.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="c1">// in config file add like this,</span>
+<span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;Predefined_Colors&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;#2f8cab&#39;</span><span class="p">,</span><span class="s1">&#39;pink&#39;</span><span class="p">);</span>
+
+<span class="c1">//initiate</span>
+<span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">();</span>
+<span class="k">echo</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">getHex</span><span class="p">();</span> <span class="c1">// returns 2f8cab</span>
+<span class="k">echo</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">useInput</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">();</span> <span class="c1">// returns pink</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">You cannot add same input more than once. The duplicate one will be removed. But you can add in different formats,like hex, rgb..</p>
+</div>
+</div>
+</div>
+<div class="section" id="convert-colors">
+<h2>Convert Colors<a class="headerlink" href="#convert-colors" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="import-colors">
+<h2>Import Colors<a class="headerlink" href="#import-colors" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="export-colors">
+<h2>Export Colors<a class="headerlink" href="#export-colors" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -204,7 +241,10 @@
       <ul class="breadcrumb pull-right">
         <li>
           <a href="index.html" title="previous chapter (use the left arrow)">&larr; Sodium</a>
+          <span class="divider"></span>
+          
         </li>
+          <li><a href="components/model.html" title="next chapter (use the right arrow)">Model &rarr;</a></li>
       </ul>
     </div>
   
@@ -213,7 +253,7 @@
 <div id="comments">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
-    var disqus_shortname = 'Sodium';
+    var disqus_shortname = 'sodium';
     var disqus_identifier = 'getting_started';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -236,6 +276,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="components/model.html" title="Model"
+             >next</a> |</li>
         <li class="right" >
           <a href="index.html" title="Sodium"
              >previous</a> |</li>

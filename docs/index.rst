@@ -1,8 +1,8 @@
 .. title:: Sodium | PHP Color Library
 
-*******
+******
 Sodium
-*******
+******
 
 A smart color library for all your color related needs
 
@@ -116,11 +116,27 @@ Add this code in your ``composer.json``
 
 :strong:`Dependencies`
 
-| "imagine/imagine"              For Image manipulation 
-| "sabre/xml"                    For import/export in XML
-| "skyzyx/adobe-swatch-exchange" For export in PSD ACO
-| "sybio/gif-creator"            For export in GIF
+| "*imagine/imagine*"              For Image manipulation 
+| "*sabre/xml*"                    For import/export in XML
+| "*skyzyx/adobe-swatch-exchange*" For export in PSD ACO
+| "*sybio/gif-creator*"            For export in GIF
 
+.. note:: Above mentioned dependencies are required only if you need to work with Image/Xml/Aco files. If not, you can just remove it from ``composer.json`` file.
+
+Contribute
+-----------
+
+Sodium is build in the intention to make easy the color calculations and image presentations. If you have ideas / suggestions, you can simply fork the project. I believe every codings starts with bugs and errors. Feel free to report the bugs, using Github issues.
+
+Author
+-------
+
+My name is `Lokesh <http://lokesh.me>`__ . A PHP Programmer, Web Designer, Aeronautical student and one of the laziest person. 
+
+Licence
+-------
+
+Sodium is licenced under MIT.
 
 Getting started
 ---------------

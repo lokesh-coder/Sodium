@@ -327,13 +327,17 @@ table.two-column {
 
 .top-links a:hover,.footer-links a:hover  {
     text-decoration: none;
-     color: #eee;
+     color: #aaa;
 }
 
 .footer-links {
     border-top: 1px solid #ccc;
     padding-top: 12px;
     margin-top: 30px;
+}
+
+.footer-links a{
+    color: #eee;
 }
 
 .rel-spacer {
