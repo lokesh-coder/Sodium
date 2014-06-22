@@ -614,7 +614,7 @@ class Sodium Extends Core
         $mts = new Export\MultipleToSingle($this, array('standard' => FALSE));
         $output = $mts->export();
         foreach ($output as $op)
-            $v[] = '<div style="background-color:#' . $op . ';margin:2px;width:50px;height:50px;display:inline-block;" title="#' . $op . '"></div>';
+            $v[] = '<div style="border-radius:50px;background-color:#' . $op . ';margin:2px;width:50px;height:50px;display:inline-block;" title="#' . $op . '"></div>';
 
         return implode('', $v);
     }

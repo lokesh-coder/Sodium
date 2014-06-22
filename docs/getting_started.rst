@@ -19,12 +19,12 @@ Initiate sodium,
     echo $sodium->getHex(); // returns 0f0
 
 Add Colors
-=============
+==========
 
 Sodium supports multiple colors input, and multiple formats ( `string`, `array`, `json`, `array object`, `Sodium object`). Read more about `Input types </components/input.html>`__
 
 Add in constructor
--------------------
+------------------
 
 .. code-block:: php
 
@@ -81,6 +81,9 @@ Its possible to initiate sodium without providing any initial colors. By default
 
 Convert Colors
 ==============
+
+Very basic things you can do with sodium is, convert colors. There are different `color sources <http://lokesh.me>`__ available to convert.
+
 
 
 Import Colors

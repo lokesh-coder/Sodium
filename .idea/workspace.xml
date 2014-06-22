@@ -1,833 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/sodiumraw.php" line="4" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9b0f6204-5e22-4448-9272-dab2e8e0570e" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\Sodium.iml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\commandlinetools\schemas\frameworkDescriptionVersion1.1.3.xsd" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\webResources.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\404.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-ArrayAccess.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-ArrayObject.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Countable.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Exception.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Ico.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-IcoThumb.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-IteratorAggregate.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Kuler_Api.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Kuler_Comment.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Kuler_Exception.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Kuler_Theme.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-PCL_Color.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-PCL_Colors.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-PCL_Lover.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-PCL_Lovers.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-PCL_Palette.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-PCL_Palettes.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-PCL_Pattern.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-PCL_Patterns.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-PhpPsdReader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Serializable.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-SimpleXMLElement.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Autoloader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Config.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Core.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Exception.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.Aco.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.Ase.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.ExportAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.ExportInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.Gif.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.MultipleToMultiple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.MultipleToSingle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.SingleToMultiple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.SingleToSingle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Export.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Formula.Complement.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Formula.FormulaAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Formula.FormulaInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Formula.Greenish.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Formula.Midtone.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Formula.Sibling.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Formula.Tint.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Formula.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.Box.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.Collage.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.ImageAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.ImageInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.Template.Fill.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.Template.Frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.Template.Notepad.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.Template.SimpleTag.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.Template.Skeleton.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.Template.TemplateAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.Template.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Input.InputAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Input.Json.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Input.SimpleArray.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Input.SimpleArrayObject.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Input.SodiumObject.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Input.String.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Input.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Library.ExportASE.ExportASE.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Library.ExportAco.ExportAco.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Library.IcoThumb.IcoThumb.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Library.KulerApi.KulerApi.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Library.LibraryInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Library.PhpColorLoverApi.ColorLover.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Library.PsdReader.PsdReader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Library.WebThumbnail.Capture.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Mixer.Colorspace.Cmy.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Mixer.Colorspace.Cmyk.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Mixer.Colorspace.Hsl.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Mixer.Colorspace.Hsv.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Mixer.Colorspace.Rgb.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Mixer.Seed.Crayon.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.AbstractModel.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Aggregate.AbstractAggregate.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Aggregate.AggregateInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Aggregate.Css.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Aggregate.Ico.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Aggregate.Image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Aggregate.Psd.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Api.AbstractApi.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Api.ApiInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Api.ColorLovers.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Api.Kuler.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Api.Webpage.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.AbstractColorspace.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Cmy.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Cmyk.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.ColorspaceInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Hsl.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Hsv.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.HunterLab.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Lab.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Lch.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Luv.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Rgb.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Xyz.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Colorspace.Yxy.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.ConversionAwareInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.ModelInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Seed.AbstractSeed.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Seed.Basic.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Seed.Crayon.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Seed.Hex.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Seed.Name.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Seed.Pantone.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.Seed.Seedinterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Model.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Plugin.Brightness.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Plugin.Gray.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Plugin.Mingle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Plugin.Nored.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Plugin.PluginAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.Cie.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.CrayolaCrayonsColors.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.HexCodes.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.Pantone.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.PantoneC.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.PantonePC.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.ReferenceAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.WebColorNames.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.WebSafeColors.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Reference.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Sodium.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.SodiumAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.SodiumInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Storage.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Toolbox.Gradient.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Toolbox.ToolboxAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Sodium.Utile.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Traversable.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-Webthumbnail.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-WebthumbnailException.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-WebthumbnailHttpCall.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-acofile.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-phpColourLover.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\class-sodium.Plugin.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\elementlist.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\function-imagecreatefrompsd.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\function-mkASE.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-None.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-PHP.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Export.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Formula.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Image.Template.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Input.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Library.ExportASE.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Library.ExportAco.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Library.IcoThumb.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Library.KulerApi.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Library.PhpColorLoverApi.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Library.PsdReader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Library.WebThumbnail.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Library.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Mixer.Colorspace.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Mixer.Seed.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Mixer.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Model.Aggregate.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Model.Api.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Model.Colorspace.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Model.Seed.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Model.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Plugin.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Reference.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.Toolbox.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\namespace-Sodium.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\collapsed.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\combined.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\footer.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\inherit.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\resize.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\sort.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\style.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\tree-cleaner.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\tree-hasnext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\tree-last.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\resources\tree-vertical.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Ico.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-IcoThumb.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Kuler_Api.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Kuler_Comment.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Kuler_Exception.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Kuler_Theme.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-PCL_Color.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-PCL_Colors.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-PCL_Lover.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-PCL_Lovers.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-PCL_Palette.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-PCL_Palettes.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-PCL_Pattern.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-PCL_Patterns.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-PhpPsdReader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Autoloader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Config.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Core.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Exception.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.Aco.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.Ase.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.ExportAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.ExportInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.Gif.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.MultipleToMultiple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.MultipleToSingle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.SingleToMultiple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.SingleToSingle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Export.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Formula.Complement.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Formula.FormulaAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Formula.FormulaInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Formula.Greenish.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Formula.Midtone.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Formula.Sibling.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Formula.Tint.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Formula.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.Box.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.Collage.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.ImageAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.ImageInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.Template.Fill.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.Template.Frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.Template.Notepad.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.Template.SimpleTag.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.Template.Skeleton.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.Template.TemplateAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.Template.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Input.InputAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Input.Json.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Input.SimpleArray.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Input.SimpleArrayObject.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Input.SodiumObject.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Input.String.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Input.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Library.ExportASE.ExportASE.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Library.ExportAco.ExportAco.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Library.IcoThumb.IcoThumb.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Library.KulerApi.KulerApi.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Library.LibraryInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Library.PhpColorLoverApi.ColorLover.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Library.PsdReader.PsdReader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Library.WebThumbnail.Capture.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Mixer.Colorspace.Cmy.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Mixer.Colorspace.Cmyk.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Mixer.Colorspace.Hsl.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Mixer.Colorspace.Hsv.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Mixer.Colorspace.Rgb.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Mixer.Seed.Crayon.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.AbstractModel.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Aggregate.AbstractAggregate.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Aggregate.AggregateInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Aggregate.Css.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Aggregate.Ico.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Aggregate.Image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Aggregate.Psd.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Api.AbstractApi.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Api.ApiInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Api.ColorLovers.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Api.Kuler.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Api.Webpage.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.AbstractColorspace.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Cmy.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Cmyk.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.ColorspaceInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Hsl.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Hsv.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.HunterLab.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Lab.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Lch.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Luv.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Rgb.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Xyz.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Colorspace.Yxy.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.ConversionAwareInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.ModelInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Seed.AbstractSeed.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Seed.Basic.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Seed.Crayon.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Seed.Hex.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Seed.Name.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Seed.Pantone.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.Seed.Seedinterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Model.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Plugin.Brightness.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Plugin.Gray.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Plugin.Mingle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Plugin.Nored.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Plugin.PluginAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.Cie.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.CrayolaCrayonsColors.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.HexCodes.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.Pantone.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.PantoneC.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.PantonePC.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.ReferenceAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.WebColorNames.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.WebSafeColors.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Reference.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Sodium.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.SodiumAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.SodiumInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Storage.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Toolbox.Gradient.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Toolbox.ToolboxAbstract.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Sodium.Utile.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-Webthumbnail.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-WebthumbnailException.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-WebthumbnailHttpCall.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-acofile.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-phpColourLover.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-class-sodium.Plugin.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-function-imagecreatefrompsd.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\source-function-mkASE.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\api\tree.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Autoloader.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Config\Default.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Config\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Config\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Core.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Exception.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\Aco.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\Ase.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\ExportAbstract.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\Gif.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\MultipleToMultiple.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\MultipleToSingle.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\SingleToMultiple.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\SingleToSingle.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Export\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula\Complement.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula\FormulaAbstract.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula\FormulaInterface.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula\Greenish.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula\Midtone.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula\Sibling.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula\Tint.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Formula\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Box.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Collage.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\ImageAbstract.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\SimpleTag.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Template.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Template\Fill.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Template\Frame.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Template\Notepad.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Template\SimpleTag.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Template\Skeleton.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Template\TemplateAbstract.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Template\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\Template\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Image\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Input.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Input\InputAbstract.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Input\Json.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Input\SimpleArray.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Input\SimpleArrayObject.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Input\SodiumObject.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Input\String.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Input\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Input\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportASE\ASE-Example.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportASE\ASE-Export.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportASE\ExportASE.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportASE\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportASE\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportAco\ExportAco.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportAco\aco.class.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportAco\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportAco\example1.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportAco\example2.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\ExportAco\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoParse\class.ico.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoParse\class.icothumb.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoParse\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoParse\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoParse\test.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoParse\test2.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoThumb\IcoThumb.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoThumb\class.ico.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoThumb\class.icothumb.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoThumb\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoThumb\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoThumb\test.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\IcoThumb\test2.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\KulerApi\Api.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\KulerApi\Comment.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\KulerApi\KulerApi.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\KulerApi\Theme.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\KulerApi\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\KulerApi\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\ColorLover.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\Color.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\Colors.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\Lover.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\Lovers.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\Palette.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\Palettes.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\Pattern.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\Patterns.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\PCL\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\examples.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PhpColorLoverApi\phpColourLover.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PsdReader\PsdReader.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PsdReader\classPhpPsdReader.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PsdReader\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\PsdReader\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\WebThumbnail\Capture.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\WebThumbnail\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\WebThumbnail\examples\capture_to_browser.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\WebThumbnail\examples\capture_to_file.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\WebThumbnail\examples\capture_without_delay.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\WebThumbnail\examples\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\WebThumbnail\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\WebThumbnail\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\WebThumbnail\webthumbnail.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Library\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Colorspace\Cmy.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Colorspace\Cmyk.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Colorspace\Hsl.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Colorspace\Hsv.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Colorspace\Rgb.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Colorspace\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Colorspace\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Seed\Crayon.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Seed\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\Seed\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Mixer\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\AbstractModel.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Aggregate\Css.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Aggregate\Ico.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Aggregate\Image.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Aggregate\Psd.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Aggregate\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Aggregate\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Api\ColorLovers.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Api\Kuler.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Api\Webpage.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Api\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Api\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Cmy.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Cmyk.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Hsl.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Hsv.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\HunterLab.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Lab.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Lch.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Luv.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Rgb.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Xyz.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\Yxy.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Colorspace\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Seed\Basic.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Seed\Crayon.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Seed\Hex.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Seed\Name.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Seed\Pantone.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Seed\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\Seed\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Model\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Plugin.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Plugin\Brightness.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Plugin\Gray.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Plugin\Mingle.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Plugin\Nored.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Plugin\PluginAbstract.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Plugin\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Plugin\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\Cie.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\CrayolaCrayonsColors.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\HexCodes.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\Pantone.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\PantoneC.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\PantonePC.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\ReferenceAbstract.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\WebColorNames.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\WebSafeColors.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Reference\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Sodium.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\SodiumAbstract.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\SodiumInterface.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Storage.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Toolbox\Gradient.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Toolbox\ToolboxAbstract.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Toolbox\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Toolbox\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\Utile.php.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\css\nv.d3.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\js\d3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\js\holder.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\js\html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\js\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\js\nv.d3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\coverage\js\respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\sodiumraw.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\README.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\composer.json" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Draw.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Draw\DrawerInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Draw\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Effects.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Effects\EffectsInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Effects\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Exception.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Exception\Exception.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Exception\InvalidArgumentException.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Exception\OutOfBoundsException.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Exception\RuntimeException.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Exception\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Advanced.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Advanced\Border.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Advanced\Canvas.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Advanced\Grayscale.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Advanced\OnPixelBased.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Advanced\RelativeResize.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Advanced\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\ApplyMask.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Copy.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Crop.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Fill.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\FlipHorizontally.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\FlipVertically.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Paste.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Resize.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Rotate.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Save.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Show.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Strip.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\Thumbnail.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Basic\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\FilterInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\ImagineAware.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\Transformation.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Filter\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gd.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gd\Drawer.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gd\Effects.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gd\Font.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gd\Image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gd\Imagine.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gd\Layers.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gd\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gmagick.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gmagick\Drawer.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gmagick\Effects.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gmagick\Font.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gmagick\Image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gmagick\Imagine.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gmagick\Layers.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Gmagick\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\AbstractFont.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Box.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\BoxInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Color.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Fill.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Fill\FillInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Fill\Gradient.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Fill\Gradient\Horizontal.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Fill\Gradient\Linear.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Fill\Gradient\Vertical.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Fill\Gradient\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Fill\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\FontInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Histogram.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Histogram\Bucket.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Histogram\Range.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Histogram\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\ImageInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\ImagineInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\LayersInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\ManipulatorInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Point.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\PointInterface.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Point\Center.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\Point\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Image\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Imagick.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Imagick\Drawer.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Imagick\Effects.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Imagick\Font.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Imagick\Image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Imagick\Imagine.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Imagick\Layers.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Imagick\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Test.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Test\Constraint.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Test\Constraint\IsImageEqual.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Test\Constraint\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Test\ImagineTestCase.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\Test\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\Imagine\namespace-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\PROJECT_VERSION" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\SAMI_VERSION" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\classes-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\classes.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\css\main.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\css\panel.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\css\reset.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\doc-index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\i\arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\i\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\i\results_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\i\tree_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\interfaces.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\js\jquery-1.3.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\js\searchdoc.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\namespaces-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\namespaces.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\opensearch.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\panel.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\renderer.index" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\search_index.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\API\API\tree.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\_static\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\_static\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\_static\img\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\_static\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\_static\pygments.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\_themes\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\_themes\imagine\layout.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\_themes\imagine\static\imagine.css_t" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\_themes\imagine\theme.conf" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\conf.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\index.rst" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\sami_configuration.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\usage\coordinates.rst" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\usage\drawing.rst" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\usage\effects.rst" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\usage\exceptions.rst" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\usage\filters.rst" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\usage\introduction.rst" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\docs\usage\layers.rst" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Draw\DrawerInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Effects\EffectsInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Exception\Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Exception\InvalidArgumentException.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Exception\OutOfBoundsException.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Exception\RuntimeException.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Advanced\Border.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Advanced\Canvas.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Advanced\Grayscale.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Advanced\OnPixelBased.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Advanced\RelativeResize.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\ApplyMask.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Copy.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Crop.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Fill.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\FlipHorizontally.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\FlipVertically.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Paste.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Resize.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Rotate.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Save.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Show.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Strip.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Basic\Thumbnail.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\FilterInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\ImagineAware.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Filter\Transformation.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gd\Drawer.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gd\Effects.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gd\Font.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gd\Image.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gd\Imagine.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gd\Layers.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gmagick\Drawer.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gmagick\Effects.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gmagick\Font.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gmagick\Image.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gmagick\Imagine.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Gmagick\Layers.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\AbstractFont.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Box.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\BoxInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Color.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Fill\FillInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Fill\Gradient\Horizontal.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Fill\Gradient\Linear.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Fill\Gradient\Vertical.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\FontInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Histogram\Bucket.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Histogram\Range.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\ImageInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\ImagineInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\LayersInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\ManipulatorInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Point.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\PointInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Image\Point\Center.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Imagick\Drawer.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Imagick\Effects.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Imagick\Font.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Imagick\Image.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Imagick\Imagine.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Imagick\Layers.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Test\Constraint\IsImageEqual.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\lib\Imagine\Test\ImagineTestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Draw\AbstractDrawerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Effects\AbstractEffectsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Advanced\BorderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Advanced\CanvasTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Advanced\GrayscaleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\CopyTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\CropTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\FlipHorizontallyTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\FlipVerticallyTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\PasteTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\ResizeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\RotateTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\SaveTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\ShowTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\StripTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\Basic\ThumbnailTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\FilterTestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\ImagineAwareTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Filter\TransformationTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\DummyImagineAwareFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\anima.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\cat.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\font\Arial.ttf" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\google.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\resize\210-design-19933.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\results\blank.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\results\crop_resize_flip.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\results\gradient.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\results\rotate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\results\thumbnails\inset.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\results\thumbnails\outbound.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\sample.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\trans.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\trans.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Fixtures\xparent.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Functional\GdTransparentGifHandlingTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gd\DrawerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gd\EffectsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gd\ImageTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gd\ImagineTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gd\LayersTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gmagick\DrawerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gmagick\EffectsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gmagick\ImageTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gmagick\ImagineTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Gmagick\LayersTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\AbstractImageTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\AbstractImagineTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\AbstractLayersTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\BoxTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\ColorTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\Fill\Gradient\HorizontalTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\Fill\Gradient\LinearTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\Fill\Gradient\VerticalTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\Histogram\BucketTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\Histogram\RangeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\PointTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Image\Point\CenterTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Imagick\DrawerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Imagick\EffectsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Imagick\ImageTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Imagick\ImagineTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Imagick\LayersTest.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Issues\Issue131Test.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Issues\Issue17Test.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Issues\Issue59Test.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Issues\Issue67Test.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\Imagine\Issues\multi-layer.psd" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\Imagine\imagine\tests\bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\composer\ClassLoader.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\composer\autoload_classmap.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\composer\autoload_namespaces.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\composer\autoload_real.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\VYLSON SILWR\Sodium\vendor\composer\include_paths.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/environment.pickle" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/environment.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/_build/html/.doctrees/components/model.doctree" afterPath="$PROJECT_DIR$/docs/_build/html/.doctrees/components/model.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sodium/Toolbox/Gradient.php" afterPath="$PROJECT_DIR$/src/Sodium/Toolbox/Gradient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sodium/Model/Aggregate/Image.php" afterPath="$PROJECT_DIR$/src/Sodium/Model/Aggregate/Image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sodium/Reference.php" afterPath="$PROJECT_DIR$/src/Sodium/Reference.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sodium/Sodium.php" afterPath="$PROJECT_DIR$/src/Sodium/Sodium.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/getting_started.rst" afterPath="$PROJECT_DIR$/docs/getting_started.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/_build/html/components/model.html" afterPath="$PROJECT_DIR$/docs/_build/html/components/model.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/_build/html/_sources/components/model.txt" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/components/model.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Sodium/Toolbox/Gradient.php" afterPath="$PROJECT_DIR$/src/Sodium/Toolbox/Couple.php" />
     </list>
     <ignored path="Sodium.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -850,10 +39,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Core.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Sodium/Core.php">
+      <file leaf-file-name="sodiumraw.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sodiumraw.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="359" column="0" selection-start="8211" selection-end="8211" vertical-scroll-proportion="0.38433516" vertical-offset="5773" max-vertical-offset="6358">
+            <state line="11" column="16" selection-start="210" selection-end="210" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="306">
+              <folding>
+                <element signature="e#44#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gradient.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Sodium/Toolbox/Gradient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="28" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1003">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Couple.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sodium/Toolbox/Couple.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="12" selection-start="0" selection-end="2282" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1700">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToolboxAbstract.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sodium/Toolbox/ToolboxAbstract.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -904,7 +122,6 @@
         <option value="$PROJECT_DIR$/docs/components/model.rst" />
         <option value="$PROJECT_DIR$/licence" />
         <option value="$PROJECT_DIR$/src/Sodium/Mixer/Colorspace/Hsl.php" />
-        <option value="$PROJECT_DIR$/src/Sodium/Sodium.php" />
         <option value="$PROJECT_DIR$/src/Sodium/Export/Json.php" />
         <option value="$PROJECT_DIR$/src/Sodium/Config/Custom.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -912,10 +129,18 @@
         <option value="$PROJECT_DIR$/src/Sodium/Config.php" />
         <option value="$PROJECT_DIR$/src/Sodium/Config/Default.php" />
         <option value="$PROJECT_DIR$/docs/conf.py" />
-        <option value="$PROJECT_DIR$/sodiumraw.php" />
         <option value="$PROJECT_DIR$/docs/index.rst" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Sodium/Core.php" />
+        <option value="$PROJECT_DIR$/docs/getting_started.rst" />
+        <option value="$PROJECT_DIR$/src/Sodium/Sodium.php" />
+        <option value="$PROJECT_DIR$/src/Sodium/Model/Aggregate/Image.php" />
+        <option value="$PROJECT_DIR$/src/Sodium/Reference.php" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/src/Sodium/Model/Aggregate/Css.php" />
+        <option value="$PROJECT_DIR$/src/Sodium/Toolbox/Couple.php" />
+        <option value="$PROJECT_DIR$/src/Sodium/Toolbox/Gradient.php" />
+        <option value="$PROJECT_DIR$/sodiumraw.php" />
       </list>
     </option>
   </component>
@@ -952,7 +177,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ColorIdeProjectViewPane">
         <subPane>
           <PATH>
@@ -971,8 +195,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sodium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sodium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sodium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sodium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sodium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sodium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Toolbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -986,6 +251,12 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="SearchEverywhereHistory" value="wrap&#10;anno" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1149,36 +420,64 @@
       <created>1402555211224</created>
       <updated>1402555211224</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="general fix&#10;">
+      <created>1402555478282</created>
+      <updated>1402555478282</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1032" height="732" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3485342" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3474026" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06619144" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17413442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.089613035" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27494907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3474026" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06619144" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17718941" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-    </layout>
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USERS">
@@ -1218,54 +517,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="1881" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="19" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2299" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/_build/html/_static/guzzle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="842" column="14" selection-start="17313" selection-end="17313" vertical-scroll-proportion="0.0" vertical-offset="15657" max-vertical-offset="16112" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/_static/guzzle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="69" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="16112" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sodium/Config/Default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="0" selection-start="3265" selection-end="3280" vertical-scroll-proportion="0.0" vertical-offset="1691" max-vertical-offset="1805" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sodium/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="2204" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sodium/SodiumAbstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="53" selection-start="4144" selection-end="4144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10659" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sodium/Sodium.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="20" selection-start="5381" selection-end="5381" vertical-scroll-proportion="0.0" vertical-offset="4864" max-vertical-offset="11742" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sodium/Model/Colorspace/Hsl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="2223" max-vertical-offset="4066" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sodium/Model/Colorspace/Hsv.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="3918" max-vertical-offset="4446" />
@@ -1311,11 +562,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="2223" max-vertical-offset="4066" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sodium/SodiumAbstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="53" selection-start="4144" selection-end="4144" vertical-scroll-proportion="0.0" vertical-offset="4218" max-vertical-offset="10659" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.WebIde70/config/commandlinetools/Custom_py.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="436" />
@@ -1337,11 +583,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="422" />
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/_static/guzzle.css">
@@ -1372,11 +618,6 @@
     <entry file="file://$PROJECT_DIR$/src/Sodium/Mixer/Colorspace/Hsl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="37" selection-start="1026" selection-end="1026" vertical-scroll-proportion="1.475" vertical-offset="162" max-vertical-offset="1178" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sodium/Sodium.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="268" column="49" selection-start="5613" selection-end="5613" vertical-scroll-proportion="0.3893967" vertical-offset="4746" max-vertical-offset="11799" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sodium/Config.php">
@@ -1442,22 +683,110 @@
         <state line="31" column="29" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1156" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.73656845" vertical-offset="459" max-vertical-offset="2448" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4930" />
+      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4930" />
+        <state line="133" column="40" selection-start="3510" selection-end="3539" vertical-scroll-proportion="0.4714038" vertical-offset="1989" max-vertical-offset="2720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/getting_started.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="23" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Sodium.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="616" column="51" selection-start="14665" selection-end="14665" vertical-scroll-proportion="0.6284153" vertical-offset="10127" max-vertical-offset="10676" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.049001817" vertical-offset="27" max-vertical-offset="986" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Model/Aggregate/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="20" selection-start="197" selection-end="197" vertical-scroll-proportion="-2.8402903" vertical-offset="1735" max-vertical-offset="2329" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="490" column="9" selection-start="15549" selection-end="15549" vertical-scroll-proportion="-4.0943737" vertical-offset="10586" max-vertical-offset="18734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Model/Seed/Name.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.2214155" vertical-offset="1224" max-vertical-offset="1870" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Reference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="27" selection-start="416" selection-end="416" vertical-scroll-proportion="0.33451957" vertical-offset="220" max-vertical-offset="782" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Reference/WebColorNames.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="83" selection-end="83" vertical-scroll-proportion="-3.9184396" vertical-offset="2295" max-vertical-offset="2873" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_9.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="9" selection-start="8435" selection-end="8435" vertical-scroll-proportion="0.34845734" vertical-offset="3888" max-vertical-offset="18088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="358" selection-end="358" vertical-scroll-proportion="-25.22087" vertical-offset="14672" max-vertical-offset="15249" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Model/Aggregate/Css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="0" selection-start="3534" selection-end="3534" vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="2533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/SodiumAbstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="301" column="23" selection-start="6155" selection-end="6155" vertical-scroll-proportion="-2.5499094" vertical-offset="6403" max-vertical-offset="9418" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sodium/Core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="359" column="0" selection-start="8211" selection-end="8211" vertical-scroll-proportion="0.38433516" vertical-offset="5773" max-vertical-offset="6358">
+        <state line="21" column="6" selection-start="344" selection-end="344" vertical-scroll-proportion="0.31205675" vertical-offset="62" max-vertical-offset="6358" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Toolbox/ToolboxAbstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Toolbox/Couple.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="0" selection-end="2282" vertical-scroll-proportion="-0.0" vertical-offset="68" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sodiumraw.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="210" selection-end="210" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="306">
+          <folding>
+            <element signature="e#44#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sodium/Toolbox/Gradient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="28" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>

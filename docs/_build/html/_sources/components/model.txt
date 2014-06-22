@@ -53,7 +53,7 @@ Models
 Hex
 ---
 
-The input hex triplet can be 6 chars or 3 chars, but it should have '#' prefix. But, the output hex can ----- be customized.
+The input hex triplet can be 6 chars or 3 chars, but it should have '#' prefix. But, the output hex can be customized.
 
 .. code-block:: php
 

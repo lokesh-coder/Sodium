@@ -4,92 +4,51 @@ namespace Sodium\Toolbox;
 
 class Gradient Extends ToolboxAbstract
 {
-
-    protected $_default_level = 10;
+    protected $_start_color;
+    protected $_end_color;
+    protected $_default_color = '#f00';
+    protected $_default_step = 5;
+    protected $_steps;
 
     public function Gradient()
     {
 
-        $level = isset($this->_args[0]) ? $this->_args[0] : $this->_default_level;
-        $hex = $this->_sodium_object->getHex();
+        $user_color = isset($this->_args[0]) ? $this->_args[0] : $this->_default_color;
+        $this->_end_color = $this->_sodium_object->import($user_color)->useInput(2)->getRGB();
+        $this->_steps = isset($this->_args[1]) ? $this->_args[1] : $this->_default_step;
+        $this->_start_color = $this->_sodium_object->getRGB();
 
-        if ($this->isLight($hex)) {
-            $lightColor = $hex;
-            $darkColor = $this->darken($level);
-        } else {
-            $lightColor = $this->lighten($level);
-            $darkColor = $hex;
+        return $this->_getGradient();
+    }
+
+    private function _getGradient() {
+
+        $step['r'] = ($this->_start_color[0] - $this->_end_color[0])/$this->_steps;
+        $step['g'] = ($this->_start_color[1] - $this->_end_color[1])/$this->_steps;
+        $step['b'] = ($this->_start_color[2] - $this->_end_color[2])/$this->_steps;
+
+        $gradient = array();
+
+        for($i = 0; $i <= $this->_steps; $i++) {
+
+            $rgb[0] = floor($this->_start_color[0] - ($step['r'] * $i));
+            $rgb[1] = floor($this->_start_color[1] - ($step['g'] * $i));
+            $rgb[2] = floor($this->_start_color[2] - ($step['b'] * $i));
+
+
+            $hex['r'] = sprintf('%02x', ($rgb[0]));
+            $hex['g'] = sprintf('%02x', ($rgb[1]));
+            $hex['b'] = sprintf('%02x', ($rgb[2]));
+
+            $gradient[] = '#'.implode(NULL, $hex);
+
         }
 
-        return array($lightColor, $darkColor);
+        return $gradient;
+
     }
-
-    public function isLight($color)
-    {
-
-        $r = hexdec($color[0] . $color[1]);
-        $g = hexdec($color[2] . $color[3]);
-        $b = hexdec($color[4] . $color[5]);
-
-        return (($r * 299 + $g * 587 + $b * 114) / 1000 > 130);
-    }
-
-    public function isDark($color)
-    {
-
-        // Calculate straight from rbg
-        $r = hexdec($color[0] . $color[1]);
-        $g = hexdec($color[2] . $color[3]);
-        $b = hexdec($color[4] . $color[5]);
-
-        return (($r * 299 + $g * 587 + $b * 114) / 1000 <= 130);
-    }
-
-    public function darken($level)
-    {
-
-        $lightness = $this->_darken($this->_sodium_object->getLightness(), $level);
-        $this->_sodium_object->setLightness($lightness);
-        return $this->_sodium_object->getHex();
-    }
-
-    public function lighten($level)
-    {
-
-        $lightness = $this->_lighten($this->_sodium_object->getLightness(), $level);
-        $this->_sodium_object->setLightness($lightness);
-
-        return $this->_sodium_object->getHex();
-    }
-
-    private function _darken($lightness, $level)
-    {
-
-        $lightness = $lightness / 100;
-        if ($level) {
-            $lightness = ($lightness * 100) - $level;
-            $lightness = ($lightness < 0) ? 0 : $lightness / 100;
-        } else {
-
-            $lightness = $lightness / 2;
-        }
-
-        return $lightness * 100;
-    }
-
-    private function _lighten($lightness, $level)
-    {
-
-        $lightness = $lightness / 100;
-        if ($level) {
-            $lightness = ($lightness * 100) + $level;
-            $lightness = ($lightness > 100) ? 1 : $lightness / 100;
-        } else {
-
-            $lightness += (1 - $lightness) / 2;
-        }
-
-        return $lightness * 100;
+    private function _collect($rgb){
+        return 'rgb('.$rgb[0].','.$rgb[1].','.$rgb[2].')';
     }
 
 }

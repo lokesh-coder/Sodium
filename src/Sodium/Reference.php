@@ -32,4 +32,9 @@ class Reference
         return self::$_library[$class];
     }
 
+    public static function get($library){
+        $get_library=self::load($library);
+        return $get_library->get();
+    }
+
 }

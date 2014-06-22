@@ -8,6 +8,7 @@ use Sodium\Export;
 use Sodium\Image as ImageTool;
 use Sodium\model;
 use Sodium\Sodium;
+use Sodium\Exception;
 
 class Image Extends AbstractAggregate implements AggregateInterface
 {
@@ -45,8 +46,8 @@ class Image Extends AbstractAggregate implements AggregateInterface
             default:
                 $value = '';
         }
-        // if (!file_exists($value))
-        //     throw new Exception('Image file ' . $value . ' not exists');
+         if (!file_exists($value))
+             throw new Exception('Image file ' . $value . ' not exists');
         return $value;
     }
 
