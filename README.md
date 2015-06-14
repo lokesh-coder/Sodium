@@ -1,4 +1,4 @@
-( sodium undoergoes complete rebiuld to make it fast, reasonable and easy interface to extend. )
+( sodium undoergoes complete rebuild to make it fast, reasonable and easy interface to extend. )
 Sodium
 ======
 
