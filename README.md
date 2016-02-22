@@ -1,8 +1,8 @@
-( sodium undoergoes complete rebuild to make it fast, reasonable and easy interface to extend. )
+( Sodium is beight updated with more flexible options. Waiting is worth! )
 Sodium
 ======
 
-A PHP color library.
+> A PHP color library.
 
 [![Build Status](https://travis-ci.org/lokesh-coder/Sodium.svg?branch=master)](https://travis-ci.org/lokesh-coder/Sodium)
 
