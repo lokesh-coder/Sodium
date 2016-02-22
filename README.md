@@ -1,4 +1,4 @@
-( Sodium is being updated with more flexible options. Waiting is worth! )
+( Sodium is being updated with more flexible options. Releasing first version on 1st of march 2016.  Waiting is worth! )
 Sodium
 ======
 
