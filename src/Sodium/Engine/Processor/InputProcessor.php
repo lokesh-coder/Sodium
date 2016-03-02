@@ -12,85 +12,94 @@ class InputProcessor implements ProcessorInterface
 {
     protected $rawInputs;
     protected $formattedInputs;
-    protected $formats=array();
-    protected $inputWithModel;
+    protected $formats = array();
     protected $inputsWithModel;
+    protected $inputsWithModels;
     protected $currentInput;
-    protected $registeredModels=array();
+    protected static $registeredModels = array();
 
-    public function __construct($input,array $formats)
+    public function __construct($input, array $formats)
     {
         $this->rawInputs[] = $input;
         $this->formats = $formats;
-        $this->currentInput=is_array($input)?$input[0]:$input;
+        $this->currentInput = is_array($input) ? $input[0] : $input;
     }
 
     public function initiate($input)
     {
-        $duplicate=clone $this;
-        $duplicate->rawInputs=array();
+        $duplicate = clone $this;
+        $duplicate->rawInputs = array();
         $duplicate->rawInputs[] = $input;
-        $duplicate->currentInput=is_array($input)?$input[0]:$input;
+        $duplicate->currentInput = is_array($input) ? $input[0] : $input;
         return $duplicate;
     }
 
     public function pushInput($input)
     {
-        $this->rawInputs[]=$input;
+        $this->rawInputs[] = $input;
         return $this->process($this->registeredModels);
     }
 
     public function useInput($index)
     {
-        $this->currentInput=$this->formattedInputs[$index];
+        $this->currentInput = $this->formattedInputs[$index];
         return $this->process($this->registeredModels);
     }
 
     public function clear()
     {
-        $duplicate=clone $this;
-        $duplicate->currentInput='';
-        $duplicate->rawInputs=array();
-        $duplicate->formattedInputs=array();
-        $duplicate->inputWithModel=array();
-        $duplicate->inputsWithModel=array();
-        $duplicate->currentInput='';
+        $duplicate = clone $this;
+        $duplicate->currentInput = '';
+        $duplicate->rawInputs = array();
+        $duplicate->formattedInputs = array();
+        $duplicate->inputsWithModel = array();
+        $duplicate->inputsWithModels = array();
+        $duplicate->currentInput = '';
         return $duplicate;
     }
 
     public function process($registeredModels)
     {
-        $this->registeredModels=$registeredModels;
-        $this->formattedInputs=InputFormatter::init($this->rawInputs,$this->formats)->format();
+        self::$registeredModels = $registeredModels;
+        $this->formattedInputs = InputFormatter::init($this->rawInputs, $this->formats)->format();
         ModelConcrete::setRegisteredModels($registeredModels);
-        $resolver=InputResolver::init($this->formattedInputs,$registeredModels);
-        $this->formattedInputs=$resolver->getInputs();
-        $this->inputWithModel=$resolver->getModels();
-        $this->inputsWithModel=InputObserver::init($this->inputWithModel,$registeredModels)->observe();
+        $resolver = InputResolver::init($this->formattedInputs, $registeredModels);
+        $this->formattedInputs = $resolver->getInputs();
+        $this->inputsWithModel = $resolver->getModels();
+        $this->inputsWithModels = InputObserver::init($this->inputsWithModel, $registeredModels)->observe();
         return $this;
+    }
+
+    public static function getRegisteredModels()
+    {
+        return self::$registeredModels;
     }
 
     public function getModel()
     {
-        return $this->inputWithModel;
+        return $this->inputsWithModel;
     }
 
     public function getModels()
     {
-        return $this->inputsWithModel;
+        return $this->inputsWithModels;
     }
 
     public function getCurrentInput()
     {
         return $this->currentInput;
     }
-    public function getCurrentInputModel()
+    public function getCurrentInputModel($model = '')
     {
-        return $this->inputWithModel[$this->currentInput];
+        if ($model != '' && $this->inputsWithModels[$this->currentInput][$model]) {
+            return $this->inputsWithModels[$this->currentInput][$model];
+        }
+
+        return $this->inputsWithModel[$this->currentInput];
     }
     public function getCurrentInputModels()
     {
-        return $this->inputsWithModel[$this->currentInput];
+        return $this->inputsWithModels[$this->currentInput];
     }
 
 }

@@ -86,6 +86,7 @@ class Engine{
 
 	public function __call($method,$args)
 	{
+		
 		$args[0]=empty($args[0])?null:$args[0];
 		foreach(self::$cogs as $cog){
 			if(in_array($method,self::$cogMethods[get_class($cog)]))

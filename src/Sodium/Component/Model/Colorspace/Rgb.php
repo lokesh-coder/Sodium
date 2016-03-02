@@ -6,7 +6,7 @@ use Sodium\Concrete\Component\Model\ModelConcrete;
 use Sodium\Contract\Component\Model\Colorspace\ColorspaceInterface;
 use Sodium\Contract\Component\Model\ConversionAwareInterface;
 
-class Rgb extends ModelConcrete implements ColorspaceInterface,ConversionAwareInterface
+class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareInterface
 {
 
     const MIN = 0;
@@ -56,16 +56,16 @@ class Rgb extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array(
             $this->red,
             $this->green,
-            $this->blue
+            $this->blue,
         );
     }
 
     public function getDefaultOutput()
     {
         return array(
-            'red'   => $this->red,
+            'red' => $this->red,
             'green' => $this->green,
-            'blue'  => $this->blue
+            'blue' => $this->blue,
         );
     }
 
@@ -91,7 +91,7 @@ class Rgb extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
                 $value = array(
                     $string,
                     0,
-                    0
+                    0,
                 );
                 break;
 
@@ -101,7 +101,7 @@ class Rgb extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
                 $value = array(
                     0,
                     $string,
-                    0
+                    0,
                 );
                 break;
 
@@ -111,7 +111,7 @@ class Rgb extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
                 $value = array(
                     0,
                     0,
-                    $string
+                    $string,
                 );
                 break;
             default:
@@ -135,9 +135,10 @@ class Rgb extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function validateInput($value)
     {
+
         if (strpos($value, '%') !== false) {
             $value = rtrim($value, '%');
-            $value = (float)$value;
+            $value = (float) $value;
             $value = (self::MAX / 100) * $value;
             $value = round($value);
             $value = $this->validateInput($value);

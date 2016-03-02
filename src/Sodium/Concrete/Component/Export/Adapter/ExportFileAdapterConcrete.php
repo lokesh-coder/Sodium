@@ -24,4 +24,13 @@ abstract class ExportFileAdapterConcrete
         fclose($fh) or die("can't close file");
         return true;
     }
+
+    public function makeInputFlat(array $colors,$model='Sodium\Component\Model\Seed\Hex'){
+        $colors=array_values($colors);
+        $flatten_colors=[];
+        foreach($colors as $col){
+            $flatten_colors[]=$col[$model];
+        }
+        return $flatten_colors;
+    }
 }

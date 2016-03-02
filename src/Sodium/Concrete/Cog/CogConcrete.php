@@ -30,6 +30,9 @@ abstract class CogConcrete
     protected function getCurrentInputModel(){
         return $this->engine->inputProcessor->getCurrentInputModel();
     }
+    protected function getCurrentInputModels(){
+        return $this->engine->inputProcessor->getCurrentInputModels();
+    }
 
     public function setEngine(Engine $engine)
     {

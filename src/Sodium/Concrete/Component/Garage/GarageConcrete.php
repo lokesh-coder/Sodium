@@ -4,11 +4,11 @@ namespace Sodium\Concrete\Component\Garage;
 
 abstract class GarageConcrete
 {
-    protected $currentInputModel;
+    protected $currentInputModels;
 
-    function __construct($currentInputModel)
+    function __construct($currentInputModels)
     {
-        $this->currentInputModel = $currentInputModel;
+        $this->currentInputModels = $currentInputModels;
     }
 
 }

@@ -7,5 +7,8 @@ use Sodium\Contract\Component\Export\Adapter\File\ExportAdapterFileInterface;
 
 class Gif extends ExportAdapterFileConcrete implements ExportAdapterFileInterface
 {
-
+    public function export(array $colors)
+    {
+        // d($colors);
+    }
 }

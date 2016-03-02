@@ -16,7 +16,7 @@ class Polaroid extends ImagingConcrete implements ImagingInterface
     $root=$_SERVER['DOCUMENT_ROOT'];
     $srcRoot=Resource::getPath();
     $palette = new RGB();
-    $cur_input_col=$this->inputProcessor->getCurrentInput();
+    $cur_input_col=$this->inputProcessor->getCurrentInputModel('Sodium\Component\Model\Seed\Hex')->getStandardOutput();
 
     // bg layer
     $bg_layer_size  = new Box(300,300);

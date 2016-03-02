@@ -19,6 +19,12 @@
         }
     },
     "require": {
-        "imagine/imagine": "0.6.*@dev"
+        "symfony/var-dumper": "2.6.*@dev",
+        "imagine/imagine": "dev-master",
+        "phpunit/phpunit": "4.7.x-dev",
+        "mockery/mockery": "0.9.3",
+        "skyzyx/adobe-swatch-exchange": "2.1",
+        "sybio/gif-creator": "1.0.0",
+        "sybio/gif-frame-extractor": "1.0.0"
     }
 }
