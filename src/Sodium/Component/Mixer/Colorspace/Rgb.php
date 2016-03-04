@@ -6,49 +6,32 @@ use Sodium\Component\Model\Colorspace\Rgb as RgbModel;
 
 class Rgb extends RgbModel
 {
-    /**
-     * @var mixed
-     */
+
     protected $rgbModel;
 
-    /**
-     * @param RgbModel $rgb
-     */
     public function __construct(RgbModel $rgb)
     {
         $this->rgbModel = $rgb;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getBlue()
+    public function getBlue($format)
     {
-        return $this->rgbModel->blue;
+        return $this->rgbModel->formatOutput($this->rgbModel->blue,$format);
     }
 
-    /**
-     * @return mixed
-     */
-    public function getGreen()
+    public function getGreen($format)
     {
-        return $this->rgbModel->green;
+        return $this->rgbModel->formatOutput($this->rgbModel->green,$format);
     }
 
-    /**
-     * @return mixed
-     */
-    public function getRGB()
+    public function getRGB($format)
     {
-        return $this->rgbModel->getStandardOutput();
+        return $this->rgbModel->formatOutput($this->rgbModel->rgb,$format);
     }
 
-    /**
-     * @return mixed
-     */
-    public function getRed()
+    public function getRed($format)
     {
-        return $this->rgbModel->red;
+        return $this->rgbModel->formatOutput($this->rgbModel->red,$format);
     }
 
     public function setRed($red)
@@ -57,9 +40,33 @@ class Rgb extends RgbModel
         $this->rgbModel->fromRGB($this->rgbModel->rgb);
         return $this;
     }
+    public function mixRed($red)
+    {
+        $this->rgbModel->rgb = array($this->rgbModel->$red+$red, $this->rgbModel->green, $this->rgbModel->blue);
+        $this->rgbModel->fromRGB($this->rgbModel->rgb);
+        return $this;
+    }
     public function setGreen($green)
     {
         $this->rgbModel->rgb = array($this->rgbModel->red, $green, $this->rgbModel->blue);
+        $this->rgbModel->fromRGB($this->rgbModel->rgb);
+        return $this;
+    }
+    public function mixGreen($green)
+    {
+        $this->rgbModel->rgb = array($this->rgbModel->red, $this->rgbModel->green+$green, $this->rgbModel->blue);
+        $this->rgbModel->fromRGB($this->rgbModel->rgb);
+        return $this;
+    }
+    public function setBlue($blue)
+    {
+        $this->rgbModel->rgb = array($this->rgbModel->red, $this->rgbModel->green, $blue);
+        $this->rgbModel->fromRGB($this->rgbModel->rgb);
+        return $this;
+    }
+    public function mixBlue($blue)
+    {
+        $this->rgbModel->rgb = array($this->rgbModel->red, $this->rgbModel->green, $this->rgbModel->blue+$blue);
         $this->rgbModel->fromRGB($this->rgbModel->rgb);
         return $this;
     }

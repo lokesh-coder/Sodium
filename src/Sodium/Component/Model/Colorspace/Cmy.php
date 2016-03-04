@@ -9,6 +9,7 @@ use Sodium\Contract\Component\Model\ConversionAwareInterface;
 class Cmy extends ModelConcrete implements ColorspaceInterface,ConversionAwareInterface
 {
 
+    protected $cmy = array();
     protected $cyan = 0;
     protected $magenta = 0;
     protected $yellow = 0;
@@ -27,7 +28,7 @@ class Cmy extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function setProperties($cmy)
     {
-
+        $this->cmy = $this->filterInput($cmy);
         if (is_array($cmy) && count($cmy) == 3) {
             $this->cyan = $this->filterInput($cmy[0]);
             $this->magenta = $this->filterInput($cmy[1]);
@@ -63,12 +64,12 @@ class Cmy extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $this->cyan = (255 - $rgb[0]);
         $this->magenta = (255 - $rgb[1]);
         $this->yellow = (255 - $rgb[2]);
-
-        return array(
+        $this->cmy= array(
             $this->cyan,
             $this->magenta,
             $this->yellow
         );
+        return $this->cmy;
     }
 
     public function getDefaultOutput()
@@ -167,26 +168,30 @@ class Cmy extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return intval($value);
     }
 
-    protected function formatOutput($value, $format)
+    protected function formatOutput($value, $format,$collective=false)
     {
-        if (is_array($value)) {
+
+        if (is_array($value) && $format == 'standard') {
+            return $this->getStandardOutput();
+        }
+        if (is_array($value) && $format == 'default') {
+            return $this->getDefaultOutput();
+        }
+        if (is_array($value) && $format == 'object') {
+            return $this;
+        }
+        if (is_array($value)) {  
             $new_values = array();
             foreach ($value as $val) {
-                $new_values[] = $this->formatOutput($val, $format);
+                $new_values[] = $this->formatOutput($val, $format,true);
             }
             return $new_values;
         }
         if ($format == 'percentage') {
-            return round(numberformat(($value / self::MAX) * 100, $this->_decimal_limit));
+            return round(number_format(($value / self::MAX) * 100, $this->decimalLimit));
         }
         if ($format == 'float') {
-            return numberformat($value / self::MAX, $this->_decimal_limit);
-        }
-        if ($format == 'standard') {
-            return $this->getStandardOutput();
-        }
-        if ($format == 'object') {
-            return $this;
+            return floatval(number_format($value / self::MAX, $this->decimalLimit));
         }
         return $value;
     }

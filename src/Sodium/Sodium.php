@@ -39,15 +39,15 @@ class Sodium extends Engine
 
 	public $registeredGarages = array(
 	    'Converter' => 'Sodium\Component\Garage\Converter',
+	    'Check' => 'Sodium\Component\Garage\Check',
+	    'Painter' => 'Sodium\Component\Garage\Painter',
 	    'Collection' => 'Sodium\Component\Garage\Collection'
 	);
 	public function __construct($input){
 
 		$this->setProcessors($input);
 		$this->setCogs();
-
-		$engine = new Engine($input);
-		return $engine->run();
+		return new Engine($input);
 	}
 
 	private function setCogs(){
@@ -66,7 +66,6 @@ class Sodium extends Engine
 
 		$inputProcessor = new InputProcessor($input, $this->registeredFormats);
 		$modelProcessor = new ModelProcessor($this->registeredModels);
-
 		Engine::attachProcessor('input',$inputProcessor);
 		Engine::attachProcessor('model',$modelProcessor);
 	}

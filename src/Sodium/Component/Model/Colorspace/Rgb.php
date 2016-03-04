@@ -156,10 +156,19 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
 
     protected function formatOutput($value, $format)
     {
-        if (is_array($value)) {
+        if (is_array($value) && $format == 'standard') {
+            return $this->getStandardOutput();
+        }
+        if (is_array($value) && $format == 'default') {
+            return $this->getDefaultOutput();
+        }
+        if (is_array($value) && $format == 'object') {
+            return $this;
+        }
+        if (is_array($value)) {  
             $new_values = array();
             foreach ($value as $val) {
-                $new_values[] = $this->formatOutput($val, $format);
+                $new_values[] = $this->formatOutput($val, $format,true);
             }
             return $new_values;
         }
@@ -167,13 +176,7 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
             return round(number_format(($value / self::MAX) * 100, $this->decimalLimit));
         }
         if ($format == 'float') {
-            return number_format($value / self::MAX, $this->decimalLimit);
-        }
-        if ($format == 'standard') {
-            return $this->getStandardOutput();
-        }
-        if ($format == 'object') {
-            return $this;
+            return floatval(number_format($value / self::MAX, $this->decimalLimit));
         }
         return $value;
     }

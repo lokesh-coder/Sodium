@@ -8,11 +8,13 @@ use Sodium\Contract\Component\Model\ConversionAwareInterface;
 
 class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareInterface
 {
+    protected $hsl=array();
     protected $hue = 0;
     protected $saturation = 0;
     protected $lightness = 0;
     private $defaultSaturation = 50;
     private $defaultLightness = 50;
+    protected $decimalLimit = 2;
 
     const MIN = 0;
     const MAX = 100;
@@ -28,10 +30,31 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function setProperties(array $hsl)
     {
+        $this->hsl = $this->filterInput($hsl);
         if (count($hsl) == 3) {
             $this->hue = $this->validateInput($hsl[0], 'hue');
             $this->saturation = $this->validateInput($hsl[1]);
             $this->lightness = $this->validateInput($hsl[2]);
+        }
+    }
+
+    protected function filterInput($value)
+    {
+
+        if (is_array($value)) {
+            $hsl = array();
+
+            foreach ($value as $key => $val) {
+                if($key==0)
+                    $type='hue';
+                else
+                    $type='';
+                $hsl[] = $this->validateInput($val,$type);
+            }
+
+            return $hsl;
+        } else {
+            return $this->validateInput($value);
         }
     }
 
@@ -116,7 +139,11 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     public function getDefaultOutput()
     {
-        return array($this->hue, $this->saturation, $this->lightness);
+        return array(
+            'hue'    => $this->hue,
+            'saturation' => $this->saturation,
+            'lightness'  => $this->lightness
+        );
     }
 
     function toRGB()
@@ -214,5 +241,32 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $this->saturation = $saturation * self::MAX;
         $this->lightness = $lightness * self::MAX;
         return array($this->hue, $this->saturation, $this->lightness);
+    }
+    protected function formatOutput($value, $format='')
+    {
+
+        if (is_array($value) && $format == 'standard') {
+            return $this->getStandardOutput();
+        }
+        if (is_array($value) && $format == 'default') {
+            return $this->getDefaultOutput();
+        }
+        if (is_array($value) && $format == 'object') {
+            return $this;
+        }
+        if (is_array($value)&& $format == '') {  
+            $new_values = array();
+            foreach ($value as $val) {
+                $new_values[] = $this->formatOutput($val, $format,true);
+            }
+            return $new_values;
+        }
+        if ($format == 'percentage') {
+            return round(number_format(($value / self::MAX) * 100, $this->decimalLimit));
+        }
+        if ($format == 'float') {
+            return floatval(number_format($value / self::MAX, $this->decimalLimit));
+        }
+        return $value;
     }
 }
