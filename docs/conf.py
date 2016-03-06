@@ -109,7 +109,7 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #html_theme = 'alabaster'
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -286,13 +286,11 @@ texinfo_documents = [
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'                           
                                                                                  
-if not on_rtd:  # only import and set the theme if we're building docs locally                    
-    # Override default css to get a larger width for local build                 
+if not on_rtd:                
     def setup(app):                                                              
         #app.add_javascript("custom.js")                                         
         app.add_stylesheet('_static/default.css')                                
-else:                                                                            
-    # Override default css to get a larger width for ReadTheDoc build            
+else:                                                                             
     html_context = {                                                             
         'css_files': [                                                           
             'https://media.readthedocs.org/css/sphinx_rtd_theme.css',            
