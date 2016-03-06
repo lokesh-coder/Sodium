@@ -289,12 +289,13 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 if not on_rtd:                
     def setup(app):                                                              
         #app.add_javascript("custom.js")                                         
-        app.add_stylesheet('_static/css/main.css')                                
+        app.add_stylesheet('_static/default.css')                                
 else:
-	html_style = 'css/main.css'                                                                              
+	html_style = 'css/main.css'
+
     html_context = {                                                             
         'css_files': [                                                           
             'https://media.readthedocs.org/css/sphinx_rtd_theme.css',            
-            'https://media.readthedocs.org/css/readthedocs-doc-embed.css'                                      
+            'https://media.readthedocs.org/css/readthedocs-doc-embed.css'                               
         ],                                                                       
     }
