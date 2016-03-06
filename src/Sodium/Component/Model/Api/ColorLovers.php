@@ -57,7 +57,7 @@ class ColorLovers extends ModelConcrete implements ApiInterface
   private function initRequest()
   {
     $request = new ColorLover($this->paletteId);
-    $colors = $request->getPalette();
+    $colors = @$request->getPalette();
     $hex = array();
     foreach ($colors['colors'] as $col)
       $hex[] = '#' . strtolower($col);

@@ -37,13 +37,13 @@ class InputProcessor implements ProcessorInterface
     public function pushInput($input)
     {
         $this->rawInputs[] = $input;
-        return $this->process($this->registeredModels);
+        return $this->process(self::$registeredModels);
     }
 
     public function useInput($index)
     {
         $this->currentInput = $this->formattedInputs[$index];
-        return $this->process($this->registeredModels);
+        return $this->process(self::$registeredModels);
     }
 
     public function clear()
@@ -97,9 +97,19 @@ class InputProcessor implements ProcessorInterface
 
         return $this->inputsWithModel[$this->currentInput];
     }
+    public function setCurrentInputModel($model)
+    {
+        $this->inputsWithModel[$this->currentInput]=$model;
+        return $this;
+    }
     public function getCurrentInputModels()
     {
         return $this->inputsWithModels[$this->currentInput];
+    }
+    public function setCurrentInputModels($models)
+    {
+        $this->inputsWithModels[$this->currentInput]=$models;
+        return $this;
     }
 
 }

@@ -4,6 +4,8 @@ namespace Sodium\Component\Model\Aggregate;
 
 use Sodium\Concrete\Component\Model\ModelConcrete;
 use Sodium\Contract\Component\Model\Aggregate\AggregateInterface;
+use Sodium\Component\Model\Aggregate\Image;
+use Sodium\Resource\Ico\IcoThumb;
 
 class Ico extends ModelConcrete implements AggregateInterface
 {
@@ -43,7 +45,7 @@ class Ico extends ModelConcrete implements AggregateInterface
     public static function regex()
     {
 
-        $regex['psd'] = '/^ico\(.*\)$/i';
+        $regex['ico'] = '/^ico\(.*\)$/i';
         return $regex;
     }
 
@@ -59,7 +61,7 @@ class Ico extends ModelConcrete implements AggregateInterface
 
     public function getCollection()
     {
-        $image = $this->_init_image();
+        $image = $this->initImage();
         return $image->getCollection();
     }
 
@@ -68,21 +70,16 @@ class Ico extends ModelConcrete implements AggregateInterface
         return count($this->getCollection());
     }
 
-    public function getCollectionObj()
-    {
-        return new Sodium($this->getCollection());
-    }
-
     private function initImage()
     {
-        $image = new IcoThumb($this->filename);
-        $image->saveImage($this->filePath());
+        $ico = new IcoThumb($this->filename);
+        $v=$ico->saveImage($this->filePath());
+        d($this->filePath());
         return new Image('img(' . $this->filePath() . ')');
     }
 
     private function filePath()
     {
-        $path = Config::get('Default_Path', 'Image');
-        return $base_dir = Autoloader::baseDir() . '/' . $path . $this->_image_prefix_name . '.' . self::IMGformat;
+        return $base_dir = $_SERVER['DOCUMENT_ROOT'] . $this->filePrefixName . '.' . self::IMG_FORMAT;
     }
 }

@@ -9,8 +9,9 @@ class Collection extends GarageConcrete
 {
     public function getCollection()
     {
-        if(!$this->currentInputModel instanceof ConversionAwareInterface)
-            return $this->currentInputModel->getCollection();
+    	 $getCurrentInputModel=$this->engine->inputProcessor->getCurrentInputModel();
+        if(!$getCurrentInputModel instanceof ConversionAwareInterface)
+            return $getCurrentInputModel->getCollection();
         return '';
     }
 }

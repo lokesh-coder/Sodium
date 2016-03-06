@@ -39,4 +39,8 @@ abstract class CogConcrete
         $this->engine = $engine;
         return $this;
     }
+    public function getEngine()
+    {
+        return $this->engine;
+    }
 }

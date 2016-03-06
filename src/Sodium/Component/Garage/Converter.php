@@ -3,23 +3,9 @@
 namespace Sodium\Component\Garage;
 
 use Sodium\Concrete\Component\Garage\GarageConcrete;
-use Sodium\Engine\Processor\InputProcessor;
-use Sodium\Engine\Processor\Input\InputObserver;
 
 class Converter extends GarageConcrete
 {
-    private function _get_model($model)
-    {
-        return $this->currentInputModels['Sodium\\Component\\Model\\' . $model];
-    }
-
-    private function _update_models($model)
-    {
-        $trigger = InputObserver::init(array($this->_get_model($model)), InputProcessor::getRegisteredModels())->observe();
-        $this->currentInputModels = $trigger[0];
-        return $this;
-    }
-
     public function getRed($format)
     {
         return $this->_get_model('Colorspace\Rgb')->getRed($format);
@@ -163,26 +149,5 @@ class Converter extends GarageConcrete
     public function getHSL($format)
     {
         return $this->_get_model('Colorspace\Hsl')->getHSL($format);
-    }
-    public function lighten($amount=10){
-        $hsl=$this->getHSL('default');
-        if( $amount ) {
-                   $hsl['lightness'] = ($hsl['lightness'] * 100) + $amount;
-                   $hsl['lightness'] = ($hsl['lightness'] > 100) ? 1:$hsl['lightness']/100;
-               } else {
-                   $hsl['lightness'] += (1-$hsl['lightness'])/2;
-               }
-        return $this->setLightness($hsl['lightness']);
-    }
-
-    public function darken($amount=10){
-        $hsl=$this->getHSL('default');
-       if( $amount ) {
-            $hsl['lightness'] = ($hsl['lightness'] * 100) - $amount;
-            $hsl['lightness'] = ($hsl['lightness'] < 0) ? 0:$hsl['lightness']/100;
-        } else {
-            $hsl['lightness'] = $hsl['lightness']/2 ;
-        }
-        return $this->setLightness($hsl['lightness']);
     }
 }

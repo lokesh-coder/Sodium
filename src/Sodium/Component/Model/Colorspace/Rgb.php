@@ -37,10 +37,10 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
 
     public static function regex()
     {
-        $regex['rgb'] = '/^rgb\(([-+]?[0-9]*\.?[0-9]*)%?,([-+]?[0-9]*\.?.*)%?,([-+]?[0-9]*.*)%?\)$/i';
-        $regex['red'] = '/^red\(([-+]?[0-9]*\.?[0-9]*)%?\)$/i';
-        $regex['green'] = '/^green\(([-+]?[0-9]*\.?[0-9]*)%?\)$/i';
-        $regex['blue'] = '/^blue\(([-+]?[0-9]*\.?[0-9]*)%?\)$/i';
+        $regex['rgb'] = '/^rgb\(\s?([-+]?[0-9]*\.?[0-9]*)%?\s?,(\s?[-+]?[0-9]*\.?.*)%?\s?,(\s?[-+]?[0-9]*.*)%?\s?\)$/i';
+        $regex['red'] = '/^red\(\s?([-+]?[0-9]*\.?[0-9]*)%?\s?\)$/i';
+        $regex['green'] = '/^green\(\s?([-+]?[0-9]*\.?[0-9]*)%?\s?\)$/i';
+        $regex['blue'] = '/^blue\(\s?([-+]?[0-9]*\.?[0-9]*)%?\s?\)$/i';
 
         return $regex;
     }
@@ -115,7 +115,7 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
                 );
                 break;
             default:
-                throw new Exception('Invalid Syntax');
+                throw new \Exception('Invalid Syntax');
         }
         return $value;
     }

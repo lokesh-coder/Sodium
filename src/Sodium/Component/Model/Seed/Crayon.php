@@ -64,7 +64,7 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
 
     private function format($string)
     {
-        $type = self::isValid($string, TRUE);
+        $type = self::isAcceptedFormat($string);
         switch ($type) {
             case 'crayon':
                 $string = ltrim($string, 'crayon');

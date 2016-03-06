@@ -21,6 +21,7 @@ class GarageCog extends CogConcrete implements CogInterface
         if (in_array($method, array_keys($loadedMethods))) {
             $class = $this->getGarageClass($method);
             $c = new $class($this->getCurrentInputModels());
+            $c->setEngine($this->getEngine());
             if (count($args) == 1) {
                 return $c->$method($args[0]);
             }

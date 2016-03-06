@@ -29,6 +29,8 @@ class Sodium extends Engine
 	    'Crayon'    => 'Sodium\Component\Model\Seed\Crayon',
 	    'Pantone'   => 'Sodium\Component\Model\Seed\Pantone',
 	    'Css'       => 'Sodium\Component\Model\Aggregate\Css',
+	    'Image'       => 'Sodium\Component\Model\Aggregate\Image',
+	    'Ico'       => 'Sodium\Component\Model\Aggregate\ico',
 	    'ColorLovers'=>'Sodium\Component\Model\Api\ColorLovers',
 	    'Kuler'=>'Sodium\Component\Model\Api\Kuler',
 	);

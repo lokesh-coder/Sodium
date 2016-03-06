@@ -4,6 +4,9 @@ namespace Sodium\Component\Model\Aggregate;
 
 use Sodium\Concrete\Component\Model\ModelConcrete;
 use Sodium\Contract\Component\Model\Aggregate\AggregateInterface;
+use Imagine\Gd\Imagine as Gd;
+use Imagine\Image\Box;
+use Imagine\Image\Point;
 
 class Image extends ModelConcrete implements AggregateInterface
 {
@@ -13,7 +16,6 @@ class Image extends ModelConcrete implements AggregateInterface
     protected $colors = array();
     private $thumbnailWidth = 20;
     private $thumbnailHeight = 20;
-    private $imagePrefixName = 'Image_Model';
 
     public function __construct($image = '')
     {
@@ -42,14 +44,8 @@ class Image extends ModelConcrete implements AggregateInterface
 
     public static function regex()
     {
-
         $regex['full'] = '/^img\(.*\)$/i';
         return $regex;
-    }
-
-    public function getImg()
-    {
-
     }
 
     public function setThumbnail($width, $height)
@@ -75,10 +71,9 @@ class Image extends ModelConcrete implements AggregateInterface
         return 'img(' . $path . ')';
     }
 
-    public function getCollection($model = Model::HEX)
+    public function getCollection($model = 'Sodium\Component\Model\Seed\Hex')
     {
-        $col = $this->getColors();
-        return $this->convert($col)->export(Export::MTS, array('standard' => true, 'model' => $model));
+        return  $this->getColors();
     }
 
     public function getCollectionCount()
@@ -88,8 +83,8 @@ class Image extends ModelConcrete implements AggregateInterface
 
     private function getColors()
     {
-        $create = ImageTool::create();
-        $image = $create->open($this->image);
+        $imagine=new Gd();
+        $image = $imagine->open($this->image);
         $thumb = $image->thumbnail(new Box($this->thumbnailWidth, $this->thumbnailHeight));
         return $this->histogram($thumb);
     }
@@ -111,10 +106,5 @@ class Image extends ModelConcrete implements AggregateInterface
         }
         arsort($colors, SORT_NUMERIC);
         return $colors;
-    }
-
-    private function convert(array $values)
-    {
-        return new Sodium(array_keys($values));
     }
 }

@@ -22,11 +22,11 @@
         "imagine/imagine": "dev-master",
         "skyzyx/adobe-swatch-exchange": "2.1",
         "sybio/gif-creator": "1.0.0",
-        "sybio/gif-frame-extractor": "1.0.0"
+        "sybio/gif-frame-extractor": "1.0.0",
+        "phpunit/php-code-coverage": "^3.3"
     },
     "require-dev":{
-        "symfony/var-dumper": "2.6.*@dev",
-        "phpunit/phpunit": "4.7.x-dev",
+         "symfony/var-dumper": "2.6.*@dev",
         "mockery/mockery": "0.9.3",
         "squizlabs/php_codesniffer": "2.5.1"
     }

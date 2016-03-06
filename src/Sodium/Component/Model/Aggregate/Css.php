@@ -31,6 +31,8 @@ class Css extends ModelConcrete implements AggregateInterface
     public static function regex()
     {
         $regex['css'] = '/^css\(.*\)$/i';
+        $regex['scss'] = '/^scss\(.*\)$/i';
+        $regex['sass'] = '/^sass\(.*\)$/i';
         return $regex;
     }
 
@@ -50,6 +52,10 @@ class Css extends ModelConcrete implements AggregateInterface
         $type = self::isAcceptedFormat($string, TRUE);
         switch ($type) {
             case 'css':
+            case 'scss':
+            case 'sass':
+                $string = ltrim($string, 'sass');
+                $string = ltrim($string, 'scss');
                 $string = ltrim($string, 'css');
                 $string = ltrim($string, '(');
                 $string = rtrim($string, ')');
@@ -61,7 +67,7 @@ class Css extends ModelConcrete implements AggregateInterface
                 break;
 
             default:
-                throw new Exception('invalid Syntax');
+                throw new \Exception('invalid Syntax');
         }
         return $content;
     }
