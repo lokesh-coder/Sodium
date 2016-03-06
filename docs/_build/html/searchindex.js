@@ -1,0 +1,1 @@
+Search.setIndex({envversion:47,filenames:["index","intro"],objects:{},objnames:{},objtypes:{},terms:{content:0,index:0,introduct:0,modul:0,page:0,search:0},titles:["Welcome to Sodium&#8217;s documentation!","Introduction"],titleterms:{buddi:[],document:0,hello:[],indic:0,introduct:1,sodium:0,tabl:0,welcom:0}})
