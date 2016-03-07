@@ -2,7 +2,21 @@
     "name": "lokesh/sodium",
     "type": "color-library",
     "description": "A Smart color library to create, convert, mix, generate, export colors.",
-    "keywords": ["color", "colour", "convert", "gif", "image", "rgb", "hex", "hsl", "hsv", "hsb", "cmy", "cmyk", "lab"],
+    "keywords": [
+        "color",
+        "colour",
+        "convert",
+        "gif",
+        "image",
+        "rgb",
+        "hex",
+        "hsl",
+        "hsv",
+        "hsb",
+        "cmy",
+        "cmyk",
+        "lab"
+    ],
     "homepage": "http://github.com/lokesh-coder/Sodium",
     "license": "MIT",
     "authors": [
@@ -22,11 +36,11 @@
         "imagine/imagine": "dev-master",
         "skyzyx/adobe-swatch-exchange": "2.1",
         "sybio/gif-creator": "1.0.0",
-        "sybio/gif-frame-extractor": "1.0.0",
-        "phpunit/php-code-coverage": "^3.3"
+        "sybio/gif-frame-extractor": "1.0.0"
     },
-    "require-dev":{
-         "symfony/var-dumper": "2.6.*@dev",
+    "require-dev": {
+        "phpunit/phpunit": "5.0.*",
+        "symfony/var-dumper": "2.6.*@dev",
         "mockery/mockery": "0.9.3",
         "squizlabs/php_codesniffer": "2.5.1"
     }
