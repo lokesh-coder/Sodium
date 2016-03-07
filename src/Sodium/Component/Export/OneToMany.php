@@ -9,11 +9,12 @@ class OneToMany extends ExportConcrete implements ExportInterface
 {
     public function export()
     {
-        $models=$this->getInputProcessor()->getCurrentInputModels();
-        $colors=array();
-        foreach ($models as $name=>$model) {
-            $colors[]=$model->getStandardOutput();
+        $models = $this->getInputProcessor()->getCurrentInputModels();
+        $colors = array();
+        foreach ($models as $name => $model) {
+            $colors[] = $model->getStandardOutput();
         }
+
         return $this->exportAdapter->export($colors);
     }
 }

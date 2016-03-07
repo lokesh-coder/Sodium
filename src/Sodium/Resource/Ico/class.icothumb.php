@@ -1,15 +1,16 @@
 <?php
 /**
- * class.icothumb.php
+ * class.icothumb.php.
  *
  * @(#) $Header: /home/jeph/repository/classes/ico/class.icothumb.php,v 0.1 2005/06/09 10:05:41 jeph Exp $
  **/
 
 /**
  * Class IcoThumb
- * Create a thumbnail with an Icon
+ * Create a thumbnail with an Icon.
  *
  * @author Diogo Resende <me@diogoresende.net>
+ *
  * @version 0.1
  *
  * @dependency  Class    Ico
@@ -21,61 +22,61 @@
  **/
 class IcoThumb
 {
-    /**
+    /*
      * IcoThumb::ico
      * Icon resource
      *
      * @type resource
      * @var  public
      **/
-    var $ico;
+    public $ico;
 
-    /**
+    /*
      * IcoThumb::padding
      * Paddings for the thumbnail
      *
      * @type array
      * @var  public
      **/
-    var $padding = array(
+    public $padding = array(
         'left' => 10,
         'top' => 5,
         'right' => 10,
         'bottom' => 5,
-        'middle' => 20
+        'middle' => 20,
     );
 
-    /**
+    /*
      * IcoThumb::view_info
      * View icon info below each image on thumbnail
      *
      * @type boolean
      * @var  public
      **/
-    var $view_info = true;
+    public $view_info = true;
 
-    /**
+    /*
      * IcoThumb::use_diferent_depths
      * Use always one color depth per size or use all
      *
      * @type boolean
      * @var  public
      **/
-    var $use_diferent_depths = false;
+    public $use_diferent_depths = false;
 
-    /**
+    /*
      * IcoThumb::font
      * Font for size and depth strings
      *
      * @type array
      * @var  public
      **/
-    var $font = array(
+    public $font = array(
         'size' => 2,
-        'depth' => 1
+        'depth' => 1,
     );
 
-    /**
+    /*
      * IcoThumb::color
      * Color for size and depth strings and also the line
      * between the icon and strings
@@ -83,32 +84,31 @@ class IcoThumb
      * @type array
      * @var  public
      **/
-    var $color = array(
+    public $color = array(
         'size' => array(100, 100, 100),
         'depth' => array(100, 100, 100),
-        'line' => array(180, 180, 180)
+        'line' => array(180, 180, 180),
     );
 
-    /**
+    /*
      * IcoThumb::max_size
      * Maximum image size inside thumbnail
      *
      * @type integer
      * @var  public
      **/
-    var $max_size = 128;
+    public $max_size = 128;
 
     /**
      * IcoThumb::IcoThumb()
-     * Class constructor
+     * Class constructor.
      *
-     * @param   optional    string   $path   Path to ICO file
-     * @return              void
+     * @param optional    string $path Path to ICO file
      **/
-    function IcoThumb($path = '')
+    public function IcoThumb($path = '')
     {
         if (!class_exists('Ico')) {
-            include dirname(__FILE__) . '/class.ico.php';
+            include dirname(__FILE__).'/class.ico.php';
         }
 
         if (strlen($path) > 0) {
@@ -119,12 +119,11 @@ class IcoThumb
     /**
      * IcoThumb::LoadIco()
      * Load an ICO file (don't need to call this is if fill the
-     * parameter in the class constructor)
+     * parameter in the class constructor).
      *
-     * @param   string $path Path to ICO file
-     * @return  void
+     * @param string $path Path to ICO file
      **/
-    function LoadIco($path)
+    public function LoadIco($path)
     {
         $this->ico = new Ico($path);
         $this->ico->bgcolor = array(255, 255, 255);
@@ -132,32 +131,33 @@ class IcoThumb
 
     /**
      * IcoThumb::GetThumb()
-     * Return an image resource with the thumbnail
+     * Return an image resource with the thumbnail.
      *
-     * @param   integer $total_icons Total icons in thumbnail
-     * @return  resource    Image resource (Thumbnail)
+     * @param int $total_icons Total icons in thumbnail
+     *
+     * @return resource Image resource (Thumbnail)
      **/
-    function GetThumb($total_icons = 0)
+    public function GetThumb($total_icons = 0)
     {
         if ($total_icons <= 0 || $total_icons > count($this->ico->formats)) {
             $total_icons = count($this->ico->formats);
         }
 
-        /**
+        /*
          * Get a list ordered by size desc, depth desc
          **/
         $icons = array();
-        for ($i = 0; $i < count($this->ico->formats); $i++) {
+        for ($i = 0; $i < count($this->ico->formats); ++$i) {
             if ($this->ico->formats[$i]['Width'] <= $this->max_size) {
                 $icons[] = array(
                     'index' => $i,
                     'size' => $this->ico->formats[$i]['Width'],
-                    'depth' => $this->ico->formats[$i]['BitCount']
+                    'depth' => $this->ico->formats[$i]['BitCount'],
                 );
             }
         }
-        for ($i = 0; $i < count($icons); $i++) {
-            for ($j = $i + 1; $j < count($icons); $j++) {
+        for ($i = 0; $i < count($icons); ++$i) {
+            for ($j = $i + 1; $j < count($icons); ++$j) {
                 if ($icons[$j]['size'] > $icons[$i]['size']) {
                     $tmp = $icons[$j];
                     $icons[$j] = $icons[$i];
@@ -170,7 +170,7 @@ class IcoThumb
             }
         }
 
-        /**
+        /*
          * Chose icon indexes
          **/
         $last_size = 0;
@@ -178,16 +178,20 @@ class IcoThumb
         $p = 0;
         while ($total_icons > 0) {
             if (!$this->use_diferent_depths) {
-                while (isset($icons[$p + 1]) && $icons[$p]['size'] == $last_size) $p++;
+                while (isset($icons[$p + 1]) && $icons[$p]['size'] == $last_size) {
+                    $p++;
+                }
             }
-            if (!isset($icons[$p])) break;
+            if (!isset($icons[$p])) {
+                break;
+            }
             $chosen_icons[] = $icons[$p]['index'];
             $last_size = $icons[$p++]['size'];
-            $total_icons--;
+            --$total_icons;
         }
 
         $width = $this->padding['left'];
-        for ($i = 0; $i < count($chosen_icons); $i++) {
+        for ($i = 0; $i < count($chosen_icons); ++$i) {
             if ($i > 0) {
                 $width += $this->padding['middle'];
             }
@@ -207,7 +211,7 @@ class IcoThumb
 
         $x = $this->padding['left'];
         $y = $this->padding['top'] + $this->ico->formats[$chosen_icons[0]]['Height'];
-        for ($i = 0; $i < count($chosen_icons); $i++) {
+        for ($i = 0; $i < count($chosen_icons); ++$i) {
             $im_ico = $this->ico->GetIcon($chosen_icons[$i]);
 
             $w = $this->ico->formats[$chosen_icons[$i]]['Width'];
@@ -223,10 +227,10 @@ class IcoThumb
             $linecolor = $this->ico->AllocateColor($im, $this->color['line'][0], $this->color['line'][1], $this->color['line'][2]);
             $sizecolor = $this->ico->AllocateColor($im, $this->color['size'][0], $this->color['size'][1], $this->color['size'][2]);
             $depthcolor = $this->ico->AllocateColor($im, $this->color['depth'][0], $this->color['depth'][1], $this->color['depth'][2]);
-            for ($i = 0; $i < count($chosen_icons); $i++) {
+            for ($i = 0; $i < count($chosen_icons); ++$i) {
                 imageline($im, $x, $y, $x + $this->ico->formats[$chosen_icons[$i]]['Width'], $y, $linecolor);
-                $this->ImageStringCentered($im, $x, $y + 2, $this->ico->formats[$chosen_icons[$i]]['Width'], $this->font['size'], $sizecolor, $this->ico->formats[$chosen_icons[$i]]['Width'] . 'x' . $this->ico->formats[$chosen_icons[$i]]['Height']);
-                $this->ImageStringCentered($im, $x, $y + imagefontheight($this->font['size']) + 2, $this->ico->formats[$chosen_icons[$i]]['Width'], $this->font['depth'], $depthcolor, $this->ico->formats[$chosen_icons[$i]]['BitCount'] . ' bits');
+                $this->ImageStringCentered($im, $x, $y + 2, $this->ico->formats[$chosen_icons[$i]]['Width'], $this->font['size'], $sizecolor, $this->ico->formats[$chosen_icons[$i]]['Width'].'x'.$this->ico->formats[$chosen_icons[$i]]['Height']);
+                $this->ImageStringCentered($im, $x, $y + imagefontheight($this->font['size']) + 2, $this->ico->formats[$chosen_icons[$i]]['Width'], $this->font['depth'], $depthcolor, $this->ico->formats[$chosen_icons[$i]]['BitCount'].' bits');
                 $x += $this->padding['middle'] + $this->ico->formats[$chosen_icons[$i]]['Width'];
             }
         }
@@ -238,18 +242,17 @@ class IcoThumb
 
     /**
      * IcoThumb::ImageStringCentered()
-     * Draw a string on the image centered
+     * Draw a string on the image centered.
      *
-     * @param   resource &$im Image resource
-     * @param   integer $left X coordinate
-     * @param   integer $top Y coordinate
-     * @param   integer $width Width of box to draw string inside
-     * @param   integer $font Font
-     * @param   integer $color Color index
-     * @param   string $text String
-     * @return  void
+     * @param resource &$im   Image resource
+     * @param int      $left  X coordinate
+     * @param int      $top   Y coordinate
+     * @param int      $width Width of box to draw string inside
+     * @param int      $font  Font
+     * @param int      $color Color index
+     * @param string   $text  String
      **/
-    function ImageStringCentered(&$im, $left, $top, $width, $font, $color, $text)
+    public function ImageStringCentered(&$im, $left, $top, $width, $font, $color, $text)
     {
         $text_width = imagefontwidth($font) * strlen($text);
         $left += (($width - $text_width) / 2);
@@ -257,5 +260,3 @@ class IcoThumb
         imagestring($im, $font, $left, $top, $text, $color);
     }
 }
-
-?>

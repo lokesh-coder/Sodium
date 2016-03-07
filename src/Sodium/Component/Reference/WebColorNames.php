@@ -7,8 +7,6 @@ use Sodium\Contract\Component\ReferenceInterface;
 
 class WebColorNames extends ReferenceConcrete implements ReferenceInterface
 {
-
-
     public static function get()
     {
         $colors = array(
@@ -159,8 +157,9 @@ class WebColorNames extends ReferenceConcrete implements ReferenceInterface
             'WhiteSmoke' => '#f5f5f5',
             'Yellow' => '#ffff00',
             'YellowGreen' => '#9acd32',
-            'NoColor' => '#000000'
+            'NoColor' => '#000000',
         );
+
         return $colors;
     }
 }

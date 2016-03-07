@@ -31,18 +31,21 @@ class InputProcessor implements ProcessorInterface
         $duplicate->rawInputs = array();
         $duplicate->rawInputs[] = $input;
         $duplicate->currentInput = is_array($input) ? $input[0] : $input;
+
         return $duplicate;
     }
 
     public function pushInput($input)
     {
         $this->rawInputs[] = $input;
+
         return $this->process(self::$registeredModels);
     }
 
     public function useInput($index)
     {
         $this->currentInput = $this->formattedInputs[$index];
+
         return $this->process(self::$registeredModels);
     }
 
@@ -55,6 +58,7 @@ class InputProcessor implements ProcessorInterface
         $duplicate->inputsWithModel = array();
         $duplicate->inputsWithModels = array();
         $duplicate->currentInput = '';
+
         return $duplicate;
     }
 
@@ -67,6 +71,7 @@ class InputProcessor implements ProcessorInterface
         $this->formattedInputs = $resolver->getInputs();
         $this->inputsWithModel = $resolver->getModels();
         $this->inputsWithModels = InputObserver::init($this->inputsWithModel, $registeredModels)->observe();
+
         return $this;
     }
 
@@ -99,7 +104,8 @@ class InputProcessor implements ProcessorInterface
     }
     public function setCurrentInputModel($model)
     {
-        $this->inputsWithModel[$this->currentInput]=$model;
+        $this->inputsWithModel[$this->currentInput] = $model;
+
         return $this;
     }
     public function getCurrentInputModels()
@@ -108,8 +114,8 @@ class InputProcessor implements ProcessorInterface
     }
     public function setCurrentInputModels($models)
     {
-        $this->inputsWithModels[$this->currentInput]=$models;
+        $this->inputsWithModels[$this->currentInput] = $models;
+
         return $this;
     }
-
 }

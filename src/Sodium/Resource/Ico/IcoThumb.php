@@ -4,7 +4,6 @@ namespace Sodium\Resource\Ico;
 
 class IcoThumb
 {
-
     public function __construct($file)
     {
         $this->_filename = $file;
@@ -19,5 +18,4 @@ class IcoThumb
         imagepng($im, $path);
         imagedestroy($im);
     }
-
 }

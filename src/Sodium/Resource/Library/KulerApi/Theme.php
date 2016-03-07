@@ -1,13 +1,15 @@
 <?php
 /**
- * Kuler API library for PHP
+ * Kuler API library for PHP.
  *
  * @author Gabriel Somoza (me@gabrielsomoza.com)
+ *
  * @link http://gabrielsomoza.com
+ *
  * @version 0.1.1
  *
  * @category Kuler
- * @package PHP-Kuler-API-Library
+ *
  * @link http://learn.adobe.com/wiki/display/kulerdev/B.+Feeds
  *
  * @copyright Copyright (c) 2011-2012, Gabriel Somoza
@@ -24,17 +26,13 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
- *
  */
 
 /**
  * Provides encapsulation for an XML Theme retrieved from the API.
- *
- * @package PHP-Kuler-API-Library
  */
 class Kuler_Theme
 {
-
     public $_theme;
 
     /**
@@ -48,8 +46,9 @@ class Kuler_Theme
     {
         $namespaces = $rssItem->getDocNamespaces();
         $this->_theme = $rssItem->children($namespaces['kuler'])->themeItem;
-        if (!isset($this->_theme->themeID))
+        if (!isset($this->_theme->themeID)) {
             throw new Kuler_Exception('Error loading the Kuler item');
+        }
     }
 
     /**
@@ -57,64 +56,68 @@ class Kuler_Theme
      * SimpleXMLElement and should be properly casted in most situations.
      *
      * @param string $name
+     *
      * @return SimpleXMLElement The value of retrieving the "theme{$name}" property from the internal $_theme object.
      */
     public function __get($name)
     {
-        $property = 'theme' . ucfirst($name);
-        if (property_exists($this->_theme, $property))
+        $property = 'theme'.ucfirst($name);
+        if (property_exists($this->_theme, $property)) {
             return $this->_theme->$property;
-        else
-            throw new Kuler_Exception('Property \'' . $name . '\' not found');
+        } else {
+            throw new Kuler_Exception('Property \''.$name.'\' not found');
+        }
     }
 
     /**
-     * Retrieves the theme's author's name
+     * Retrieves the theme's author's name.
      */
     public function getAuthorLabel()
     {
-        return (string)$this->_theme->themeAuthor->authorLabel;
+        return (string) $this->_theme->themeAuthor->authorLabel;
     }
 
     /**
-     * Retrieves the theme's author's Kuler ID
+     * Retrieves the theme's author's Kuler ID.
      */
     public function getAuthorID()
     {
-        return (int)$this->_theme->themeAuthor->authorID;
+        return (int) $this->_theme->themeAuthor->authorID;
     }
 
     /**
-     * Retrieves the theme's title
+     * Retrieves the theme's title.
      */
     public function getTitle()
     {
-        return (string)$this->_theme->themeTitle;
+        return (string) $this->_theme->themeTitle;
     }
 
     /**
      * Returns an Array of strings where each string is the HEX color of a swatch
      * in the theme.
      *
-     * @param boolean $prependPound If set, it will prepend the pound symbol (#)
-     * to each color - useful for direct HTML usage for example.
-     * @return Array Each swatch in the theme in its hexadecimal format.
+     * @param bool $prependPound If set, it will prepend the pound symbol (#)
+     *                           to each color - useful for direct HTML usage for example.
+     *
+     * @return array Each swatch in the theme in its hexadecimal format.
      */
     public function getSwatchesHex($prependPound = true)
     {
         $hex = array();
         foreach ($this->swatches->swatch as $swatch) {
-            $hex[] = ($prependPound ? '#' : '') . (string)$swatch->swatchHexColor;
+            $hex[] = ($prependPound ? '#' : '').(string) $swatch->swatchHexColor;
         }
+
         return $hex;
     }
 
     /**
-     * Retrieves the thumbnail URL of the theme
+     * Retrieves the thumbnail URL of the theme.
      */
     public function getThumbnail()
     {
-        return Kuler_Api::getThemeThumbnail((int)$this->ID);
+        return Kuler_Api::getThemeThumbnail((int) $this->ID);
     }
 
     /**
@@ -124,7 +127,6 @@ class Kuler_Theme
      */
     public function getUrl()
     {
-        return Kuler_Api::viewThemeUrl((int)$this->ID);
+        return Kuler_Api::viewThemeUrl((int) $this->ID);
     }
-
 }

@@ -34,35 +34,35 @@ class Cmyk  extends ModelConcrete implements ColorspaceInterface,ConversionAware
         }
     }
 
-    static function regex()
+    public static function regex()
     {
         $regex['cmyk'] = '/^cmyk\(([-+]?[0-9]*\.?[0-9]*)%?,([-+]?[0-9]*\.?.*)%?,([-+]?[0-9]*.*)%?,([-+]?[0-9]*.*)%?\)$/i';
         $regex['key'] = '/^key\(([-+]?[0-9]*.*)%?\)$/i';
+
         return $regex;
     }
 
     public function getStandardOutput()
     {
-        return 'cmyk(' . $this->cyan . ',' . $this->magenta . ',' . $this->yellow . ',' . $this->key . ')';
+        return 'cmyk('.$this->cyan.','.$this->magenta.','.$this->yellow.','.$this->key.')';
     }
 
     public function getDefaultOutput()
     {
         return array(
-            'cyan'    => $this->cyan,
+            'cyan' => $this->cyan,
             'magenta' => $this->magenta,
-            'yellow'  => $this->yellow,
-            'key'     => $this->key
+            'yellow' => $this->yellow,
+            'key' => $this->key,
         );
     }
 
-    function toRGB()
+    public function toRGB()
     {
         $cyan = $this->cyan / 100;
         $magenta = $this->magenta / 100;
         $yellow = $this->yellow / 100;
         $key = $this->key / 100;
-
 
         $cyan = ($cyan * (1 - $key) + $key);
         $magenta = ($magenta * (1 - $key) + $key);
@@ -75,11 +75,11 @@ class Cmyk  extends ModelConcrete implements ColorspaceInterface,ConversionAware
         return array(
             $red,
             $green,
-            $blue
+            $blue,
         );
     }
 
-    function fromRGB(array $rgb)
+    public function fromRGB(array $rgb)
     {
         $cyan = 1 - ($rgb[0] / 255);
         $magenta = 1 - ($rgb[1] / 255);
@@ -113,13 +113,12 @@ class Cmyk  extends ModelConcrete implements ColorspaceInterface,ConversionAware
             $this->cyan,
             $this->magenta,
             $this->yellow,
-            $this->key
+            $this->key,
         );
     }
 
     protected function format($string)
     {
-
         $type = self::isValid($string, true);
         switch ($type) {
             case 'cmyk':
@@ -135,18 +134,18 @@ class Cmyk  extends ModelConcrete implements ColorspaceInterface,ConversionAware
                     0,
                     0,
                     0,
-                    $string
+                    $string,
                 );
                 break;
             default:
                 throw new Exception('invalid Syntax');
         }
+
         return $value;
     }
 
     protected function filterInput($value)
     {
-
         if (is_array($value)) {
             $cmyk = array();
             $last = end($value);
@@ -155,6 +154,7 @@ class Cmyk  extends ModelConcrete implements ColorspaceInterface,ConversionAware
                 $cmyk[] = $this->validateInput($val);
             }
             $cmyk[] = $this->validateInput($last, true);
+
             return $cmyk;
         } else {
             return $this->validateInput($value);
@@ -163,7 +163,6 @@ class Cmyk  extends ModelConcrete implements ColorspaceInterface,ConversionAware
 
     protected function validateInput($value, $key = false)
     {
-
         $max = self::MAX;
         if ($key) {
             $max = self::KEY_MAX;
@@ -182,6 +181,7 @@ class Cmyk  extends ModelConcrete implements ColorspaceInterface,ConversionAware
         } elseif ($value > $max) {
             $value = $max;
         }
+
         return intval($value);
     }
 }

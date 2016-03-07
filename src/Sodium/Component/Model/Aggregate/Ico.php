@@ -4,12 +4,11 @@ namespace Sodium\Component\Model\Aggregate;
 
 use Sodium\Concrete\Component\Model\ModelConcrete;
 use Sodium\Contract\Component\Model\Aggregate\AggregateInterface;
-use Sodium\Component\Model\Aggregate\Image;
 use Sodium\Resource\Ico\IcoThumb;
 
 class Ico extends ModelConcrete implements AggregateInterface
 {
-    public static $canExportable = FALSE;
+    public static $canExportable = false;
     protected $filename;
     protected $colors = array();
     private $filePrefixName = 'Temp_Ico_File';
@@ -18,14 +17,14 @@ class Ico extends ModelConcrete implements AggregateInterface
 
     public function __construct($ico = '')
     {
-        if ($ico != '')
+        if ($ico != '') {
             $this->filename = $this->format($ico);
+        }
     }
 
     protected function format($string)
     {
-
-        $type = self::isAcceptedFormat($string, TRUE);
+        $type = self::isAcceptedFormat($string, true);
         switch ($type) {
             case 'ico':
                 $string = ltrim($string, 'ico');
@@ -37,15 +36,17 @@ class Ico extends ModelConcrete implements AggregateInterface
             default:
                 $value = '';
         }
-        if (!file_exists($value))
-            throw new Exception('ico file ' . realpath($value) . ' not exists');
+        if (!file_exists($value)) {
+            throw new Exception('ico file '.realpath($value).' not exists');
+        }
+
         return $value;
     }
 
     public static function regex()
     {
-
         $regex['ico'] = '/^ico\(.*\)$/i';
+
         return $regex;
     }
 
@@ -62,6 +63,7 @@ class Ico extends ModelConcrete implements AggregateInterface
     public function getCollection()
     {
         $image = $this->initImage();
+
         return $image->getCollection();
     }
 
@@ -73,13 +75,14 @@ class Ico extends ModelConcrete implements AggregateInterface
     private function initImage()
     {
         $ico = new IcoThumb($this->filename);
-        $v=$ico->saveImage($this->filePath());
+        $v = $ico->saveImage($this->filePath());
         d($this->filePath());
-        return new Image('img(' . $this->filePath() . ')');
+
+        return new Image('img('.$this->filePath().')');
     }
 
     private function filePath()
     {
-        return $base_dir = $_SERVER['DOCUMENT_ROOT'] . $this->filePrefixName . '.' . self::IMG_FORMAT;
+        return $base_dir = $_SERVER['DOCUMENT_ROOT'].$this->filePrefixName.'.'.self::IMG_FORMAT;
     }
 }

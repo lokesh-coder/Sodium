@@ -9,6 +9,6 @@ class Json extends ExportAdapterFileConcrete implements ExportAdapterFileInterfa
 {
     public function export(array $colors)
     {
-        $this->createFile($this->name.'.json',$this->path,json_encode($colors));
+        $this->createFile($this->name.'.json', $this->path, json_encode($colors));
     }
 }

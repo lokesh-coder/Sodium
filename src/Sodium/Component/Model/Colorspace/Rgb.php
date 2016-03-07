@@ -8,7 +8,6 @@ use Sodium\Contract\Component\Model\ConversionAwareInterface;
 
 class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareInterface
 {
-
     const MIN = 0;
     const MAX = 255;
 
@@ -53,6 +52,7 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
     public function fromRGB(array $rgb)
     {
         $this->setProperties($rgb);
+
         return array(
             $this->red,
             $this->green,
@@ -71,12 +71,11 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
 
     public function getStandardOutput()
     {
-        return 'rgb(' . $this->red . ',' . $this->green . ',' . $this->blue . ')';
+        return 'rgb('.$this->red.','.$this->green.','.$this->blue.')';
     }
 
     protected function formatInput($string)
     {
-
         $type = self::isAcceptedFormat($string, true);
         switch ($type) {
             case 'rgb':
@@ -117,6 +116,7 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
             default:
                 throw new \Exception('Invalid Syntax');
         }
+
         return $value;
     }
 
@@ -127,6 +127,7 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
             foreach ($value as $key => $val) {
                 $rgb[] = $this->validateInput($val);
             }
+
             return $rgb;
         } else {
             return $this->validateInput($value);
@@ -135,7 +136,6 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
 
     protected function validateInput($value)
     {
-
         if (strpos($value, '%') !== false) {
             $value = rtrim($value, '%');
             $value = (float) $value;
@@ -165,11 +165,12 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
         if (is_array($value) && $format == 'object') {
             return $this;
         }
-        if (is_array($value)) {  
+        if (is_array($value)) {
             $new_values = array();
             foreach ($value as $val) {
-                $new_values[] = $this->formatOutput($val, $format,true);
+                $new_values[] = $this->formatOutput($val, $format, true);
             }
+
             return $new_values;
         }
         if ($format == 'percentage') {
@@ -178,6 +179,7 @@ class Rgb extends ModelConcrete implements ColorspaceInterface, ConversionAwareI
         if ($format == 'float') {
             return floatval(number_format($value / self::MAX, $this->decimalLimit));
         }
+
         return $value;
     }
 }

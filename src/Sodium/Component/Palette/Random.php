@@ -9,6 +9,6 @@ class Random extends PaletteConcrete implements PaletteInterface
 {
     public function generate()
     {
-        return array('#2f8cab','green','blue');
+        return array('#2f8cab', 'green', 'blue');
     }
 }

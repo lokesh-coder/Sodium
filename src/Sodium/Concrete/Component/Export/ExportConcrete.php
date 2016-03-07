@@ -11,9 +11,9 @@ abstract class ExportConcrete
     protected $inputProcessor;
     protected $model;
 
-    public function __construct(ExportAdapterInterface $exportAdapter, $model='Sodium\Component\Model\Seed\Hex')
+    public function __construct(ExportAdapterInterface $exportAdapter, $model = 'Sodium\Component\Model\Seed\Hex')
     {
-        $this->model=$model;
+        $this->model = $model;
         $this->exportAdapter = $exportAdapter;
     }
 
@@ -26,6 +26,4 @@ abstract class ExportConcrete
     {
         $this->inputProcessor = $inputProcessor;
     }
-
-
 }

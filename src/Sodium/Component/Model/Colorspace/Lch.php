@@ -30,7 +30,6 @@ class Lch extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function format($string)
     {
-
         $type = self::isValid($string, true);
         switch ($type) {
             case 'lch':
@@ -42,41 +41,43 @@ class Lch extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
             default:
                 throw new Exception('invalid Syntax');
         }
+
         return $value;
     }
 
-    static function regex()
+    public static function regex()
     {
         $regex['lch'] = '/^lch\(([-+]?[0-9]*\.?[0-9]*),([-+]?[0-9]*\.?.*),([-+]?[0-9]*.*)\)$/i';
+
         return $regex;
     }
 
     public function getStandardOutput()
     {
-        return 'lch(' . $this->lightness . ',' . $this->chroma . ',' . $this->hue . ')';
-
+        return 'lch('.$this->lightness.','.$this->chroma.','.$this->hue.')';
     }
 
     public function getDefaultOutput()
     {
         return array(
             'lightness' => $this->lightness,
-            'chroma'    => $this->chroma,
-            'hue'       => $this->hue
+            'chroma' => $this->chroma,
+            'hue' => $this->hue,
         );
     }
 
-    function toRGB()
+    public function toRGB()
     {
         $radian = $this->hue * (pi() / 180);
         $a = cos($radian) * $this->chroma;
         $b = sin($radian) * $this->chroma;
-        $lab = 'lab(' . $this->lightness . ',' . $a . ',' . $b . ')';
+        $lab = 'lab('.$this->lightness.','.$a.','.$b.')';
         $lab_model = new Lab($lab);
+
         return $lab_model->toRGB();
     }
 
-    function fromRGB(array $rgb)
+    public function fromRGB(array $rgb)
     {
         $lab_model = new Lab();
         $lab = $lab_model->fromRGB($rgb);
@@ -99,7 +100,7 @@ class Lch extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array(
             $this->lightness,
             $this->chroma,
-            $this->hue
+            $this->hue,
         );
     }
 }

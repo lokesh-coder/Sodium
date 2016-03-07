@@ -7,8 +7,6 @@ use Sodium\Contract\Component\ReferenceInterface;
 
 class Pantone extends ReferenceConcrete implements ReferenceInterface
 {
-
-
     public static function get()
     {
         $pantone = array(

@@ -4,7 +4,7 @@ namespace Sodium\Concrete\Processor\Input;
 
 abstract class InputFormatConcrete
 {
-    protected $formats=array();
+    protected $formats = array();
 
     public function setFormats($formats)
     {
@@ -15,5 +15,4 @@ abstract class InputFormatConcrete
     {
         return $this->formats;
     }
-
 }

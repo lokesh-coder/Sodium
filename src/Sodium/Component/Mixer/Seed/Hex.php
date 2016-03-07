@@ -17,5 +17,4 @@ class Hex extends HexModel
     {
         return $this->_model->getHex();
     }
-
 }

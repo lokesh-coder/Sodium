@@ -7,8 +7,6 @@ use Sodium\Contract\Component\ReferenceInterface;
 
 class WebSafeColors extends ReferenceConcrete implements ReferenceInterface
 {
-
-
     public static function get()
     {
         $websafe_colors = array(
@@ -227,7 +225,7 @@ class WebSafeColors extends ReferenceConcrete implements ReferenceInterface
             '#ffff66',
             '#ffff99',
             '#ffffcc',
-            '#ffffff'
+            '#ffffff',
         );
 
         return $websafe_colors;

@@ -28,7 +28,7 @@ class GarageCog extends CogConcrete implements CogInterface
 
             return $c->$method($args[0]);
         }
-        throw new \Exception('Garage Method ' . $method . ' not found.');
+        throw new \Exception('Garage Method '.$method.' not found.');
     }
 
     public function getGarages()
@@ -40,6 +40,7 @@ class GarageCog extends CogConcrete implements CogInterface
                 $methods[$name->name] = $name->class;
             }
         }
+
         return $methods;
     }
 
@@ -47,12 +48,14 @@ class GarageCog extends CogConcrete implements CogInterface
     {
         $reflectionClass = new \ReflectionClass($class);
         $methods = $reflectionClass->getMethods(\ReflectionMethod::IS_PUBLIC);
+
         return $methods;
     }
 
     public function getGarageClass($method)
     {
         $garages = $this->getGarages();
+
         return $garages[$method];
     }
 }

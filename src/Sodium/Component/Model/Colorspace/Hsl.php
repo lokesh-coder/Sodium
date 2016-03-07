@@ -8,7 +8,7 @@ use Sodium\Contract\Component\Model\ConversionAwareInterface;
 
 class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareInterface
 {
-    protected $hsl=array();
+    protected $hsl = array();
     protected $hue = 0;
     protected $saturation = 0;
     protected $lightness = 0;
@@ -22,7 +22,6 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     public function __construct($hsl = '')
     {
-
         if ($hsl != '') {
             $this->setProperties($this->format($hsl));
         }
@@ -40,16 +39,16 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function filterInput($value)
     {
-
         if (is_array($value)) {
             $hsl = array();
 
             foreach ($value as $key => $val) {
-                if($key==0)
-                    $type='hue';
-                else
-                    $type='';
-                $hsl[] = $this->validateInput($val,$type);
+                if ($key == 0) {
+                    $type = 'hue';
+                } else {
+                    $type = '';
+                }
+                $hsl[] = $this->validateInput($val, $type);
             }
 
             return $hsl;
@@ -60,7 +59,6 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function validateInput($value, $key = '')
     {
-
         $max = self::MAX;
         if ($key == 'hue') {
             $max = self::HUE_MAX;
@@ -86,7 +84,6 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function format($string)
     {
-
         $type = self::isAcceptedFormat($string, true);
         switch ($type) {
             case 'hsl':
@@ -119,10 +116,11 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
             default:
                 throw new Exception('invalid Syntax');
         }
+
         return $value;
     }
 
-    static function regex()
+    public static function regex()
     {
         $regex['hsl'] = '/^hsl\(([-+]?[0-9]*\.?[0-9]*)%?,([-+]?[0-9]*\.?.*)%?,([-+]?[0-9]*.*)%?\)$/i';
         $regex['hue'] = '/^hue\(([-+]?[0-9]*\.?[0-9]*)%?\)$/i';
@@ -134,19 +132,19 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     public function getStandardOutput()
     {
-        return 'hsl(' . $this->hue . ',' . $this->saturation . ',' . $this->lightness . ')';
+        return 'hsl('.$this->hue.','.$this->saturation.','.$this->lightness.')';
     }
 
     public function getDefaultOutput()
     {
         return array(
-            'hue'    => $this->hue,
+            'hue' => $this->hue,
             'saturation' => $this->saturation,
-            'lightness'  => $this->lightness
+            'lightness' => $this->lightness,
         );
     }
 
-    function toRGB()
+    public function toRGB()
     {
         $this->hue = $this->hue / self::HUE_MAX;
         $this->saturation = $this->saturation / self::MAX;
@@ -171,12 +169,12 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $this->hue = $this->hue * self::HUE_MAX;
         $this->saturation = $this->saturation * self::MAX;
         $this->lightness = $this->lightness * self::MAX;
+
         return array($r, $g, $b);
     }
 
     protected function hueToRgb($v1, $v2, $hue_value)
     {
-
         if ($hue_value < 0) {
             $hue_value += 1;
         }
@@ -184,18 +182,19 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
             $hue_value -= 1;
         }
         if ((6 * $hue_value) < 1) {
-            return ($v1 + ($v2 - $v1) * 6 * $hue_value);
+            return $v1 + ($v2 - $v1) * 6 * $hue_value;
         }
         if ((2 * $hue_value) < 1) {
-            return ($v2);
+            return $v2;
         }
         if ((3 * $hue_value) < 2) {
-            return ($v1 + ($v2 - $v1) * ((2 / 3) - $hue_value) * 6);
+            return $v1 + ($v2 - $v1) * ((2 / 3) - $hue_value) * 6;
         }
-        return ($v1);
+
+        return $v1;
     }
 
-    function fromRGB(array $rgb)
+    public function fromRGB(array $rgb)
     {
         $red_value = ($rgb[0] / 255);
 
@@ -204,7 +203,6 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $min_value = min($red_value, $green_value, $blue_value);
 
         $max_value = max($red_value, $green_value, $blue_value);
-
 
         $diff_value = $max_value - $min_value;
 
@@ -230,21 +228,21 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
                 $hue = (2 / 3) + $green_point - $red_point;
             }
             if ($hue < 0) {
-                $hue++;
+                ++$hue;
             }
             if ($hue > 1) {
-                $hue--;
+                --$hue;
             }
         }
 
         $this->hue = $hue * self::HUE_MAX;
         $this->saturation = $saturation * self::MAX;
         $this->lightness = $lightness * self::MAX;
+
         return array($this->hue, $this->saturation, $this->lightness);
     }
-    protected function formatOutput($value, $format='')
+    protected function formatOutput($value, $format = '')
     {
-
         if (is_array($value) && $format == 'standard') {
             return $this->getStandardOutput();
         }
@@ -254,11 +252,12 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         if (is_array($value) && $format == 'object') {
             return $this;
         }
-        if (is_array($value)&& $format == '') {  
+        if (is_array($value) && $format == '') {
             $new_values = array();
             foreach ($value as $val) {
-                $new_values[] = $this->formatOutput($val, $format,true);
+                $new_values[] = $this->formatOutput($val, $format, true);
             }
+
             return $new_values;
         }
         if ($format == 'percentage') {
@@ -267,6 +266,7 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         if ($format == 'float') {
             return floatval(number_format($value / self::MAX, $this->decimalLimit));
         }
+
         return $value;
     }
 }

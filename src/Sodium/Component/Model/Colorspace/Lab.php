@@ -34,7 +34,6 @@ class Lab extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function format($string)
     {
-
         $type = self::isValid($string, true);
         switch ($type) {
             case 'lab':
@@ -46,6 +45,7 @@ class Lab extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
             default:
                 throw new Exception('invalid Syntax');
         }
+
         return $value;
     }
 
@@ -53,18 +53,20 @@ class Lab extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
     {
         // TODO: fix reference
         $ref = Cie::get();
+
         return $ref[$this->cie][$this->observerDegree][$this->illuminant];
     }
 
-    static function regex()
+    public static function regex()
     {
         $regex['lab'] = '/^lab\(([-+]?[0-9]*\.?[0-9]*),([-+]?[0-9]*\.?.*),([-+]?[0-9]*.*)\)$/i';
+
         return $regex;
     }
 
     public function getStandardOutput()
     {
-        return 'lab(' . $this->l . ',' . $this->a . ',' . $this->b . ')';
+        return 'lab('.$this->l.','.$this->a.','.$this->b.')';
     }
 
     public function getDefaultOutput()
@@ -72,11 +74,11 @@ class Lab extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array(
             'l' => $this->l,
             'a' => $this->a,
-            'b' => $this->b
+            'b' => $this->b,
         );
     }
 
-    function toRGB()
+    public function toRGB()
     {
         $var_Y = ($this->l + 16) / 116;
         $var_X = ($this->a / 500) + $var_Y;
@@ -103,17 +105,18 @@ class Lab extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $y = $ref['y'] * $var_Y;
         $z = $ref['z'] * $var_Z;
 
-        $value = 'xyz(' . round($x) . ',' . round($y) . ',' . round($z) . ')';
+        $value = 'xyz('.round($x).','.round($y).','.round($z).')';
         $xyz = new Xyz($value);
         $rgb = $xyz->toRGB();
+
         return array(
             $rgb[0],
             $rgb[1],
-            $rgb[2]
+            $rgb[2],
         );
     }
 
-    function fromRGB(array $rgb)
+    public function fromRGB(array $rgb)
     {
         $xyz_model = new Xyz();
         $xyz = $xyz_model->fromRGB($rgb);
@@ -149,7 +152,7 @@ class Lab extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array(
             $this->l,
             $this->a,
-            $this->b
+            $this->b,
         );
     }
 }

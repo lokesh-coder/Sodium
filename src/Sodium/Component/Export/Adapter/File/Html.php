@@ -12,11 +12,11 @@ class Html extends ExportFileAdapterConcrete implements ExportAdapterFileInterfa
         $colors = $this->makeInputFlat($colors);
         $segment = array();
         foreach ($colors as $color) {
-            $segment[] = '<span style="display:inline-block;width:100px;height:100px;background: ' . $color . ';border-radius:200px;margin:10px;" title="' . $color . '"></span>';
+            $segment[] = '<span style="display:inline-block;width:100px;height:100px;background: '.$color.';border-radius:200px;margin:10px;" title="'.$color.'"></span>';
         }
         $segment = implode('', $segment);
         $file = $this->createHtmlLayout($segment);
-        $this->createFile($this->name . '.html', $this->path, $file);
+        $this->createFile($this->name.'.html', $this->path, $file);
     }
 
     protected function createHtmlLayout($segment)

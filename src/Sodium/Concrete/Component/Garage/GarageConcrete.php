@@ -13,18 +13,20 @@ abstract class GarageConcrete
 
     protected function _get_model($model)
     {
-        $getCurrentInputModels=$this->engine->inputProcessor->getCurrentInputModels();
-        return $getCurrentInputModels['Sodium\\Component\\Model\\' . $model];
+        $getCurrentInputModels = $this->engine->inputProcessor->getCurrentInputModels();
+
+        return $getCurrentInputModels['Sodium\\Component\\Model\\'.$model];
     }
 
     protected function _update_models($model)
     {
         $trigger = InputObserver::init(array($this->_get_model($model)), InputProcessor::getRegisteredModels())->observe();
 
-        $currentInput=$this->engine->inputProcessor->getCurrentInputModel();
-        $currentInputModel=$trigger[0][get_class($currentInput)];
+        $currentInput = $this->engine->inputProcessor->getCurrentInputModel();
+        $currentInputModel = $trigger[0][get_class($currentInput)];
         $this->engine->inputProcessor->setCurrentInputModel($currentInputModel);
         $this->engine->inputProcessor->setCurrentInputModels($trigger[0]);
+
         return $this->engine;
     }
 
@@ -40,5 +42,4 @@ abstract class GarageConcrete
     {
         return $this->engine;
     }
-
 }

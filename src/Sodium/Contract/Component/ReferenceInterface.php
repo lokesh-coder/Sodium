@@ -4,5 +4,5 @@ namespace Sodium\Contract\Component;
 
 interface ReferenceInterface
 {
-    static function get();
+    public static function get();
 }

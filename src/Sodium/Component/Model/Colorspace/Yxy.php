@@ -28,21 +28,22 @@ class Yxy extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function format($str_yxy)
     {
-
         $string = ltrim($str_yxy, 'yxy(');
         $string = rtrim($string, ')');
+
         return explode(',', $string);
     }
 
-    static function regex()
+    public static function regex()
     {
         $regex[] = '/^yxy\(([-+]?[0-9]*\.?[0-9]*)%?,([-+]?[0-9]*\.?.*)%?,([-+]?[0-9]*.*)%?\)$/i';
+
         return $regex;
     }
 
     public function getStandardOutput()
     {
-        return 'yxy(' . $this->y . ',' . $this->x . ',' . $this->yy . ')';
+        return 'yxy('.$this->y.','.$this->x.','.$this->yy.')';
     }
 
     public function getDefaultOutput()
@@ -50,11 +51,11 @@ class Yxy extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array(
             'y' => $this->y,
             'x' => $this->x,
-            'y' => $this->yy
+            'y' => $this->yy,
         );
     }
 
-    function toRGB()
+    public function toRGB()
     {
         $X = $this->x * ($this->Y / $this->y);
         $Y = $this->Y;
@@ -86,10 +87,11 @@ class Yxy extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $var_R = max(0, min(255, $var_R * 255));
         $var_G = max(0, min(255, $var_G * 255));
         $var_B = max(0, min(255, $var_B * 255));
+
         return array($var_R, $var_G, $var_B);
     }
 
-    function fromRGB(array $rgb)
+    public function fromRGB(array $rgb)
     {
         $tmp_r = $rgb[0] / 255;
         $tmp_g = $rgb[1] / 255;
@@ -126,6 +128,7 @@ class Yxy extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $this->y = $newy;
         $this->x = $newx / $gx;
         $this->yy = $newy / $gy;
+
         return array($this->y, $this->x, $this->yy);
     }
 }

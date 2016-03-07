@@ -4,7 +4,8 @@ namespace Sodium\Resource;
 
 class Resource
 {
-  public static function getPath(){
-    return __DIR__;
-  }
+    public static function getPath()
+    {
+        return __DIR__;
+    }
 }

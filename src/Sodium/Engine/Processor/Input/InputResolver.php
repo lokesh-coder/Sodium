@@ -7,19 +7,20 @@ use Sodium\Engine\Processor\Model\ModelInitiator;
 class InputResolver
 {
     protected $input;
-    protected $inputs=array();
+    protected $inputs = array();
     protected $models;
     protected static $blankInputCount = 0;
-    protected $predefinedColors=array('rgb(0,0,0)');
+    protected $predefinedColors = array('rgb(0,0,0)');
     private $registeredModels;
 
-    public static function init($input,$registeredModels)
+    public static function init($input, $registeredModels)
     {
-        $self=new self($input,$registeredModels);
+        $self = new self($input, $registeredModels);
+
         return $self->resolve();
     }
 
-    public function __construct($input,$registeredModels)
+    public function __construct($input, $registeredModels)
     {
         $this->input = $input;
         $this->registeredModels = $registeredModels;
@@ -37,13 +38,14 @@ class InputResolver
     public function resolve()
     {
         $this->resolveInput($this->input);
+
         return $this;
     }
 
     protected function resolveInput($input)
     {
         if (empty($input)) {
-            self::$blankInputCount++;
+            ++self::$blankInputCount;
             if (self::$blankInputCount == 1) {
                 $this->resolveBlankInput();
             }
@@ -52,13 +54,15 @@ class InputResolver
         } elseif (is_array($input)) {
             $this->resolveArrayInput($input);
         }
+
         return $this->models;
     }
 
-    protected function resolveBlankInput($flush=false)
+    protected function resolveBlankInput($flush = false)
     {
-        if($flush)
+        if ($flush) {
             return $this->fetchColorModel('');
+        }
         $colors = count($this->predefinedColors) == 0 ? 'rgb(0,0,0)' : $this->predefinedColors;
         $this->resolveInput($colors);
     }
@@ -82,14 +86,14 @@ class InputResolver
         foreach ($this->registeredModels as $name => $model):
             if ($model::isAcceptedFormat($input)) {
                 if (!isset($this->models[$input][$model])) {
-                    $this->models[$input] = ModelInitiator::initiate($model,$input);
-                    $this->inputs[]=$input;
+                    $this->models[$input] = ModelInitiator::initiate($model, $input);
+                    $this->inputs[] = $input;
                 }
                 $valid = true;
             }
         endforeach;
         if (!$valid) {
-            throw new \Exception('Input Model not found: ' . $input);
+            throw new \Exception('Input Model not found: '.$input);
         }
     }
 
@@ -104,9 +108,8 @@ class InputResolver
 
     public function getModel($input)
     {
-        $models=$this->getModels();
+        $models = $this->getModels();
+
         return $models[$input];
     }
-
-
 }

@@ -10,7 +10,7 @@ use Imagine\Image\Point;
 
 class Image extends ModelConcrete implements AggregateInterface
 {
-    public static $canExportable = FALSE;
+    public static $canExportable = false;
     protected $image;
     protected $imageProperties = array();
     protected $colors = array();
@@ -19,13 +19,14 @@ class Image extends ModelConcrete implements AggregateInterface
 
     public function __construct($image = '')
     {
-        if ($image != '')
+        if ($image != '') {
             $this->image = $this->format($image);
+        }
     }
 
     protected function format($string)
     {
-        $type = self::isAcceptedFormat($string, TRUE);
+        $type = self::isAcceptedFormat($string, true);
         switch ($type) {
             case 'full':
                 $string = ltrim($string, 'img');
@@ -37,21 +38,25 @@ class Image extends ModelConcrete implements AggregateInterface
             default:
                 $value = '';
         }
-        if (!file_exists($value))
-            throw new Exception('Image file ' . $value . ' not exists');
+        if (!file_exists($value)) {
+            throw new Exception('Image file '.$value.' not exists');
+        }
+
         return $value;
     }
 
     public static function regex()
     {
         $regex['full'] = '/^img\(.*\)$/i';
+
         return $regex;
     }
 
     public function setThumbnail($width, $height)
     {
-        $this->thumbnailWidth = (int)$width;
-        $this->thumbnailHeight = (int)$height;
+        $this->thumbnailWidth = (int) $width;
+        $this->thumbnailHeight = (int) $height;
+
         return $this;
     }
 
@@ -68,7 +73,8 @@ class Image extends ModelConcrete implements AggregateInterface
     public function getStandardOutput()
     {
         $path = $this->getImg();
-        return 'img(' . $path . ')';
+
+        return 'img('.$path.')';
     }
 
     public function getCollection($model = 'Sodium\Component\Model\Seed\Hex')
@@ -83,9 +89,10 @@ class Image extends ModelConcrete implements AggregateInterface
 
     private function getColors()
     {
-        $imagine=new Gd();
+        $imagine = new Gd();
         $image = $imagine->open($this->image);
         $thumb = $image->thumbnail(new Box($this->thumbnailWidth, $this->thumbnailHeight));
+
         return $this->histogram($thumb);
     }
 
@@ -94,17 +101,19 @@ class Image extends ModelConcrete implements AggregateInterface
         $size = $resource->getSize();
         $colors = array();
 
-        for ($x = 0, $width = $size->getWidth(); $x < $width; $x++) {
-            for ($y = 0, $height = $size->getHeight(); $y < $height; $y++) {
+        for ($x = 0, $width = $size->getWidth(); $x < $width; ++$x) {
+            for ($y = 0, $height = $size->getHeight(); $y < $height; ++$y) {
                 $col = $resource->getColorAt(new Point($x, $y));
-                $rgb = 'rgb(' . $col->getRed() . ',' . $col->getGreen() . ',' . $col->getBlue() . ')';
-                if (isset($colors[$rgb]))
+                $rgb = 'rgb('.$col->getRed().','.$col->getGreen().','.$col->getBlue().')';
+                if (isset($colors[$rgb])) {
                     $colors[$rgb] += 1;
-                else
+                } else {
                     $colors[$rgb] = 1;
+                }
             }
         }
         arsort($colors, SORT_NUMERIC);
+
         return $colors;
     }
 }

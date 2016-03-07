@@ -8,7 +8,7 @@ class Image
     {
     }
 
-    public function _setSource(){
-
+    public function _setSource()
+    {
     }
 }

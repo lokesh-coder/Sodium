@@ -36,7 +36,6 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function validateInput($value, $key = '')
     {
-
         $max = self::MAX;
         if ($key == 'hue') {
             $max = self::HUE_MAX;
@@ -62,7 +61,6 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function format($string)
     {
-
         $type = self::isValid($string, true);
         switch ($type) {
             case 'hsv':
@@ -95,10 +93,11 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
             default:
                 throw new Exception('invalid Syntax');
         }
+
         return $value;
     }
 
-    static function regex()
+    public static function regex()
     {
         $regex['hsv'] = '/^hsv\(([-+]?[0-9]*\.?[0-9]*)%?,([-+]?[0-9]*\.?.*)%?,([-+]?[0-9]*.*)%?\)$/i';
         $regex['hue'] = '/^hue\(([-+]?[0-9]*\.?[0-9]*)%?\)$/i';
@@ -110,7 +109,7 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     public function getStandardOutput()
     {
-        return 'hsv(' . $this->hue . ',' . $this->saturation . ',' . $this->_value . ')';
+        return 'hsv('.$this->hue.','.$this->saturation.','.$this->_value.')';
     }
 
     public function getDefaultOutput()
@@ -118,7 +117,7 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array($this->hue, $this->saturation, $this->_value);
     }
 
-    function toRGB()
+    public function toRGB()
     {
         $hue = $this->hue / self::HUE_MAX;
         $saturation = $this->saturation / self::MAX;
@@ -170,12 +169,11 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array($red, $green, $blue);
     }
 
-    function fromRGB(array $rgb)
+    public function fromRGB(array $rgb)
     {
         $red = $rgb[0] / 255;
         $green = $rgb[1] / 255;
         $blue = $rgb[2] / 255;
-
 
         $min = min($red, $green, $blue);
         $max = max($red, $green, $blue);
@@ -184,10 +182,10 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $delta = $max - $min;
 
         if ($delta == 0) {
-
             $this->hue = self::MIN;
             $this->saturation = self::MIN;
             $this->_value = ($value * self::MAX);
+
             return array($this->hue, $this->saturation, $this->_value);
         }
 
@@ -202,6 +200,7 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
             $this->hue = ($hue);
             $this->saturation = ($saturation);
             $this->_value = ($value);
+
             return array($this->hue, $this->saturation, $this->_value);
         }
         if ($red == $max) {
@@ -221,6 +220,7 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $this->hue = $hue;
         $this->saturation = ($saturation * self::MAX);
         $this->_value = ($value * self::MAX);
+
         return array($this->hue, $this->saturation, $this->_value);
     }
 }

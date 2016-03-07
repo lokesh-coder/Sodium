@@ -11,13 +11,14 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
 {
     protected $name = 'Black';
     protected $defaultName = 'unavailable';
-    protected $rgbUpdate = FALSE;
+    protected $rgbUpdate = false;
 
     public function __construct($name = '')
     {
         if ($name != '') {
-            if (!is_string($name))
+            if (!is_string($name)) {
                 throw new Exception('Invalid Input. Please provide String');
+            }
             $this->name = $this->format($name);
         }
     }
@@ -26,11 +27,12 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
     {
         $hexmodel = new Hex();
         $hex = $hexmodel->fromRGB($rgb);
-        $hex = '#' . $hex;
-        if (!in_array($hex, $this->colorNames()))
+        $hex = '#'.$hex;
+        if (!in_array($hex, $this->colorNames())) {
             $this->name = $this->defaultName;
-        else
+        } else {
             $this->name = array_search($hex, $this->colorNames());
+        }
     }
 
     public function getDefaultOutput()
@@ -45,13 +47,14 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
 
     public function getHex()
     {
-        return strtolower(array_search($this->name, array_flip($this->colorNames(TRUE))));
+        return strtolower(array_search($this->name, array_flip($this->colorNames(true))));
     }
 
     public function toRGB()
     {
-        $hex = array_search($this->name, array_flip($this->colorNames(TRUE)));
+        $hex = array_search($this->name, array_flip($this->colorNames(true)));
         $hexmodel = new Hex($hex);
+
         return $hexmodel->toRGB();
     }
 
@@ -77,6 +80,7 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
             default:
                 throw new Exception('invalid Syntax');
         }
+
         return $content;
     }
 
@@ -85,11 +89,13 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
         return $this->name;
     }
 
-    protected function colorNames($case = FALSE)
+    protected function colorNames($case = false)
     {
         $colors = CrayolaCrayonsColors::get();
-        if ($case)
+        if ($case) {
             return array_change_key_case($colors, CASE_LOWER);
+        }
+
         return $colors;
     }
 }

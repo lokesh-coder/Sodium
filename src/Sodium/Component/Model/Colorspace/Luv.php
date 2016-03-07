@@ -34,7 +34,6 @@ class Luv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function format($string)
     {
-
         $type = self::isValid($string, true);
         switch ($type) {
             case 'luv':
@@ -46,6 +45,7 @@ class Luv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
             default:
                 throw new Exception('invalid Syntax');
         }
+
         return $value;
     }
 
@@ -53,18 +53,20 @@ class Luv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
     {
         //TODO fix reference
         $ref = Cie::get();
+
         return $ref[$this->cie][$this->observerDegree][$this->_illuminant];
     }
 
-    static function regex()
+    public static function regex()
     {
         $regex['luv'] = '/^luv\(([-+]?[0-9]*\.?[0-9]*),([-+]?[0-9]*\.?.*),([-+]?[0-9]*.*)\)$/i';
+
         return $regex;
     }
 
     public function getStandardOutput()
     {
-        return 'luv(' . $this->l . ',' . $this->u . ',' . $this->v . ')';
+        return 'luv('.$this->l.','.$this->u.','.$this->v.')';
     }
 
     public function getDefaultOutput()
@@ -72,11 +74,11 @@ class Luv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array(
             'l' => $this->l,
             'u' => $this->u,
-            'v' => $this->v
+            'v' => $this->v,
         );
     }
 
-    function toRGB()
+    public function toRGB()
     {
         $y = ($this->l + 16) / 116;
         if (pow($y, 3) > 0.008856) {
@@ -100,10 +102,11 @@ class Luv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $z = (9 * $y - (15 * $v * $y) - ($v * $x)) / (3 * $v);
 
         $xyz_model = new Xyz();
+
         return $xyz_model->toRGB(array($x, $y, $z));
     }
 
-    function fromRGB(array $rgb)
+    public function fromRGB(array $rgb)
     {
         $xyz_model = new Xyz();
         $xyz = $xyz_model->fromRGB($rgb);
@@ -134,7 +137,6 @@ class Luv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
         $com = $ref_x + (15 * $ref_y) + (3 * $ref_z);
         if ($com == 0) {
-
             $refu = 0;
             $refv = 0;
         } else {
@@ -149,7 +151,7 @@ class Luv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array(
             $this->l,
             $this->u,
-            $this->v
+            $this->v,
         );
     }
 }

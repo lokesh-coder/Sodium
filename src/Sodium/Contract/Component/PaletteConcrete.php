@@ -10,6 +10,6 @@ abstract class PaletteConcrete
 
     public function setInputProcessor(InputProcessor $inputProcessor)
     {
-        $this->inputProcessor=$inputProcessor;
+        $this->inputProcessor = $inputProcessor;
     }
 }

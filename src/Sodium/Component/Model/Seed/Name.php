@@ -30,7 +30,7 @@ class Name extends ModelConcrete implements SeedInterface,ConversionAwareInterfa
     {
         $hexmodel = new Hex();
         $hex = $hexmodel->fromRGB($rgb);
-        $hex = '#' . $hex;
+        $hex = '#'.$hex;
         if (!in_array($hex, $this->colorNames())) {
             $this->name = $this->defaultName;
         } else {
@@ -44,6 +44,7 @@ class Name extends ModelConcrete implements SeedInterface,ConversionAwareInterfa
         if ($case) {
             return array_change_key_case($colors, CASE_LOWER);
         }
+
         return $colors;
     }
 
@@ -60,6 +61,7 @@ class Name extends ModelConcrete implements SeedInterface,ConversionAwareInterfa
     public static function regex()
     {
         $regex[] = '/^([a-zA-Z]+)$/i';
+
         return $regex;
     }
 
@@ -85,18 +87,18 @@ class Name extends ModelConcrete implements SeedInterface,ConversionAwareInterfa
             $value = strtolower($value);
             $hex = array_search($value, array_flip($this->colorNames(true)));
             $hexmodel = new Hex($hex);
+
             return $hexmodel->toRGB();
         } elseif ($this->rgbUpdate) {
-
             return array(
                 $this->red,
                 $this->green,
-                $this->blue
+                $this->blue,
             );
         } elseif ($this->name != $this->defaultName) {
-
             $hex = array_search($this->name, array_flip($this->colorNames(true)));
             $hexmodel = new Hex($hex);
+
             return $hexmodel->toRGB();
         }
     }

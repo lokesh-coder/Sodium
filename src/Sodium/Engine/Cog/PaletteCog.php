@@ -11,6 +11,7 @@ class PaletteCog extends CogConcrete implements CogInterface
     public function palette(PaletteInterface $paletteInterface)
     {
         $paletteInterface->setInputProcessor($this->getInputProcessor());
+
         return $paletteInterface->generate();
     }
 }

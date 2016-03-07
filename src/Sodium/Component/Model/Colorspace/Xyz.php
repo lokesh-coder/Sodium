@@ -30,7 +30,6 @@ class Xyz extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function format($string)
     {
-
         $type = self::isValid($string, true);
         switch ($type) {
             case 'xyz':
@@ -42,18 +41,20 @@ class Xyz extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
             default:
                 throw new Exception('invalid Syntax');
         }
+
         return $value;
     }
 
-    static function regex()
+    public static function regex()
     {
         $regex['xyz'] = '/^xyz\(([-+]?[0-9]*\.?[0-9]*)%?,([-+]?[0-9]*\.?.*)%?,([-+]?[0-9]*.*)%?\)$/i';
+
         return $regex;
     }
 
     public function getStandardOutput()
     {
-        return 'xyz(' . $this->x . ',' . $this->y . ',' . $this->z . ')';
+        return 'xyz('.$this->x.','.$this->y.','.$this->z.')';
     }
 
     public function getDefaultOutput()
@@ -61,11 +62,11 @@ class Xyz extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array(
             'x' => $this->x,
             'y' => $this->y,
-            'z' => $this->z
+            'z' => $this->z,
         );
     }
 
-    function toRGB()
+    public function toRGB()
     {
         $varx = $this->x / 100;
         $vary = $this->y / 100;
@@ -93,14 +94,15 @@ class Xyz extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $var_R = max(0, min(255, $var_R * 255));
         $var_G = max(0, min(255, $var_G * 255));
         $var_B = max(0, min(255, $var_B * 255));
+
         return array(
             $var_R,
             $var_G,
-            $var_B
+            $var_B,
         );
     }
 
-    function fromRGB(array $rgb)
+    public function fromRGB(array $rgb)
     {
         $tmp_r = $rgb[0] / 255;
         $tmp_g = $rgb[1] / 255;
@@ -134,7 +136,7 @@ class Xyz extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         return array(
             $newx,
             $newy,
-            $newz
+            $newz,
         );
     }
 }

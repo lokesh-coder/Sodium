@@ -6,5 +6,4 @@ use Sodium\Contract\Component\Model\ModelInterface;
 
 interface SeedInterface extends ModelInterface
 {
-    
 }

@@ -9,9 +9,10 @@ class OneToOne extends ExportConcrete implements ExportInterface
 {
     public function export()
     {
-        $models=$this->getInputProcessor()->getCurrentInputModels();
-        $rgbModel=$models[$this->model];
+        $models = $this->getInputProcessor()->getCurrentInputModels();
+        $rgbModel = $models[$this->model];
         $colors[] = $rgbModel->getStandardOutput();
+
         return $this->exportAdapter->export($colors);
     }
 }

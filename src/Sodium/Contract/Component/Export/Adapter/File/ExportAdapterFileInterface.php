@@ -6,5 +6,4 @@ use Sodium\Contract\Component\Export\Adapter\ExportAdapterInterface;
 
 interface ExportAdapterFileInterface extends ExportAdapterInterface
 {
-    
 }

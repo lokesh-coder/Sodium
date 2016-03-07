@@ -5,21 +5,21 @@ namespace Sodium\Engine\Processor\Input;
 class InputFormatter
 {
     protected $rawInput;
-    protected $formats=array();
+    protected $formats = array();
 
-    public static function init($rawInput,$formats=array())
+    public static function init($rawInput, $formats = array())
     {
-        return new self($rawInput,$formats);
+        return new self($rawInput, $formats);
     }
 
-    function __construct($rawInput,array $formats)
+    public function __construct($rawInput, array $formats)
     {
         $this->rawInput = $rawInput;
         $this->formats = $formats;
     }
 
     /**
-     * Get formats
+     * Get formats.
      *
      * @return array
      */
@@ -29,7 +29,7 @@ class InputFormatter
     }
 
     /**
-     * Set formats
+     * Set formats.
      *
      * @param array $formats
      *
@@ -38,15 +38,17 @@ class InputFormatter
     public function setFormats(array $formats)
     {
         $this->formats = $formats;
+
         return $this;
     }
 
     public function format()
     {
-        foreach($this->formats as $type){
-            if($type::isAcceptedFormat($this->rawInput)){
-                $format=new $type();
+        foreach ($this->formats as $type) {
+            if ($type::isAcceptedFormat($this->rawInput)) {
+                $format = new $type();
                 $format->setFormats($this->getFormats());
+
                 return $format->getFormattedInput($this->rawInput);
             }
         }

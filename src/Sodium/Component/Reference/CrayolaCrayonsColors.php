@@ -7,7 +7,8 @@ use Sodium\Contract\Component\ReferenceInterface;
 
 class CrayolaCrayonsColors extends ReferenceConcrete implements ReferenceInterface
 {
-    public static function get(){
+    public static function get()
+    {
         return array(
             'Almond' => '#efdbc5',
             'AntiqueBrass' => '#cd9575',
@@ -126,7 +127,7 @@ class CrayolaCrayonsColors extends ReferenceConcrete implements ReferenceInterfa
             'Wisteria' => '#cda4de',
             'Yellow' => '#fce883',
             'YellowGreen' => '#c5e384',
-            'YellowOrange' => '#ffb653'
+            'YellowOrange' => '#ffb653',
         );
     }
 }

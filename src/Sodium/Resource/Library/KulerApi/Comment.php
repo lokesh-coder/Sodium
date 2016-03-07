@@ -1,13 +1,15 @@
 <?php
 /**
- * Kuler API library for PHP
+ * Kuler API library for PHP.
  *
  * @author Gabriel Somoza (me@gabrielsomoza.com)
+ *
  * @link http://gabrielsomoza.com
+ *
  * @version 0.1.1
  *
  * @category Kuler
- * @package PHP-Kuler-API-Library
+ *
  * @link http://learn.adobe.com/wiki/display/kulerdev/B.+Feeds
  *
  * @copyright Copyright (c) 2011-2012, Gabriel Somoza
@@ -24,17 +26,13 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
- *
  */
 
 /**
  * Provides encapsulation for an XML Comment retrieved from the API.
- *
- * @package PHP-Kuler-API-Library
  */
 class Kuler_Comment
 {
-
     protected $_comment;
 
     /**
@@ -48,8 +46,9 @@ class Kuler_Comment
     {
         $namespaces = $xmlItem->getDocNamespaces();
         $this->_comment = $xmlItem->children($namespaces['kuler'])->commentItem;
-        if (!isset($this->_comment->author))
+        if (!isset($this->_comment->author)) {
             throw new Kuler_Exception('Error loading the Comment item');
+        }
     }
 
     /**
@@ -57,6 +56,7 @@ class Kuler_Comment
      * SimpleXMLElement and should be properly casted in most situations.
      *
      * @param string $name
+     *
      * @return SimpleXMLElement The value of retrieving $name from the internal $_comment object.
      */
     public function __get($name)
@@ -64,8 +64,9 @@ class Kuler_Comment
         $property = lcfirst($name);
         if (property_exists($this->_comment, $property)) {
             return $this->_comment->$property;
-        } else
-            throw new Kuler_Exception('Property \'' . $name . '\' not found');
+        } else {
+            throw new Kuler_Exception('Property \''.$name.'\' not found');
+        }
     }
 
     /**
@@ -77,11 +78,10 @@ class Kuler_Comment
      * methods should work in both cases.
      *
      * @return Kuler_Theme A Kuler_Theme object initialized with the comment's
-     * theme data.
+     *                     theme data.
      */
     public function getTheme()
     {
         return new Kuler_Theme($this->_comment);
     }
-
 }

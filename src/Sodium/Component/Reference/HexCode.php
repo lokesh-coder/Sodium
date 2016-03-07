@@ -7,8 +7,8 @@ use Sodium\Contract\Component\ReferenceInterface;
 
 class HexCode extends ReferenceConcrete implements ReferenceInterface
 {
-
-    public static function get(){
+    public static function get()
+    {
         return array(
             '00' => 0,
             '01' => 1,
@@ -265,7 +265,7 @@ class HexCode extends ReferenceConcrete implements ReferenceInterface
             'fc' => 252,
             'fd' => 253,
             'fe' => 254,
-            'ff' => 255
+            'ff' => 255,
         );
     }
 }

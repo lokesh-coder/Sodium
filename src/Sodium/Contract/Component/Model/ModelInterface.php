@@ -4,8 +4,8 @@ namespace Sodium\Contract\Component\Model;
 
 interface ModelInterface
 {
-    static function isAcceptedFormat($input);
-    static function regex();
+    public static function isAcceptedFormat($input);
+    public static function regex();
     public function getStandardOutput();
     public function getDefaultOutput();
 }

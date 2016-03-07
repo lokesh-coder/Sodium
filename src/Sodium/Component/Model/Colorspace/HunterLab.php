@@ -41,18 +41,20 @@ class HunterLab extends ModelConcrete implements ColorspaceInterface,ConversionA
             default:
                 throw new Exception('invalid Syntax');
         }
+
         return $value;
     }
 
-    static function regex()
+    public static function regex()
     {
         $regex['hlab'] = '/^hlab\(([-+]?[0-9]*\.?[0-9]*),([-+]?[0-9]*\.?.*),([-+]?[0-9]*.*)\)$/i';
+
         return $regex;
     }
 
     public function getStandardOutput()
     {
-        return 'hlab(' . $this->l . ',' . $this->a . ',' . $this->b . ')';
+        return 'hlab('.$this->l.','.$this->a.','.$this->b.')';
     }
 
     public function getDefaultOutput()
@@ -60,11 +62,11 @@ class HunterLab extends ModelConcrete implements ColorspaceInterface,ConversionA
         return array(
             'hunterl' => $this->l,
             'huntera' => $this->a,
-            'hunterb' => $this->b
+            'hunterb' => $this->b,
         );
     }
 
-    function toRGB()
+    public function toRGB()
     {
         $y = $this->l / 10;
         $x = $this->a / 17.5 * $this->l / 10;
@@ -73,13 +75,14 @@ class HunterLab extends ModelConcrete implements ColorspaceInterface,ConversionA
         $YY = pow($y, 2);
         $XX = ($x + $YY) / 1.02;
         $ZZ = -($z - $YY) / 0.847;
-        $xyz_init = 'xyz(' . $XX . ',' . $YY . ',' . $ZZ . ')';
+        $xyz_init = 'xyz('.$XX.','.$YY.','.$ZZ.')';
 
         $xyz = new Xyz($xyz_init);
+
         return $xyz->toRGB();
     }
 
-    function fromRGB(array $rgb)
+    public function fromRGB(array $rgb)
     {
 
         // TODO refactor xyz class
@@ -91,6 +94,7 @@ class HunterLab extends ModelConcrete implements ColorspaceInterface,ConversionA
         $this->l = 10 * sqrt($getXyz[1]);
         $this->a = 17.5 * (((1.02 * $getXyz[0]) - $getXyz[1]) / sqrt($getXyz[1]));
         $this->b = 7 * (($getXyz[1] - (0.847 * $getXyz[2])) / sqrt($getXyz[1]));
+
         return array('l' => $this->l, 'a' => $this->a, 'b' => $this->b);
     }
 }

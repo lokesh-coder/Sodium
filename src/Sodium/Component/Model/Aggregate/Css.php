@@ -7,19 +7,19 @@ use Sodium\Concrete\Component\Model\ModelConcrete;
 use Sodium\Contract\Component\Model\Aggregate\AggregateInterface;
 use Sodium\Engine\Processor\Input\InputObserver;
 use Sodium\Engine\Processor\Input\InputResolver;
-use Sodium\Engine\Processor\ModelProcessor;
 
 class Css extends ModelConcrete implements AggregateInterface
 {
-    public static $canExportable = FALSE;
+    public static $canExportable = false;
     protected $rawColors = array();
     protected $convertedColors = array();
     public static $model = 'rgb';
 
     public function __construct($css = '')
     {
-        if ($css != '')
+        if ($css != '') {
             $this->setProperties($this->format($css));
+        }
     }
 
     protected function setProperties($colors)
@@ -33,6 +33,7 @@ class Css extends ModelConcrete implements AggregateInterface
         $regex['css'] = '/^css\(.*\)$/i';
         $regex['scss'] = '/^scss\(.*\)$/i';
         $regex['sass'] = '/^sass\(.*\)$/i';
+
         return $regex;
     }
 
@@ -48,8 +49,7 @@ class Css extends ModelConcrete implements AggregateInterface
 
     protected function format($string)
     {
-
-        $type = self::isAcceptedFormat($string, TRUE);
+        $type = self::isAcceptedFormat($string, true);
         switch ($type) {
             case 'css':
             case 'scss':
@@ -62,13 +62,15 @@ class Css extends ModelConcrete implements AggregateInterface
                 if (file_exists($string)) {
                     $file_content = file_get_contents($string);
                     $content = $this->parse($file_content);
-                } else
+                } else {
                     $content = $this->parse($string);
+                }
                 break;
 
             default:
                 throw new \Exception('invalid Syntax');
         }
+
         return $content;
     }
 
@@ -99,6 +101,7 @@ class Css extends ModelConcrete implements AggregateInterface
         $container['hsl'] = $hsl[0];
         $container['hsla'] = $this->parseAlpha($hsla[0], 'hsl');
         $container['name'] = array_intersect(array_flip($colors), $name[0]);
+
         return $container;
     }
 
@@ -107,18 +110,20 @@ class Css extends ModelConcrete implements AggregateInterface
         $hex_values = array();
         foreach ($container as $model => $values) {
             if ($model == 'hex') {
-                foreach ($values as $key => $hex_value)
+                foreach ($values as $key => $hex_value) {
                     $hex_values[$hex_value] = $hex_value;
+                }
             } else {
                 if (!count($container[$model]) == 0) {
                     foreach ($container[$model] as $model_name => $model_value) {
-                        $models=InputResolver::init($model_value,self::$registeredModels)->getModels();
-                        $inputObserver=InputObserver::init($models,self::$registeredModels)->observe();
+                        $models = InputResolver::init($model_value, self::$registeredModels)->getModels();
+                        $inputObserver = InputObserver::init($models, self::$registeredModels)->observe();
                         $hex_values[$model_value] = $inputObserver[$model_value]['Sodium\Component\Model\Seed\Hex']->getStandardOutput();
                     }
                 }
             }
         }
+
         return $hex_values;
     }
 
@@ -126,13 +131,13 @@ class Css extends ModelConcrete implements AggregateInterface
     {
         $parsed = array();
         foreach ($raw_value as $value) {
-
-            $value = ltrim($value, $mode . 'a(');
+            $value = ltrim($value, $mode.'a(');
             $value = rtrim($value, ')');
             $values = explode(',', $value);
             array_pop($values);
-            $parsed[] = $mode . '(' . implode(',', $values) . ')';
+            $parsed[] = $mode.'('.implode(',', $values).')';
         }
+
         return $parsed;
     }
 

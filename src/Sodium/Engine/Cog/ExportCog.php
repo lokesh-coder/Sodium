@@ -11,6 +11,7 @@ class ExportCog extends CogConcrete implements CogInterface
     public function export(ExportConcrete $exportConcrete)
     {
         $exportConcrete->setInputProcessor($this->getInputProcessor());
+
         return $exportConcrete->export();
     }
 }

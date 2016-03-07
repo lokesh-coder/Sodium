@@ -21,22 +21,27 @@ abstract class CogConcrete
         return $this->engine->inputProcessor->getModels();
     }
 
-    protected function getInputProcessor(){
+    protected function getInputProcessor()
+    {
         return $this->engine->inputProcessor;
     }
-    protected function getCurrentInput(){
+    protected function getCurrentInput()
+    {
         return $this->engine->inputProcessor->getCurrentInput();
     }
-    protected function getCurrentInputModel(){
+    protected function getCurrentInputModel()
+    {
         return $this->engine->inputProcessor->getCurrentInputModel();
     }
-    protected function getCurrentInputModels(){
+    protected function getCurrentInputModels()
+    {
         return $this->engine->inputProcessor->getCurrentInputModels();
     }
 
     public function setEngine(Engine $engine)
     {
         $this->engine = $engine;
+
         return $this;
     }
     public function getEngine()

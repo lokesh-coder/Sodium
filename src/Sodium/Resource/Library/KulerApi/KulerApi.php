@@ -4,7 +4,6 @@ namespace Sodium\Resource\Library\KulerApi;
 
 class KulerApi
 {
-
     private $_api_key;
 
     public function __construct($api_key)
@@ -18,7 +17,7 @@ class KulerApi
 
         $kuler = new \Kuler_Api($this->_api_key);
         $themes = $kuler->get($get);
+
         return $themes[0]->getSwatchesHex(true);
     }
-
 }
