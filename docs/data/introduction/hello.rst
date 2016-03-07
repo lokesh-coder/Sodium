@@ -1,15 +1,10 @@
 .. toctree::
-	:caption: Introduction
-	:maxdepth: 2
-
-	data/introduction/hello
-	data/introduction/overview
-	data/introduction/installation
 
 Hello
 =====
 
 I am Lokesh.
+
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

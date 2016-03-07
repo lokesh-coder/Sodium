@@ -11,7 +11,7 @@ body.wy-body-for-nav {
 
 body.wy-body-for-nav p {
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 16px;
   font-size: 14px; }
 body.wy-body-for-nav h1, body.wy-body-for-nav h2, body.wy-body-for-nav .rst-content .toctree-wrapper p.caption, body.wy-body-for-nav h3, body.wy-body-for-nav h4, body.wy-body-for-nav h5, body.wy-body-for-nav h6, body.wy-body-for-nav legend {
   margin-top: 0;
