@@ -284,18 +284,20 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
 
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'                           
-                                                                                 
-if not on_rtd:                
-    def setup(app):                                                              
-        #app.add_javascript("custom.js")                                         
-        app.add_stylesheet('_static/default.css')                                
-else:
-  html_style = 'css/main.css'
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
-  html_context = {                                                             
-      'css_files': [                                                           
-          'https://media.readthedocs.org/css/sphinx_rtd_theme.css',            
-          'https://media.readthedocs.org/css/readthedocs-doc-embed.css'                               
-      ],                                                                       
-  }
+import sphinx_rtd_theme
+html_theme = 'sphinx_rtd_theme'
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# Override default css to get a larger width for local build
+html_style = "css/local_build.css"
+
+if on_rtd:
+    # Override default css to get a larger width for ReadTheDoc build
+    html_context = {
+        'css_files': [
+            'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
+            'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
+            '_static/css/my_theme.css',
+        ],
+    }
