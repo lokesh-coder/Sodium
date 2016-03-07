@@ -27,7 +27,7 @@ class Cmy extends CmyModel
         return $this->CmyModel->formatOutput($this->CmyModel->yellow, $format);
     }
 
-    public function getCMY($format)
+    public function getCmy($format)
     {
         return $this->CmyModel->formatOutput($this->CmyModel->cmy, $format);
     }

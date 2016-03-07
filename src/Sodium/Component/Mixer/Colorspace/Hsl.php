@@ -27,7 +27,7 @@ class Hsl extends HslModel
         return $this->HslModel->formatOutput($this->HslModel->lightness, $format);
     }
 
-    public function getHSL($format)
+    public function getHsl($format)
     {
         return $this->HslModel->formatOutput($this->HslModel->hsl, $format);
     }

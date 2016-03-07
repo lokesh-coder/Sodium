@@ -23,7 +23,7 @@ class Rgb extends RgbModel
         return $this->rgbModel->formatOutput($this->rgbModel->green, $format);
     }
 
-    public function getRGB($format)
+    public function getRgb($format)
     {
         return $this->rgbModel->formatOutput($this->rgbModel->rgb, $format);
     }

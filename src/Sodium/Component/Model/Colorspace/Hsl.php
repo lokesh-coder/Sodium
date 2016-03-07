@@ -114,7 +114,7 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
                 break;
 
             default:
-                throw new Exception('invalid Syntax');
+                throw new \Exception('invalid Syntax');
         }
 
         return $value;
@@ -239,7 +239,9 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $this->saturation = $saturation * self::MAX;
         $this->lightness = $lightness * self::MAX;
 
-        return array($this->hue, $this->saturation, $this->lightness);
+        $this->hsl = array($this->hue, $this->saturation, $this->lightness);
+        
+        return $this->hsl;
     }
     protected function formatOutput($value, $format = '')
     {
@@ -252,19 +254,19 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         if (is_array($value) && $format == 'object') {
             return $this;
         }
-        if (is_array($value) && $format == '') {
+        if (is_array($value)) {
             $new_values = array();
             foreach ($value as $val) {
-                $new_values[] = $this->formatOutput($val, $format, true);
+                $new_values[] = $this->formatOutput($val, $format);
             }
 
             return $new_values;
         }
-        if ($format == 'percentage') {
+        if ( $format == 'percentage') {
             return round(number_format(($value / self::MAX) * 100, $this->decimalLimit));
         }
-        if ($format == 'float') {
-            return floatval(number_format($value / self::MAX, $this->decimalLimit));
+        if ( $format == 'float') {
+            return floatval(number_format(($value / self::MAX), $this->decimalLimit));
         }
 
         return $value;

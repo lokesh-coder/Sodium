@@ -36,10 +36,10 @@ class Cmy extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     public static function regex()
     {
-        $regex['cmy'] = '/^cmy\(([-+]?[0-9]*\.?[0-9]*)%?,([-+]?[0-9]*\.?.*)%?,([-+]?[0-9]*.*)%?\)$/i';
-        $regex['cyan'] = '/^cyan\(([-+]?[0-9]*\.?[0-9]*)%?\)$/i';
-        $regex['magenta'] = '/^magenta\(([-+]?[0-9]*\.?[0-9]*)%?\)$/i';
-        $regex['yellow'] = '/^yellow\(([-+]?[0-9]*\.?[0-9]*)%?\)$/i';
+        $regex['cmy'] = '/^cmy\(\s?([-+]?[0-9]*\.?[0-9]*)%?\s?,(\s?[-+]?[0-9]*\.?.*)%?\s?,(\s?[-+]?[0-9]*.*)%?\s?\)$/i';
+        $regex['cyan'] = '/^cyan\(\s?([-+]?[0-9]*\.?[0-9]*)%?\s?\)$/i';
+        $regex['magenta'] = '/^magenta\(\s?([-+]?[0-9]*\.?[0-9]*)%?\s?\)$/i';
+        $regex['yellow'] = '/^yellow\(\s?([-+]?[0-9]*\.?[0-9]*)%?\s?\)$/i';
 
         return $regex;
     }
@@ -125,7 +125,7 @@ class Cmy extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
                 );
                 break;
             default:
-                throw new Exception('invalid Syntax');
+                throw new \Exception('invalid Syntax');
         }
 
         return $value;

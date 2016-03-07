@@ -3,7 +3,7 @@
 require_once 'phpColourLover.php';
 
 echo "<h4>Most recent color.</h4>\n";
-// grab most recently added color: 
+// grab most recently added color:
 $cl = new phpColourLover();
 $color = $cl->Colors();
 $color->limit(1);

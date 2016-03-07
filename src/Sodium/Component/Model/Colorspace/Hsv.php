@@ -8,11 +8,13 @@ use Sodium\Contract\Component\Model\ConversionAwareInterface;
 
 class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareInterface
 {
+    protected $hsv = array();
     protected $hue = 0;
     protected $saturation = 0;
-    protected $_value = 0;
+    protected $value = 0;
     private $defaultSaturation = 50;
     private $defaultValue = 50;
+    protected $decimalLimit = 2;
 
     const MIN = 0;
     const MAX = 100;
@@ -27,10 +29,31 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function setProperties($hsv)
     {
+        $this->hsv = $this->filterInput($hsv);
         if (count($hsv) == 3) {
             $this->hue = $this->validateInput($hsv[0], 'hue');
             $this->saturation = $this->validateInput($hsv[1]);
-            $this->_value = $this->validateInput($hsv[2]);
+            $this->value = $this->validateInput($hsv[2]);
+        }
+    }
+
+    protected function filterInput($value)
+    {
+        if (is_array($value)) {
+            $hsv = array();
+
+            foreach ($value as $key => $val) {
+                if ($key == 0) {
+                    $type = 'hue';
+                } else {
+                    $type = '';
+                }
+                $hsv[] = $this->validateInput($val, $type);
+            }
+
+            return $hsv;
+        } else {
+            return $this->validateInput($value);
         }
     }
 
@@ -61,7 +84,7 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     protected function format($string)
     {
-        $type = self::isValid($string, true);
+        $type = self::isAcceptedFormat($string, true);
         switch ($type) {
             case 'hsv':
 
@@ -91,7 +114,7 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
                 break;
 
             default:
-                throw new Exception('invalid Syntax');
+                throw new \Exception('invalid Syntax');
         }
 
         return $value;
@@ -109,19 +132,19 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     public function getStandardOutput()
     {
-        return 'hsv('.$this->hue.','.$this->saturation.','.$this->_value.')';
+        return 'hsv('.$this->hue.','.$this->saturation.','.$this->value.')';
     }
 
     public function getDefaultOutput()
     {
-        return array($this->hue, $this->saturation, $this->_value);
+        return array($this->hue, $this->saturation, $this->value);
     }
 
     public function toRGB()
     {
         $hue = $this->hue / self::HUE_MAX;
         $saturation = $this->saturation / self::MAX;
-        $value = $this->_value / self::MAX;
+        $value = $this->value / self::MAX;
         if ($saturation == 0) {
             $red = round($value * 255);
             $green = round($value * 255);
@@ -184,9 +207,9 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         if ($delta == 0) {
             $this->hue = self::MIN;
             $this->saturation = self::MIN;
-            $this->_value = ($value * self::MAX);
+            $this->value = ($value * self::MAX);
 
-            return array($this->hue, $this->saturation, $this->_value);
+            return array($this->hue, $this->saturation, $this->value);
         }
 
         $saturation = 0;
@@ -199,9 +222,9 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
             $this->hue = ($hue);
             $this->saturation = ($saturation);
-            $this->_value = ($value);
+            $this->value = ($value);
 
-            return array($this->hue, $this->saturation, $this->_value);
+            return array($this->hue, $this->saturation, $this->value);
         }
         if ($red == $max) {
             $hue = ($green - $blue) / $delta;
@@ -219,8 +242,37 @@ class Hsv extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
         $this->hue = $hue;
         $this->saturation = ($saturation * self::MAX);
-        $this->_value = ($value * self::MAX);
+        $this->value = ($value * self::MAX);
 
-        return array($this->hue, $this->saturation, $this->_value);
+        return array($this->hue, $this->saturation, $this->value);
+    }
+
+    protected function formatOutput($value, $format = '')
+    {
+        if (is_array($value) && $format == 'standard') {
+            return $this->getStandardOutput();
+        }
+        if (is_array($value) && $format == 'default') {
+            return $this->getDefaultOutput();
+        }
+        if (is_array($value) && $format == 'object') {
+            return $this;
+        }
+        if (is_array($value) && $format == '') {
+            $newvalues = array();
+            foreach ($value as $val) {
+                $newvalues[] = $this->formatOutput($val, $format, true);
+            }
+
+            return $newvalues;
+        }
+        if ($format == 'percentage') {
+            return round(number_format(($value / self::MAX) * 100, $this->decimalLimit));
+        }
+        if ($format == 'float') {
+            return floatval(number_format($value / self::MAX, $this->decimalLimit));
+        }
+
+        return $value;
     }
 }

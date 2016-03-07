@@ -18,6 +18,7 @@ class RgbTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array('rgb(0,0,0)'),
+            array('RGB(0,0,0)'),
             array('rgb( 0 , 0 , 0 )'),
             array('rgb(123,90,00)'),
             array('rgb(0.1,0.84,0.05)'),
@@ -98,6 +99,17 @@ class RgbTest extends \PHPUnit_Framework_TestCase
     {
         $rgb = new Rgb('blue(56)');
         $this->assertEquals('rgb(0,0,56)', $rgb->getStandardOutput());
+    }
+
+    public function testShouldHaveAtleastOneRegexFormat()
+    {
+        $this->assertGreaterThanOrEqual(1, count(Rgb::regex()));
+    }
+
+    public function testInstanceOf()
+    {
+        $this->assertInstanceOf('Sodium\Contract\Component\Model\ConversionAwareInterface', new Rgb());
+        $this->assertInstanceOf('Sodium\Contract\Component\Model\Colorspace\ColorspaceInterface', new Rgb());
     }
 
     /**
