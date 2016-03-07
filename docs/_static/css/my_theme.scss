@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,600,200);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body.wy-body-for-nav {
+    font-family: 'Work Sans';
+    background-color: #fff;
+    letter-spacing: -0.5px;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: -0.25px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.wy-body-for-nav {
+    p {
+        line-height: 1.6;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+        margin-top: 0;
+        font-weight: 300;
+        font-family: "Work Sans","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+    }
+
+    .wy-breadcrumbs li.wy-breadcrumbs-aside {
+        a {
+            color: #aaa;
+            border: 1px solid #aaa;
+            padding: 7px;
+            font-size: 11px;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-radius: 2px;
+        	font-family: 'Source Sans Pro', sans-serif;
+            &:hover {
+                color: #fff;
+                border: 1px solid #F22613;
+                background-color: #F22613;
+            }
+        }
+    }
+
+    .btn-neutral {
+        color: #fff !important;
+        box-shadow: none;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 6px 7px;
+        background: #F22613 !important;
+        font-family: 'Source Sans Pro', sans-serif;
+        border-color: #F22613;
+        border-radius: 2px;
+    }
+    .toctree-expand{
+    	display: none;
+    }
+}
+
+body.wy-body-for-nav .wy-nav-side {
+    background: #fff;
+
+    .wy-side-nav-search {
+        background-color: #fff;
+
+        & > a, .wy-dropdown > a, & > div.version {
+            color: #444;
+        }
+
+        input[type=text] {
+            width: 100%;
+            border-radius: 2px;
+            padding: 6px 12px;
+            border-color: #eee;
+            box-shadow: none;
+        }
+    }
+
+    .wy-menu-vertical {
+        width: 300px;
+        text-align: right;
+    }
+
+    .wy-menu-vertical header, .wy-menu-vertical p.caption {
+        font-weight: 400;
+        text-transform: capitalize;
+        font-size: 15px;
+        color: #F22613;
+        white-space: nowrap;
+        padding-right: 10px;
+    }
+    .wy-menu-vertical span.caption-text:after {
+        content: ' #';
+    }
+
+    .wy-menu-vertical a {
+        border-right: 2px solid transparent;
+        font-size: 14px;
+        padding: 3px 10px;
+        border-top: 0;
+        border-bottom: 0;
+        background: #fff;
+
+        &.current, &:hover {
+            background-color: #fff;
+            cursor: pointer;
+            border-right: 2px solid #F22613;
+            color: #444;
+            font-weight: 500;
+        }
+    }
+}
+
+body.wy-body-for-nav .wy-nav-content-wrap {
+    background: #fff;
+}

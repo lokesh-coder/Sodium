@@ -9,17 +9,54 @@ Welcome to Sodium's documentation!
 Contents:
 
 .. toctree::
-	:caption: Table of Contents
-	:maxdepth: 2
+	:caption: Introduction
+	:maxdepth: 1
 
-	intro
+	data/introduction/hello
+	data/introduction/overview
+	data/introduction/installation
 
+.. toctree::
+	:caption: Components
+	:maxdepth: 1
 
+	data/components/models
+	data/components/mixer
+	data/components/imaging
+	data/components/pallete
+	data/components/export
+	data/components/garages
+	data/components/inputformats
+	data/components/reference
 
-Indices and tables
-==================
+.. toctree::
+	:caption: Core
+	:maxdepth: 1
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+	data/core/engine
+	data/core/processors
+	data/core/cogs
+
+.. toctree::
+	:caption: Custom components
+	:maxdepth: 1
+
+	data/extend/concept
+	data/extend/extend
+
+.. toctree::
+	:caption: Thanks
+	:maxdepth: 1
+
+	data/thanks/dependencies
+	data/thanks/source 
+
+.. toctree::
+	:caption: Source code
+	:maxdepth: 1
+
+	data/source/license
+	data/source/changelog
+	data/source/contributions
+
 
