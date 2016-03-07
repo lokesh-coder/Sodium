@@ -283,7 +283,6 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
-
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 import sphinx_rtd_theme
@@ -301,3 +300,4 @@ if on_rtd:
             '_static/css/my_theme.css',
         ],
     }
+
