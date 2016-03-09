@@ -55,7 +55,6 @@ class Converter extends GarageConcrete
     public function mixBlue($blue)
     {
         $this->getModel('Colorspace\Rgb')->mixBlue($blue);
-
         return $this->updateModels('Colorspace\Rgb');
     }
 

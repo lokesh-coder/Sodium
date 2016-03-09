@@ -6,7 +6,7 @@ use Sodium\Concrete\Component\Model\ModelConcrete;
 use Sodium\Contract\Component\Model\Colorspace\ColorspaceInterface;
 use Sodium\Contract\Component\Model\ConversionAwareInterface;
 
-class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareInterface
+class Hsl extends ModelConcrete implements ColorspaceInterface, ConversionAwareInterface
 {
     protected $hsl = array();
     protected $hue = 0;
@@ -132,7 +132,7 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
     public function getStandardOutput()
     {
-        return 'hsl('.$this->hue.','.$this->saturation.','.$this->lightness.')';
+        return 'hsl(' . $this->hue . ',' . $this->saturation . ',' . $this->lightness . ')';
     }
 
     public function getDefaultOutput()
@@ -240,7 +240,7 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
         $this->lightness = $lightness * self::MAX;
 
         $this->hsl = array($this->hue, $this->saturation, $this->lightness);
-        
+
         return $this->hsl;
     }
     protected function formatOutput($value, $format = '')
@@ -262,10 +262,10 @@ class Hsl extends ModelConcrete implements ColorspaceInterface,ConversionAwareIn
 
             return $new_values;
         }
-        if ( $format == 'percentage') {
+        if ($format == 'percentage') {
             return round(number_format(($value / self::MAX) * 100, $this->decimalLimit));
         }
-        if ( $format == 'float') {
+        if ($format == 'float') {
             return floatval(number_format(($value / self::MAX), $this->decimalLimit));
         }
 

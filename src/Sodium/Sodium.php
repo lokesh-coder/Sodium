@@ -2,11 +2,11 @@
 
 namespace Sodium;
 
-use Sodium\Engine\Engine;
 use Sodium\Engine\Cog\ExportCog;
 use Sodium\Engine\Cog\GarageCog;
 use Sodium\Engine\Cog\ImageCog;
 use Sodium\Engine\Cog\PaletteCog;
+use Sodium\Engine\Engine;
 use Sodium\Engine\Processor\InputProcessor;
 use Sodium\Engine\Processor\ModelProcessor;
 
@@ -42,6 +42,7 @@ class Sodium extends Engine
 
     public $registeredGarages = array(
         'Converter' => 'Sodium\Component\Garage\Converter',
+        'Capture' => 'Sodium\Component\Garage\Capture',
         'Check' => 'Sodium\Component\Garage\Check',
         'Painter' => 'Sodium\Component\Garage\Painter',
         'Collection' => 'Sodium\Component\Garage\Collection',

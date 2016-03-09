@@ -37,8 +37,9 @@ class Hex extends ModelConcrete implements SeedInterface,ConversionAwareInterfac
 
             return $hex_1.$hex_2.$hex_3;
         }
+        $this->hex=$string;
 
-        return $string;
+        return $this->hex;
     }
 
     public function fromRGB(array $rgb)
@@ -70,14 +71,6 @@ class Hex extends ModelConcrete implements SeedInterface,ConversionAwareInterfac
         );
     }
 
-    public function getHex($short = false)
-    {
-        if ($short) {
-            return $this->toShort($this->hex);
-        }
-
-        return $this->hex;
-    }
 
     public function getStandardOutput($short = false)
     {
@@ -134,5 +127,11 @@ class Hex extends ModelConcrete implements SeedInterface,ConversionAwareInterfac
         } else {
             return $hex;
         }
+    }
+
+    public function formatOutput($format){
+        if($format=='standard')
+            return $this->getStandardOutput();
+        return getHex();
     }
 }

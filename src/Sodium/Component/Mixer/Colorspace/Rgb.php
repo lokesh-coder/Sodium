@@ -42,7 +42,7 @@ class Rgb extends RgbModel
     }
     public function mixRed($red)
     {
-        $this->rgbModel->rgb = array($this->rgbModel->$red + $red, $this->rgbModel->green, $this->rgbModel->blue);
+        $this->rgbModel->rgb = array($this->rgbModel->red + $red, $this->rgbModel->green, $this->rgbModel->blue);
         $this->rgbModel->fromRGB($this->rgbModel->rgb);
 
         return $this;

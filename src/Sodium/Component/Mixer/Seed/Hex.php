@@ -13,8 +13,8 @@ class Hex extends HexModel
         $this->_model = $model;
     }
 
-    public function getHex()
+    public function getHex($format)
     {
-        return $this->_model->getHex();
+        return $this->_model->formatOutput($format);
     }
 }
