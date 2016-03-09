@@ -1,0 +1,29 @@
+{
+  "name": "OnePageApp",
+  "version": "1.0.0",
+  "description": "will be updated soon...",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "bower": "^1.5.1",
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lokesh-coder/one-page-app"
+  },
+  "keywords": [
+    "one",
+    "page",
+    "app"
+  ],
+  "author": "lokesh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lokesh-coder/one-page-app/issues"
+  },
+  "homepage": "http://onepageapp.in"
+}
