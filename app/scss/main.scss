@@ -1,8 +1,47 @@
-@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,300);
 
-body{
-	background-color: #fcfcfc;
-	font-family: 'Work Sans', sans-serif;
-	color:#444;
+::selection{
+	background-color: #000;
+	color:#fff;
+}
+
+
+html, body {
+    height: 90%;
+}
+
+body {
+    background-color: #F7CA18;
+    font-family: 'Work Sans', sans-serif;
+    color: #444;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.box {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+
+    h1 {
+        color: #2C3E50;
+        font-size: 80px;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+    h3{
+        color: #2C3E50;
+    	margin-top: 0;
+    	font-size:14px;
+    	font-weight:400;
+    }
+    a{
+    	color:#D35400;
+    }
 }
