@@ -3,6 +3,7 @@
 namespace Sodium\Component\Model\Seed;
 
 use Sodium\Component\Reference\CrayolaCrayonsColors;
+use Sodium\Component\Model\Seed\Hex;
 use Sodium\Concrete\Component\Model\ModelConcrete;
 use Sodium\Contract\Component\Model\ConversionAwareInterface;
 use Sodium\Contract\Component\Model\Seed\SeedInterface;
@@ -17,7 +18,7 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
     {
         if ($name != '') {
             if (!is_string($name)) {
-                throw new Exception('Invalid Input. Please provide String');
+                throw new \Exception('Invalid Input. Please provide String');
             }
             $this->name = $this->format($name);
         }
@@ -33,6 +34,8 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
         } else {
             $this->name = array_search($hex, $this->colorNames());
         }
+
+        return $this->name;
     }
 
     public function getDefaultOutput()
@@ -47,12 +50,15 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
 
     public function getHex()
     {
-        return strtolower(array_search($this->name, array_flip($this->colorNames(true))));
+        $hex=array_search($this->name, array_flip($this->colorNames(true)));
+        if(!$hex)
+            return '#000';
+        return strtolower($hex);
     }
 
     public function toRGB()
     {
-        $hex = array_search($this->name, array_flip($this->colorNames(true)));
+        $hex = $this->getHex();
         $hexmodel = new Hex($hex);
 
         return $hexmodel->toRGB();
@@ -78,7 +84,7 @@ class Crayon extends ModelConcrete implements SeedInterface,ConversionAwareInter
                 break;
 
             default:
-                throw new Exception('invalid Syntax');
+                throw new \Exception('invalid Syntax');
         }
 
         return $content;

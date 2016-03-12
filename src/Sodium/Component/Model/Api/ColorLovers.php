@@ -9,6 +9,7 @@ use Sodium\Resource\Library\PhpColorLoverApi\ColorLover;
 class ColorLovers extends ModelConcrete implements ApiInterface
 {
     public static $canExportable = false;
+    public $colorLoverObj = null;
     private $paletteId;
 
     public function __construct($palette_id = '')
@@ -25,7 +26,7 @@ class ColorLovers extends ModelConcrete implements ApiInterface
 
     public static function regex()
     {
-        $regex['cl'] = '/^cl\([0-9]+\)$/i';
+        $regex['cl'] = '/^cl\(\s?[0-9]+\s?\)$/i';
 
         return $regex;
     }
@@ -37,29 +38,32 @@ class ColorLovers extends ModelConcrete implements ApiInterface
 
     public function getStandardOutput()
     {
-        return 'cl(NULL)';
+        return 'cl(null)';
     }
 
     protected function format($string)
     {
         $type = self::isAcceptedFormat($string, true);
         switch ($type) {
-      case 'cl':
-        $id = ltrim($string, 'cl');
-        $id = ltrim($id, '(');
-        $id = rtrim($id, ')');
-        break;
+          case 'cl':
+            $id = ltrim($string, 'cl');
+            $id = ltrim($id, '(');
+            $id = rtrim($id, ')');
+            break;
 
-      default:
-        throw new Exception('invalid Syntax');
-    }
+          default:
+            throw new \Exception('invalid Syntax');
+        }
 
         return $id;
     }
 
     private function initRequest()
     {
-        $request = new ColorLover($this->paletteId);
+        if(!$this->colorLoverObj)
+            $request = new ColorLover($this->paletteId);
+        else
+            $request=$this->colorLoverObj;
         $colors = @$request->getPalette();
         $hex = array();
         foreach ($colors['colors'] as $col) {
@@ -67,6 +71,10 @@ class ColorLovers extends ModelConcrete implements ApiInterface
         }
 
         return $hex;
+    }
+
+    public function setColorLoverObj($cl){
+        $this->colorLoverObj=$cl;
     }
 
     public function getCollection()

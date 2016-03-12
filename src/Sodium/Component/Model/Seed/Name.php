@@ -20,9 +20,9 @@ class Name extends ModelConcrete implements SeedInterface,ConversionAwareInterfa
     {
         if ($name != '') {
             if (!is_string($name)) {
-                throw new Exception('Invalid Input. Please provide String');
+                throw new \Exception('Invalid Input. Please provide String');
             }
-            $this->name = strtolower($name);
+            $this->name = $this->format($name);
         }
     }
 
@@ -36,6 +36,7 @@ class Name extends ModelConcrete implements SeedInterface,ConversionAwareInterfa
         } else {
             $this->name = array_search($hex, $this->colorNames());
         }
+        return $this->name;
     }
 
     protected function colorNames($case = false)
@@ -60,7 +61,7 @@ class Name extends ModelConcrete implements SeedInterface,ConversionAwareInterfa
 
     public static function regex()
     {
-        $regex[] = '/^([a-zA-Z]+)$/i';
+        $regex['default'] = '/^([a-zA-Z]+)$/i';
 
         return $regex;
     }
@@ -101,6 +102,22 @@ class Name extends ModelConcrete implements SeedInterface,ConversionAwareInterfa
 
             return $hexmodel->toRGB();
         }
+    }
+
+
+    private function format($string)
+    {
+        $type = self::isAcceptedFormat($string);
+        switch ($type) {
+            case 'default':
+                $content = strtolower($string);
+                break;
+
+            default:
+                throw new \Exception('invalid Syntax');
+        }
+
+        return $content;
     }
 
     public function getName()
