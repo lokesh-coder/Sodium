@@ -56,3 +56,4 @@ vendor/
 #sftp configuration file
 sftp-config.json
 build/
+composer.lock

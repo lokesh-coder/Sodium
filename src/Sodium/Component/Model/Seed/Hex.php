@@ -21,10 +21,10 @@ class Hex extends ModelConcrete implements SeedInterface,ConversionAwareInterfac
     protected function format($string)
     {
         if (!is_string($string)) {
-            throw new Exception('Cannot accept array input. Please provide valid string.');
+            throw new \Exception('Cannot accept array input. Please provide valid string.');
         }
         if (!self::isAcceptedFormat($string)) {
-            throw new Exception('invalid format');
+            throw new \Exception('invalid format');
         }
 
         $string = strtolower($string);

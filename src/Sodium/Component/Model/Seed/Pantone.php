@@ -2,6 +2,8 @@
 
 namespace Sodium\Component\Model\Seed;
 
+use Sodium\Component\Model\Seed\Hex;
+use Sodium\Component\Reference\Pantone as PantoneRef;
 use Sodium\Concrete\Component\Model\ModelConcrete;
 use Sodium\Contract\Component\Model\ConversionAwareInterface;
 use Sodium\Contract\Component\Model\Seed\SeedInterface;
@@ -29,6 +31,7 @@ class Pantone extends ModelConcrete implements SeedInterface,ConversionAwareInte
         } else {
             $this->pantoneName = array_search($hex, $this->colornames());
         }
+        return $this->pantoneName;
     }
 
     public function getDefaultOutput()
@@ -43,12 +46,15 @@ class Pantone extends ModelConcrete implements SeedInterface,ConversionAwareInte
 
     public function getHex()
     {
-        return strtolower(array_search($this->_name, array_flip($this->colornames(true))));
+        $hex=array_search($this->pantoneName, array_flip($this->colornames(true)));
+        if(!$hex)
+            throw new \Exception('Pantone name not avaialable');
+        return strtolower($hex);
     }
 
     public function toRGB()
     {
-        $hex = array_search($this->pantoneName, array_flip($this->colornames(true)));
+        $hex = $this->getHex();
         $hexmodel = new Hex($hex);
 
         return $hexmodel->toRGB();
@@ -56,14 +62,14 @@ class Pantone extends ModelConcrete implements SeedInterface,ConversionAwareInte
 
     public static function regex()
     {
-        $regex['pantone'] = '/^pantone\([a-zA-Z0-9]+\)$/i';
+        $regex['pantone'] = '/^pantone\(\s?[a-zA-Z0-9]+\s?\)$/i';
 
         return $regex;
     }
 
     private function format($string)
     {
-        $type = self::isValid($string, true);
+        $type = self::isAcceptedFormat($string, true);
         switch ($type) {
             case 'pantone':
                 $string = ltrim($string, 'pantone');
@@ -74,8 +80,11 @@ class Pantone extends ModelConcrete implements SeedInterface,ConversionAwareInte
                 break;
 
             default:
-                throw new Exception('invalid Syntax');
+                throw new \Exception('invalid Syntax');
         }
+
+        if(!array_search($content, array_flip($this->colornames(true))))
+            $content='unavailable';
 
         return $content;
     }
@@ -87,7 +96,7 @@ class Pantone extends ModelConcrete implements SeedInterface,ConversionAwareInte
 
     protected function colornames($case = false)
     {
-        $colors = \Sodium\Component\Reference\Pantone::get();
+        $colors = Pantoneref::get();
         if ($case) {
             return array_change_key_case($colors, CASE_LOWER);
         }
