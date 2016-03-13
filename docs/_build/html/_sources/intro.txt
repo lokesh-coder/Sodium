@@ -1,7 +1,0 @@
-Introduction!
-=============
-
-.. code-block::php
-
-    use myNamespace/MyClass;
-    ... 

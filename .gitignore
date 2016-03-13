@@ -5,10 +5,7 @@
 
 ## Directory-based project format
 .idea/
-test.php
-*.jpg
-*.png
-docs/_build
+
 # if you remove the above rule, at least ignore user-specific stuff:
 # .idea/workspace.xml
 # .idea/tasks.xml
@@ -57,3 +54,9 @@ vendor/
 sftp-config.json
 build/
 composer.lock
+
+# custom
+test.php
+*.jpg
+*.png
+docs/_build/
