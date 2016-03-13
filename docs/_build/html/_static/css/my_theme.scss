@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,600,200);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+
+
+body.wy-body-for-nav {
+    font-family: 'Work Sans';
+    background-color: #fff;
+    letter-spacing: -0.5px;
+    font-size: 14px;
+    color: #2C3E50;
+    letter-spacing: -0.25px;
+    -webkit-font-smoothing: antialiased;
+    h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+        font-weight: 300;
+        font-family: inherit;
+    }
+    p{
+            font-size: inherit;
+    }
+}
+
+body.wy-body-for-nav .wy-nav-side{
+    background-color: #2C3E50;
+    margin: 0;
+}
+
+body.wy-body-for-nav .wy-side-nav-search{
+    background-color: #E9D460;
+    input[type=text] {
+        border-radius: 2px;
+        border:0;
+        box-shadow:none;
+    }
+    >a, >div.version{
+        color: #2C3E50;
+    }
+}
+
+body.wy-body-for-nav .wy-menu-vertical header, 
+body.wy-body-for-nav .wy-menu-vertical p.caption{
+    margin-bottom: 0;
+    display: block;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 100%;
+    color: #fff;
+    padding: 15px 19px;
+    background: #293A4A;
+    height: auto;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+body.wy-body-for-nav .wy-menu-vertical a:hover,
+body.wy-body-for-nav .wy-menu-vertical li.on a:hover, 
+body.wy-body-for-nav .wy-menu-vertical li.current>a:hover {
+    background-color: #E9D460;
+    color: #2C3E50;
+}
+
+body.wy-body-for-nav .btn-neutral {
+    background-color: #fff !important;
+    color: #746F6F !important;
+    font-family: inherit;
+    border: 1px solid #A9AAAC;
+    padding: 7px 10px;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+body.wy-body-for-nav .rst-footer-buttons {
+    text-align: left;
+}
+
+body.wy-body-for-nav footer {
+    text-align: center;
+}
+
+body.wy-body-for-nav .wy-breadcrumbs li.wy-breadcrumbs-aside a {
+    color: #aaa;
+    border: 1px solid #aaa;
+    padding: 7px;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+}

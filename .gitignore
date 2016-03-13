@@ -59,4 +59,3 @@ composer.lock
 test.php
 *.jpg
 *.png
-docs/_build/
