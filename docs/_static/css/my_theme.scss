@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,600,200);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700);
 
 
 body.wy-body-for-nav {
@@ -67,6 +67,12 @@ body.wy-body-for-nav .btn-neutral {
     padding: 7px 10px;
     box-shadow: none;
     font-size: 12px;
+    &:hover{
+        background-color: #2C3E50 !important;
+        color: #FCFCFC !important;
+        font-family: inherit;
+        border: 1px solid #2C3E50;
+    }
 }
 
 body.wy-body-for-nav .rst-footer-buttons {
@@ -86,4 +92,13 @@ body.wy-body-for-nav .wy-breadcrumbs li.wy-breadcrumbs-aside a {
     text-transform: uppercase;
     border-radius: 2px;
     font-family: 'Source Sans Pro', sans-serif;
+    &:hover{
+        background-color: #2C3E50 !important;
+        color: #FCFCFC !important;
+        border: 1px solid #2C3E50;
+    }
+}
+
+body.wy-body-for-nav div[class^='highlight'] pre{
+    font-family: 'Roboto Mono', ;
 }

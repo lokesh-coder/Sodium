@@ -11,7 +11,7 @@ command line
 .. code-block:: php
    :linenos:
 
-   $ composer require lokesh/sodium
+   composer require lokesh/sodium
 
 composer.json
 -------------
@@ -25,10 +25,9 @@ composer.json
 
 .. code-block:: php
   :linenos:
-  :emphasize-lines: 3,4
 
   use \Sodium\Sodium;
 
-  $sodium = new \Sodium\Sodium('#2f8cab');
-  echo $sodium->getHex();
+  $sodium = new Sodium('#2f8cab');
+  echo $sodium->getRed();
   echo $sodium->getName();

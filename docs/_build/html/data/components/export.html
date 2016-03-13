@@ -93,7 +93,20 @@
 <li class="toctree-l1"><a class="reference internal" href="mixer.html">Mixers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="imaging.html">Imaging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pallete.html">Pallete</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Export</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Export</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-usage">Basic usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#export-types">Export types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#export-one-color">Export one color</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-all-colors">Export all colors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#export-formats">Export formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#file-format">File format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flat-format">Flat format</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="garages.html">Garages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inputformats.html">Input Formats</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a></li>
@@ -169,6 +182,193 @@
 </div>
 <div class="section" id="export">
 <h1>Export<a class="headerlink" href="#export" title="Permalink to this headline">¶</a></h1>
+<p>This component helps to export/download the colors to different formats.</p>
+<div class="section" id="basic-usage">
+<h2>Basic usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">use</span> <span class="nx">\Sodium\Sodium</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\ManyToOne</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\Flat\Json</span><span class="p">;</span>
+
+<span class="nv">$input</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="s1">&#39;#2f8cab&#39;</span><span class="p">,</span><span class="s1">&#39;rgb(129,33,21)&#39;</span><span class="p">);</span>
+<span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+
+<span class="nv">$export_type</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Json</span><span class="p">();</span>
+<span class="nv">$export_all</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ManyToOne</span><span class="p">(</span><span class="nv">$export_type</span><span class="p">);</span>
+
+<span class="nv">$json</span> <span class="o">=</span> <span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="nv">$export_all</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="export-types">
+<h2>Export types<a class="headerlink" href="#export-types" title="Permalink to this headline">¶</a></h2>
+<p>There are four types of export. <strong>OneToOne</strong> , <strong>OneToMany</strong> , <strong>ManyToOne</strong> , <strong>ManyToMany</strong></p>
+<div class="section" id="export-one-color">
+<h3>Export one color<a class="headerlink" href="#export-one-color" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">use</span> <span class="nx">\Sodium\Sodium</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\OneToOne</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\OneToMany</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\File\Image</span><span class="p">;</span>
+
+<span class="nv">$input</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="s1">&#39;green&#39;</span><span class="p">);</span>
+<span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+
+<span class="nv">$image_format</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">(</span><span class="s1">&#39;image_name_001.jpg&#39;</span><span class="p">,</span><span class="s1">&#39;/path/to/save&#39;</span><span class="p">);</span>
+<span class="c1">// export second color ( green )</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">useInput</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">OneToOne</span><span class="p">(</span><span class="nv">$image_format</span><span class="p">))</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
+<span class="c1">// export to all color spaces, ie hex, rgb, hsl, hsv, cmy, ..</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">useInput</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">OneToMany</span><span class="p">());</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="export-all-colors">
+<h3>Export all colors<a class="headerlink" href="#export-all-colors" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">use</span> <span class="nx">\Sodium\Sodium</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\ManyToOne</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\ManytoMany</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\File\Image</span><span class="p">;</span>
+
+<span class="nv">$input</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="s1">&#39;green&#39;</span><span class="p">);</span>
+<span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+
+<span class="nv">$image_format</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">(</span><span class="s1">&#39;image_name_001.jpg&#39;</span><span class="p">,</span><span class="s1">&#39;/path/to/save&#39;</span><span class="p">);</span>
+<span class="c1">// export all colors to images</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToOne</span><span class="p">(</span><span class="nv">$image_format</span><span class="p">))</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
+<span class="c1">// export all colors all formats</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToMany</span><span class="p">());</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="export-formats">
+<h2>Export formats<a class="headerlink" href="#export-formats" title="Permalink to this headline">¶</a></h2>
+<p>There are two types of export formats. <strong>File</strong> and <strong>Flat</strong></p>
+<div class="section" id="file-format">
+<h3>File format<a class="headerlink" href="#file-format" title="Permalink to this headline">¶</a></h3>
+<p>These formats are best to export multiple colors to <em>Image</em> , <em>Gif</em> , <em>Html</em> , <em>Json</em> files</p>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">use</span> <span class="nx">\Sodium\Sodium</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\ManyToOne</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\File\Image</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\File\Gif</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\File\Html</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\File\Json</span><span class="p">;</span>
+
+<span class="nv">$input</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="s1">&#39;green&#39;</span><span class="p">);</span>
+<span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+
+<span class="nv">$image_format</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">(</span><span class="s1">&#39;image_name_001.jpg&#39;</span><span class="p">,</span><span class="s1">&#39;/path/to/save&#39;</span><span class="p">);</span>
+<span class="nv">$json_format</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Json</span><span class="p">(</span><span class="s1">&#39;json_file.json&#39;</span><span class="p">);</span>
+<span class="nv">$gif_format</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Gif</span><span class="p">(</span><span class="s1">&#39;gif_file.gif&#39;</span><span class="p">);</span>
+<span class="nv">$html_format</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Html</span><span class="p">(</span><span class="s1">&#39;html_file.html&#39;</span><span class="p">);</span>
+
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToOne</span><span class="p">(</span><span class="nv">$image_format</span><span class="p">))</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span> <span class="c1">// to save</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToOne</span><span class="p">(</span><span class="nv">$image_format</span><span class="p">))</span><span class="o">-&gt;</span><span class="na">show</span><span class="p">();</span> <span class="c1">// to show</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToOne</span><span class="p">(</span><span class="nv">$gif_format</span><span class="p">));</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToOne</span><span class="p">(</span><span class="nv">$html_format</span><span class="p">));</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToOne</span><span class="p">(</span><span class="nv">$json_format</span><span class="p">));</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="flat-format">
+<h3>Flat format<a class="headerlink" href="#flat-format" title="Permalink to this headline">¶</a></h3>
+<p>These formats are just exporting the colors to strings</p>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">use</span> <span class="nx">\Sodium\Sodium</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\OneToOne</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\OneToMany</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\ManyToOne</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\ManyToMany</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\Flat\SimpleString</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\Flat\SimpleArray</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\Sodium\Component\Export\Adapter\Flat\json</span><span class="p">;</span>
+
+<span class="nv">$input</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="s1">&#39;green&#39;</span><span class="p">);</span>
+<span class="nv">$sodium</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Sodium</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+
+<span class="nv">$string_format</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SimpleString</span><span class="p">();</span>
+<span class="nv">$array_format</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SimpleArray</span><span class="p">(</span><span class="s1">&#39;json_file.json&#39;</span><span class="p">);</span>
+<span class="nv">$json_format</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Json</span><span class="p">();</span>
+
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToMany</span><span class="p">(</span><span class="nv">$json_format</span><span class="p">));</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToMany</span><span class="p">(</span><span class="nv">$array_format</span><span class="p">));</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">ManyToOne</span><span class="p">(</span><span class="nv">$json_format</span><span class="p">));</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">OneToOne</span><span class="p">(</span><span class="nv">$string_format</span><span class="p">));</span>
+<span class="nv">$sodium</span><span class="o">-&gt;</span><span class="na">export</span><span class="p">(</span><span class="k">new</span> <span class="nx">OneToMany</span><span class="p">(</span><span class="nv">$json_format</span><span class="p">));</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
 </div>
 
 

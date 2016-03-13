@@ -96,7 +96,16 @@
 <li class="toctree-l1"><a class="reference internal" href="export.html">Export</a></li>
 <li class="toctree-l1"><a class="reference internal" href="garages.html">Garages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inputformats.html">Input Formats</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#web-color-names">Web color names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#web-safe-colors">Web safe colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#crayola-crayons-colors">Crayola crayons colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hex-codes">Hex codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cie-values">Cie values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pantone-colors">Pantone colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#trending-colors">Trending colors</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Core</span></p>
 <ul>
@@ -169,6 +178,55 @@
 </div>
 <div class="section" id="reference">
 <h1>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h1>
+<p>Reference components are standalone components. These are basically a data collection.</p>
+<div class="section" id="web-color-names">
+<h2>Web color names<a class="headerlink" href="#web-color-names" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nv">$color_names</span> <span class="o">=</span> <span class="nx">\Sodium\Component\WebColorNames</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="web-safe-colors">
+<h2>Web safe colors<a class="headerlink" href="#web-safe-colors" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nv">$web_safe_colors</span> <span class="o">=</span> <span class="nx">\Sodium\Component\WebSafeColors</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="crayola-crayons-colors">
+<h2>Crayola crayons colors<a class="headerlink" href="#crayola-crayons-colors" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nv">$crayon_colors</span> <span class="o">=</span> <span class="nx">\Sodium\Component\CrayolaCrayonsColors</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="hex-codes">
+<h2>Hex codes<a class="headerlink" href="#hex-codes" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nv">$hex_codes</span> <span class="o">=</span> <span class="nx">\Sodium\Component\HexCode</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="cie-values">
+<h2>Cie values<a class="headerlink" href="#cie-values" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nv">$cie_values</span> <span class="o">=</span> <span class="nx">\Sodium\Component\Cie</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="pantone-colors">
+<h2>Pantone colors<a class="headerlink" href="#pantone-colors" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nv">$pantone_colors</span> <span class="o">=</span> <span class="nx">\Sodium\Component\Pantone</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+<span class="nv">$pantone_c_colors</span> <span class="o">=</span> <span class="nx">\Sodium\Component\PantoneC</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+<span class="nv">$pantone_pc_colors</span> <span class="o">=</span> <span class="nx">\Sodium\Component\PantonePC</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="trending-colors">
+<h2>Trending colors<a class="headerlink" href="#trending-colors" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nv">$flat_colors</span> <span class="o">=</span> <span class="nx">\Sodium\Component\FlatColors</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+<span class="nv">$material_colors</span> <span class="o">=</span> <span class="nx">\Sodium\Component\MaterialColors</span><span class="o">::</span><span class="na">get</span><span class="p">();</span>
+</pre></div>
+</td></tr></table></div>
+</div>
 </div>
 
 
