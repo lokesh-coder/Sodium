@@ -2117,7 +2117,7 @@ class FlatColors extends ReferenceConcrete implements ReferenceInterface
             '#fffcf5',
             '#fffef5',
             '#ffffd6',
-            '#fffff7',
+            '#fffff7'
         );
         return $flat_colors;
     }
